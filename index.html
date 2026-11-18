@@ -190,6 +190,16 @@
       transform: translateY(-1px);
       box-shadow: 0 6px 18px rgba(200, 32, 97, 0.35);
     }
+    .btn-header-reg {
+      background: linear-gradient(135deg, #E6007E 0%, #B80064 100%);
+      box-shadow: 0 4px 16px rgba(230, 0, 126, 0.38), 0 0 0 2px rgba(255, 222, 89, 0.45);
+      font-weight: 850;
+      transition: all 0.22s ease;
+    }
+    .btn-header-reg:hover {
+      transform: translateY(-1px) scale(1.03);
+      box-shadow: 0 8px 24px rgba(230, 0, 126, 0.58), 0 0 0 3px rgba(255, 222, 89, 0.75);
+    }
 
     /* PART SELECTOR / SUBNAV BAR */
     .part-nav-bar {
@@ -927,34 +937,74 @@
 
     /* PART 6: REGISTRATION & QR */
     .register-single-wrap {
-      max-width: 560px;
+      max-width: 580px;
       margin: 0 auto;
     }
     .qr-box-wrap {
-      background: var(--bg-alt);
-      border: 1.5px solid #F1CAD8;
+      background: linear-gradient(180deg, #FFFFFF 0%, #FFF9FB 100%);
+      border: 2px solid #F5CAD8;
       border-radius: var(--radius-lg);
-      padding: 34px 28px;
+      padding: 38px 28px;
       text-align: center;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      box-shadow: var(--shadow-sm);
+      box-shadow: 0 16px 44px rgba(112, 26, 57, 0.08), 0 0 0 1px rgba(230, 0, 126, 0.1);
+      position: relative;
+    }
+    .qr-scan-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 12.5px;
+      font-weight: 900;
+      color: #C82061;
+      background: linear-gradient(135deg, #FFF0F5 0%, #FFFFFF 100%);
+      padding: 7px 20px;
+      border-radius: 99px;
+      border: 2px solid #E6007E;
+      margin-bottom: 22px;
+      letter-spacing: 0.6px;
+      box-shadow: 0 4px 18px rgba(230, 0, 126, 0.22), 0 0 12px rgba(230, 0, 126, 0.12);
+    }
+    .qr-badge-pulse {
+      width: 8px;
+      height: 8px;
+      background: #22C55E;
+      border-radius: 50%;
+      box-shadow: 0 0 10px #22C55E;
+      animation: qrDotPulse 1.8s infinite;
+    }
+    @keyframes qrDotPulse {
+      0%, 100% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.4); opacity: 0.6; }
     }
     .qr-img {
-      width: 175px;
-      height: 175px;
+      width: 195px;
+      height: 195px;
       background: #ffffff;
-      border: 2px solid var(--primary);
-      border-radius: 16px;
+      border: 3.5px solid #E6007E;
+      border-radius: 22px;
       padding: 10px;
-      margin: 0 auto 12px;
-      box-shadow: 0 4px 16px rgba(200, 32, 97, 0.16);
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      margin: 0 auto 16px;
       box-sizing: border-box;
+      animation: qrLuminousGlow 3.2s ease-in-out infinite;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    @keyframes qrLuminousGlow {
+      0%, 100% {
+        box-shadow: 0 0 0 4px rgba(230, 0, 126, 0.22), 0 12px 32px rgba(230, 0, 126, 0.35), 0 0 20px rgba(255, 222, 89, 0.35);
+        transform: translateY(0);
+      }
+      50% {
+        box-shadow: 0 0 0 8px rgba(230, 0, 126, 0.42), 0 18px 46px rgba(230, 0, 126, 0.55), 0 0 32px rgba(255, 222, 89, 0.65);
+        transform: translateY(-2px);
+      }
+    }
+    .qr-img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 0 10px rgba(230, 0, 126, 0.5), 0 22px 54px rgba(230, 0, 126, 0.7), 0 0 40px rgba(255, 222, 89, 0.8);
     }
     .qr-img a {
       display: flex;
@@ -968,7 +1018,54 @@
       height: 100%;
       object-fit: contain;
       display: block;
-      border-radius: 6px;
+      border-radius: 12px;
+    }
+    .cta-register-highlight {
+      position: relative;
+      overflow: hidden;
+      padding: 16px 38px !important;
+      font-size: 15.5px !important;
+      font-weight: 900 !important;
+      letter-spacing: 0.3px;
+      text-decoration: none;
+      border-radius: 99px !important;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: linear-gradient(135deg, #E6007E 0%, #C82061 50%, #900B48 100%) !important;
+      color: #FFFFFF !important;
+      box-shadow: 0 10px 30px rgba(230, 0, 126, 0.45), 0 0 0 3px rgba(255, 222, 89, 0.55) !important;
+      transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1) !important;
+      animation: ctaPulseGlow 3s infinite ease-in-out;
+    }
+    @keyframes ctaPulseGlow {
+      0%, 100% {
+        box-shadow: 0 10px 30px rgba(230, 0, 126, 0.45), 0 0 0 3px rgba(255, 222, 89, 0.5);
+        transform: translateY(0);
+      }
+      50% {
+        box-shadow: 0 16px 42px rgba(230, 0, 126, 0.68), 0 0 0 6px rgba(255, 222, 89, 0.85), 0 0 24px rgba(230, 0, 126, 0.4);
+        transform: translateY(-2px);
+      }
+    }
+    .cta-register-highlight:hover {
+      transform: translateY(-4px) scale(1.025) !important;
+      box-shadow: 0 20px 48px rgba(230, 0, 126, 0.75), 0 0 0 7px rgba(255, 222, 89, 0.95), 0 0 32px rgba(230, 0, 126, 0.5) !important;
+    }
+    .cta-register-highlight::after {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: linear-gradient(60deg, transparent 35%, rgba(255, 255, 255, 0.45) 50%, transparent 65%);
+      transform: translateX(-100%);
+      animation: ctaShimmerSweep 4.5s infinite;
+    }
+    @keyframes ctaShimmerSweep {
+      0%, 70% { transform: translateX(-100%); }
+      100% { transform: translateX(100%); }
     }
     .qr-box-wrap h4 {
       font-size: 15px;
@@ -1414,7 +1511,7 @@
       }
     }
   </style>
-  <link rel="stylesheet" href="ebook-style.css?v=20261119_v8">
+  <link rel="stylesheet" href="ebook-style.css?v=20261119_v9">
 </head>
 <body>
 
@@ -1436,7 +1533,7 @@
           <span class="btn-ebook-suffix">&nbsp;Thực Chiến</span>
           <span class="vip-pill">🔒 HỌC VIÊN</span>
         </button>
-        <button type="button" class="btn-primary" onclick="goToPart('register')">
+        <button type="button" class="btn-primary btn-header-reg" onclick="goToPart('register')">
           <span class="btn-reg-full">Đăng ký ngay</span>
           <span class="btn-reg-short">Đăng ký</span>
         </button>
@@ -1863,7 +1960,7 @@
             <div class="price-val">2.393.000đ <small style="font-size:14px;color:var(--text-muted);font-weight:600">/ học viên</small></div>
             <div class="price-note">Trọn gói 01 ngày Offline + 14 ngày đồng hành + 02 Video record + 01 Zoom sửa bài + Hệ thống AI mang về.</div>
           </div>
-          <button type="button" class="btn-primary" onclick="goToPart('register')" style="padding:13px 26px;font-size:14.5px">Đăng ký giữ chỗ ngay</button>
+          <button type="button" class="btn-primary cta-register-highlight" onclick="goToPart('register')" style="padding:14px 28px;font-size:14.5px">Đăng ký giữ chỗ ngay ↗</button>
         </div>
 
         <div class="logistics-grid">
@@ -1926,9 +2023,10 @@
 
         <div class="register-single-wrap">
           <div class="qr-box-wrap">
-            <span style="font-size:12px;font-weight:850;color:var(--primary);background:#fff;padding:6px 18px;border-radius:99px;border:1.5px solid var(--border);margin-bottom:18px;letter-spacing:0.3px;box-shadow:0 2px 8px rgba(200,32,97,0.08)">
-              QUÉT QR ĐỂ ĐĂNG KÝ TRỰC TIẾP
-            </span>
+            <div class="qr-scan-badge">
+              <span class="qr-badge-pulse"></span>
+              <span>QUÉT QR ĐỂ ĐĂNG KÝ TRỰC TIẾP</span>
+            </div>
 
             <div class="qr-img">
               <a href="https://docs.google.com/forms/d/e/1FAIpQLSepAfBro_dd6fLU0Hj6dQpfPBSq8BkOecbS5xvoiyPW0TqbSw/viewform" target="_blank" rel="noopener noreferrer" title="Bấm để mở trực tiếp Google Form đăng ký">
@@ -1959,9 +2057,9 @@
               </div>
             </div>
 
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSepAfBro_dd6fLU0Hj6dQpfPBSq8BkOecbS5xvoiyPW0TqbSw/viewform" target="_blank" rel="noopener noreferrer" class="btn-primary" style="padding:14px 32px;font-size:15px;font-weight:850;text-decoration:none;border-radius:12px;display:inline-flex;align-items:center;gap:8px;box-shadow:0 6px 20px rgba(200,32,97,0.28)">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSepAfBro_dd6fLU0Hj6dQpfPBSq8BkOecbS5xvoiyPW0TqbSw/viewform" target="_blank" rel="noopener noreferrer" class="btn-primary cta-register-highlight" title="Bấm mở Form đăng ký giữ chỗ chính thức">
               <span>Mở Google Form Đăng Ký Trực Tiếp</span>
-              <span style="font-size:16px">↗</span>
+              <span style="font-size:18px">↗</span>
             </a>
 
             <div style="margin-top:20px;padding-top:14px;border-top:1px dashed #E0B7C6;width:100%;max-width:440px;font-size:12px;color:var(--primary-dark)">
@@ -2022,7 +2120,7 @@
     </div>
   </div>
 
-  <script src="ebook-engine.js?v=20261119_v8"></script>
+  <script src="ebook-engine.js?v=20261119_v9"></script>
   <script>
     // Part Navigation Controller
     const PARTS = ['overview', 'curriculum', 'benefits', 'trainers', 'logistics', 'register', 'ebook'];
