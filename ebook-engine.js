@@ -449,6 +449,22 @@
           </div>
         </div>
 
+        <!-- STUDENT SURVEY FEATURED BANNER -->
+        <div class="eb-survey-featured-banner">
+          <div class="eb-survey-feat-left">
+            <div class="eb-survey-feat-badge-row">
+              <span class="eb-survey-feat-badge">🎓 DÀNH CHO HỌC VIÊN · KHẢO SÁT 15 CÂU</span>
+              <span class="eb-survey-feat-pill">BẢN HỌC VIÊN</span>
+            </div>
+            <h3 class="eb-survey-feat-title">Khai quật Brand DNA & nhận tệp Brand Guideline PDF 24 slide trước buổi học</h3>
+            <p class="eb-survey-feat-desc">Nhìn hình chọn đáp án trực quan để xác định phong cách thiết kế, bộ màu HEX, typography và xuất tệp hồ sơ .md phục vụ thực hành tạo Web & Video.</p>
+          </div>
+          <a href="brand-discovery.html" target="_blank" rel="noopener noreferrer" class="eb-survey-feat-cta">
+            <span>Bắt đầu khảo sát 15 câu</span>
+            <span class="cta-arrow">→</span>
+          </a>
+        </div>
+
         <!-- MAIN EBOOK GRID: SIDEBAR + STAGE -->
         <div class="eb-layout-grid">
           <!-- Sidebar -->

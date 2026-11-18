@@ -1442,6 +1442,112 @@
 /* ==========================================================================
    BÀI 4 — KHẢO SÁT 15 CÂU & BRAND GUIDELINE WIDGET STYLES
    ========================================================================== */
+
+/* Top Featured Survey Banner in Ebook Workspace */
+.eb-survey-featured-banner {
+  background: linear-gradient(135deg, #4A0E26 0%, #701A39 50%, #9A1448 100%);
+  border: 2px solid #E48FB0;
+  border-radius: 20px;
+  padding: 22px 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 22px;
+  margin-bottom: 26px;
+  box-shadow: 0 10px 30px rgba(112, 26, 57, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+.eb-survey-featured-banner::before {
+  content: '';
+  position: absolute;
+  top: -50px;
+  right: -30px;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, rgba(255, 222, 89, 0.2) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+.eb-survey-feat-left {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+.eb-survey-feat-badge-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+.eb-survey-feat-badge {
+  font-size: 11.5px;
+  font-weight: 900;
+  color: #FFDE59;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+.eb-survey-feat-pill {
+  background: rgba(255, 255, 255, 0.2);
+  color: #FFFFFF;
+  font-size: 10px;
+  font-weight: 850;
+  padding: 3px 9px;
+  border-radius: 9999px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  letter-spacing: 0.5px;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+}
+.eb-survey-feat-title {
+  margin: 0 0 6px;
+  font-size: 18px;
+  font-weight: 850;
+  color: #FFFFFF;
+  line-height: 1.35;
+  letter-spacing: -0.2px;
+}
+.eb-survey-feat-desc {
+  margin: 0;
+  font-size: 13.5px;
+  color: #FCE8F0;
+  line-height: 1.55;
+  max-width: 720px;
+}
+.eb-survey-feat-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: #FFDE59;
+  color: #4A0E26;
+  font-size: 14px;
+  font-weight: 850;
+  height: 44px;
+  padding: 0 24px;
+  border-radius: 9999px;
+  text-decoration: none;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.22);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  white-space: nowrap;
+  flex-shrink: 0;
+  line-height: 1;
+}
+.eb-survey-feat-cta:hover {
+  background: #FFF18A;
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.3);
+  color: #2E0017;
+}
+.eb-survey-feat-cta .cta-arrow {
+  font-size: 17px;
+  transition: transform 0.2s;
+}
+.eb-survey-feat-cta:hover .cta-arrow {
+  transform: translateX(4px);
+}
+
 .eb-survey-hero-card {
   background: linear-gradient(135deg, #701A39 0%, #A3164B 60%, #C82061 100%);
   border: 2px solid #F1CAD8;
@@ -1504,10 +1610,13 @@
   color: #FFFFFF;
   font-size: 10px;
   font-weight: 850;
-  padding: 2px 8px;
-  border-radius: 99px;
+  padding: 3px 9px;
+  border-radius: 9999px;
   border: 1px solid rgba(255, 255, 255, 0.35);
   letter-spacing: 0.5px;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
 }
 .eb-survey-title {
   margin: 0 0 6px;
@@ -1527,24 +1636,27 @@
 .eb-survey-cta-btn {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
+  justify-content: center;
+  gap: 8px;
   background: #FFDE59;
   color: #4A0E26;
-  font-size: 14.5px;
-  font-weight: 900;
-  padding: 14px 24px;
-  border-radius: 99px;
+  font-size: 14px;
+  font-weight: 850;
+  height: 44px;
+  padding: 0 24px;
+  border-radius: 9999px;
   text-decoration: none;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.18);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.22);
   transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
   white-space: nowrap;
   flex-shrink: 0;
+  line-height: 1;
 }
 .eb-survey-cta-btn:hover {
   background: #FFF18A;
   transform: translateY(-2px) scale(1.02);
-  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.25);
-  color: #38001D;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.3);
+  color: #2E0017;
 }
 .eb-survey-cta-btn .cta-arrow {
   font-size: 17px;
@@ -1693,9 +1805,15 @@
 
 /* Responsive adjustments for Bài 4 */
 @media (max-width: 900px) {
+  .eb-survey-featured-banner,
   .eb-survey-hero-card {
     flex-direction: column;
     align-items: flex-start;
+  }
+  .eb-survey-feat-cta,
+  .eb-survey-cta-btn {
+    width: 100%;
+    justify-content: center;
   }
   .brand-preset-cards {
     grid-template-columns: repeat(2, 1fr);

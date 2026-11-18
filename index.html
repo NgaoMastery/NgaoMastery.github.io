@@ -125,61 +125,61 @@
       align-items: center;
       gap: 10px;
     }
-    .btn-quiz {
+    .btn-ebook-nav {
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      padding: 8px 16px;
-      background: linear-gradient(135deg, #FFF0F5 0%, #FFF9EC 100%);
-      color: #9A1144;
-      border: 2px solid #C82061;
-      border-radius: 99px;
-      font-size: 13px;
-      font-weight: 850;
-      letter-spacing: -0.1px;
-      box-shadow: 0 4px 14px rgba(200, 32, 97, 0.22);
-      animation: pulseStudentBtn 2.2s infinite ease-in-out;
-      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
-      position: relative;
-    }
-    .btn-quiz:hover {
-      background: linear-gradient(135deg, #FFE5EE 0%, #FFF3D6 100%);
-      border-color: #A00E40;
-      transform: translateY(-2px) scale(1.02);
-      box-shadow: 0 8px 24px rgba(200, 32, 97, 0.32);
-    }
-    .btn-quiz .badge-student {
-      font-size: 10.5px;
-      font-weight: 900;
-      background: linear-gradient(135deg, #C82061, #8A0E38);
+      height: 42px;
+      padding: 0 18px;
+      background: linear-gradient(135deg, #701A39 0%, #A3164B 100%);
       color: #fff;
-      padding: 3px 9px;
-      border-radius: 99px;
-      letter-spacing: 0.5px;
-      text-transform: uppercase;
-      box-shadow: 0 2px 6px rgba(138, 14, 56, 0.3);
+      border: 1.5px solid #F6B8D0;
+      border-radius: 9999px;
+      font-size: 13px;
+      font-weight: 800;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(112, 26, 57, 0.2);
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      white-space: nowrap;
+      flex-shrink: 0;
+      line-height: 1;
     }
-    @keyframes pulseStudentBtn {
-      0% { box-shadow: 0 0 0 0 rgba(200, 32, 97, 0.4), 0 4px 14px rgba(200, 32, 97, 0.22); }
-      70% { box-shadow: 0 0 0 8px rgba(200, 32, 97, 0), 0 6px 18px rgba(200, 32, 97, 0.3); }
-      100% { box-shadow: 0 0 0 0 rgba(200, 32, 97, 0), 0 4px 14px rgba(200, 32, 97, 0.22); }
+    .btn-ebook-nav:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(112, 26, 57, 0.32);
+      background: linear-gradient(135deg, #881B43 0%, #C82061 100%);
+    }
+    .btn-ebook-nav .vip-pill {
+      background: #FFDE59;
+      color: #540B27;
+      font-size: 10px;
+      font-weight: 900;
+      padding: 3px 8px;
+      border-radius: 9999px;
+      letter-spacing: 0.4px;
+      line-height: 1;
+      display: inline-flex;
+      align-items: center;
     }
 
     .btn-primary {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      padding: 10px 20px;
+      height: 42px;
+      padding: 0 22px;
       background: linear-gradient(135deg, var(--primary), var(--primary-dark));
       color: #fff;
       border: none;
-      border-radius: 99px;
+      border-radius: 9999px;
       font-size: 13.5px;
       font-weight: 750;
       cursor: pointer;
       box-shadow: 0 4px 14px rgba(200, 32, 97, 0.25);
       transition: all 0.2s ease;
       white-space: nowrap;
+      flex-shrink: 0;
+      line-height: 1;
     }
     .btn-primary:hover {
       transform: translateY(-1px);
@@ -1000,13 +1000,10 @@
       .quick-stats { grid-template-columns: repeat(2, 1fr); }
     }
     @media (max-width: 768px) {
-      .nav-wrap { flex-wrap: wrap; gap: 8px; }
-      .nav-actions { gap: 6px; }
-      .btn-quiz { padding: 6px 11px; font-size: 11.5px; }
-      .btn-quiz .btn-quiz-full-text { display: none !important; }
-      .btn-quiz .btn-quiz-short-text { display: inline !important; }
-      .btn-quiz .badge-student { display: none; }
-      .btn-ebook-nav { padding: 6px 11px; font-size: 11.5px; }
+      .nav-wrap { flex-wrap: wrap; gap: 10px; }
+      .nav-actions { gap: 8px; }
+      .btn-ebook-nav { height: 38px; padding: 0 14px; font-size: 12px; }
+      .btn-primary { height: 38px; padding: 0 16px; font-size: 12.5px; }
     }
   </style>
   <link rel="stylesheet" href="ebook-style.css?v=20261118_v2">
@@ -1025,12 +1022,6 @@
       </a>
 
       <div class="nav-actions">
-        <a href="brand-discovery.html" class="btn-quiz" title="Khu vực dành riêng cho học viên: Khảo sát định vị thương hiệu 15 câu & nhận Brand Guideline 24 slide">
-          <span style="font-size:15px">🎓</span>
-          <span class="btn-quiz-full-text">Dành cho học viên · Khảo sát 15 câu</span>
-          <span class="btn-quiz-short-text" style="display:none">Khảo sát 15 câu</span>
-          <span class="badge-student">BẢN HỌC VIÊN</span>
-        </a>
         <button type="button" class="btn-ebook-nav" onclick="goToPart('ebook')" title="Ebook thực chiến Claude làm Web & Video — Chỉ dành cho học viên có mã PASS">
           <span>📘</span>
           <span>Ebook Thực Chiến</span>
