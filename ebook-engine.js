@@ -649,9 +649,12 @@
       <!-- 1. FLOATING MASCOT BOT TRIGGER (Con bot vẫy tay mời chào trên toàn web) -->
       <div class="ngao-bot-floating-widget" id="ngaoBotFloatingWidget" style="display:flex">
         <button type="button" class="ngao-bot-mascot-btn" onclick="window.EbookApp.toggleBotModal(true)" aria-label="Mở Trợ lý AI Ngáo Bot">
-          <div class="ngao-bot-bubble">👋 Bấm để hỏi bất kỳ thông tin nào trên Web!</div>
+          <div class="ngao-bot-bubble">
+            <span class="bot-bubble-dot"></span>
+            <span>👋 Hỏi Ngáo Bot mọi thứ trên Web!</span>
+          </div>
           <div class="ngao-bot-floater">
-            ${renderNgaoMascotSVG({ width: 135, height: 135, idPrefix: 'ngaoFloatBot' })}
+            <img src="assets/ngao_bot_mascot_3d.png" alt="Ngáo Bot - Trợ lý AI 3D Mascot" class="ngao-bot-3d-floating-img" width="130" height="176">
           </div>
         </button>
       </div>
@@ -663,12 +666,12 @@
             <div class="eb-bot-header">
               <div class="eb-bot-identity">
                 <div class="eb-bot-avatar-mascot">
-                  ${renderNgaoMascotSVG({ width: 38, height: 38, idPrefix: 'ngaoHeaderBot' })}
+                  <img src="assets/ngao_bot_avatar_circle.png" alt="Ngáo Bot Avatar" class="eb-bot-avatar-3d-header-img" width="46" height="46">
                 </div>
                 <div class="eb-bot-title-group">
                   <div class="eb-bot-title-line">
                     <strong class="eb-bot-title-text">Ngáo Bot · Trợ Lý AI</strong>
-                    <span class="eb-bot-online-badge">● 24/7</span>
+                    <span class="eb-bot-online-badge">● 24/7 Sẵn sàng</span>
                   </div>
                   <div class="eb-bot-subtext">Hỏi đáp & phát âm thanh về toàn bộ Website & Khoá học!</div>
                 </div>
