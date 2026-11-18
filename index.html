@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Personal Branding Mastery | Khóa học Offline Ngáo Content</title>
-  <meta name="description" content="Khóa học Offline thực chiến từ Ngáo Content | 12.12.2026 tại WORK X, 182 Điện Biên Phủ, TP.HCM cùng Trainer Ngọc Tâm & Nguyễn Hoà. Hiểu Nhân cho rõ, Xây Hiệu cho lâu.">
+  <meta name="description" content="Khóa học Offline thực chiến từ Ngáo Content | 12.12.2026 tại TP.HCM cùng Trainer Ngọc Tâm & Nguyễn Hoà. Hiểu Nhân cho rõ, Xây Hiệu cho lâu.">
   <meta name="theme-color" content="#C82061">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -348,9 +348,11 @@
       font-style: normal;
     }
     .hero-slogan {
-      font-family: var(--font-serif);
-      font-size: clamp(19px, 2.2vw, 26px);
-      font-style: italic;
+      font-family: var(--font-sans);
+      font-size: clamp(18px, 2.2vw, 24px);
+      font-weight: 850;
+      font-style: normal;
+      letter-spacing: -0.3px;
       color: var(--primary-dark);
       margin-bottom: 16px;
       display: inline-block;
@@ -382,15 +384,18 @@
     .pain-box p:last-child { margin-bottom: 0; }
 
     .hero-quote-highlight {
-      font-style: italic;
+      font-family: var(--font-sans);
+      font-style: normal;
       color: var(--primary-dark);
       font-weight: 700;
       font-size: 13.5px;
+      line-height: 1.5;
       margin-bottom: 20px;
       display: block;
-      padding: 8px 12px;
+      padding: 10px 14px;
       background: #FFF0F5;
-      border-radius: 8px;
+      border-left: 3.5px solid var(--primary);
+      border-radius: 0 10px 10px 0;
     }
 
     /* STATS BADGES */
@@ -640,11 +645,13 @@
       margin-bottom: 12px;
     }
     .ai-highlight-quote {
-      font-family: var(--font-serif);
-      font-style: italic;
+      font-family: var(--font-sans);
+      font-style: normal;
+      font-weight: 700;
       color: #FFF;
       font-size: 13.5px;
-      border-left: 3px solid #FFD43B;
+      line-height: 1.55;
+      border-left: 3.5px solid #FFD43B;
       padding-left: 12px;
     }
 
@@ -654,62 +661,159 @@
       grid-template-columns: 1fr 1fr;
       gap: 24px;
     }
-    .trainer-box {
-      background: var(--bg-alt);
+    .trainer-card {
+      background: #FFFFFF;
       border: 1.5px solid var(--border);
-      border-radius: var(--radius-md);
+      border-radius: 18px;
       padding: 24px;
-      display: grid;
-      grid-template-columns: 110px 1fr;
-      gap: 20px;
-      align-items: center;
-      transition: all 0.2s ease;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      transition: all 0.25s ease;
+      box-shadow: 0 4px 16px rgba(112, 26, 57, 0.05);
+      position: relative;
     }
-    .trainer-box:hover {
-      background: #fff;
+    .trainer-card:hover {
       border-color: var(--primary);
-      box-shadow: var(--shadow-md);
+      box-shadow: 0 10px 28px rgba(112, 26, 57, 0.12);
+      transform: translateY(-2px);
     }
-    .t-avatar {
-      width: 105px;
-      height: 105px;
-      border-radius: 50%;
+    .trainer-top {
+      display: grid;
+      grid-template-columns: 120px 1fr;
+      gap: 18px;
+      align-items: center;
+    }
+    .trainer-avatar-frame {
+      width: 120px;
+      height: 155px;
+      border-radius: 16px;
       overflow: hidden;
-      border: 3px solid #fff;
-      box-shadow: 0 4px 14px rgba(112, 26, 57, 0.12);
-      background: #fff;
+      border: 3px solid #FFF;
+      box-shadow: 0 6px 18px rgba(112, 26, 57, 0.14);
+      background: linear-gradient(135deg, #FFF1F5 0%, #FFE0EC 100%);
       flex-shrink: 0;
     }
-    .t-avatar img {
+    .trainer-avatar-frame img {
       width: 100%;
       height: 100%;
       object-fit: cover;
+      object-position: top center;
+      display: block;
     }
-    .trainer-box h3 {
-      font-size: 20px;
+    .trainer-meta h3 {
+      font-size: 22px;
       font-weight: 900;
       color: var(--primary-dark);
       margin-bottom: 4px;
+      letter-spacing: -0.3px;
     }
-    .t-role {
-      font-size: 12px;
-      font-weight: 750;
-      color: var(--primary);
-      margin-bottom: 8px;
+    .t-badge {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 850;
+      color: #FFF;
+      background: var(--primary);
+      padding: 3px 10px;
+      border-radius: 99px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 6px;
     }
-    .t-desc {
+    .trainer-title {
       font-size: 12.5px;
-      color: var(--text-muted);
-      line-height: 1.55;
-    }
-    .t-quote {
-      margin-top: 10px;
-      padding-top: 8px;
-      border-top: 1px dashed var(--border);
-      font-family: var(--font-serif);
-      font-style: italic;
-      font-size: 12px;
+      font-weight: 800;
       color: var(--primary-dark);
+      line-height: 1.4;
+      margin-bottom: 0;
+    }
+    .trainer-bio {
+      font-size: 13px;
+      color: var(--text);
+      line-height: 1.6;
+      background: #FFF9FB;
+      border: 1px solid #F8DFE9;
+      border-radius: 12px;
+      padding: 12px 14px;
+    }
+    .trainer-trust-block {
+      background: #FAFAFA;
+      border: 1px solid #ECECEC;
+      border-radius: 12px;
+      padding: 12px 14px;
+    }
+    .trust-block-title {
+      font-size: 11px;
+      font-weight: 850;
+      color: var(--primary-dark);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .trainer-channels-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 10px;
+    }
+    .channel-chip {
+      background: #FFF;
+      border: 1px solid #E4CDD7;
+      padding: 5px 11px;
+      border-radius: 8px;
+      font-size: 11.5px;
+      font-weight: 700;
+      color: var(--primary-dark);
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+    .channel-chip:hover {
+      border-color: var(--primary);
+      background: #FFF0F5;
+      color: var(--primary);
+    }
+    .trust-bullets {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .trust-bullets li {
+      font-size: 12px;
+      color: var(--text);
+      line-height: 1.45;
+      position: relative;
+      padding-left: 18px;
+    }
+    .trust-bullets li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: var(--primary);
+      font-weight: 900;
+      font-size: 11px;
+    }
+    .trainer-quote-box {
+      margin-top: auto;
+      background: linear-gradient(135deg, #FFF0F5 0%, #FFF8FA 100%);
+      border-left: 3.5px solid var(--primary);
+      border-radius: 0 10px 10px 0;
+      padding: 10px 14px;
+      font-family: var(--font-sans);
+      font-style: normal;
+      font-size: 12.5px;
+      font-weight: 700;
+      color: var(--primary-dark);
+      line-height: 1.5;
     }
 
     /* PART 5: LOGISTICS & PRICING */
@@ -1005,6 +1109,11 @@
       .btn-ebook-nav { height: 38px; padding: 0 14px; font-size: 12px; }
       .btn-primary { height: 38px; padding: 0 16px; font-size: 12.5px; }
     }
+    @media (max-width: 640px) {
+      .trainer-top { grid-template-columns: 95px 1fr; gap: 12px; }
+      .trainer-avatar-frame { width: 95px; height: 128px; }
+      .trainer-meta h3 { font-size: 19px; }
+    }
   </style>
   <link rel="stylesheet" href="ebook-style.css?v=20261118_v2">
 </head>
@@ -1122,8 +1231,8 @@
                 <small>08:30 - 17:30</small>
               </div>
               <div class="stat-pill">
-                <strong>WORK X</strong>
-                <small>182 Điện Biên Phủ</small>
+                <strong>TP. Hồ Chí Minh</strong>
+                <small>Offline thực chiến</small>
               </div>
               <div class="stat-pill">
                 <strong>2.393.000đ</strong>
@@ -1150,7 +1259,7 @@
                 <div style="width:38px;height:38px;background:#fff;border-radius:10px;display:grid;place-items:center;font-size:20px;flex-shrink:0">✍️</div>
                 <div>
                   <strong style="font-size:14px;color:#fff">ĐIỀN FORM ĐĂNG KÝ · Giữ chỗ khoá học 12/12/2026</strong>
-                  <small style="color:#FFE0EC;font-size:12px">Học phí: 2.393.000đ · Workshop Offline tại WORK X (182 Điện Biên Phủ, TP.HCM)</small>
+                  <small style="color:#FFE0EC;font-size:12px">Workshop Offline thực chiến tại TP.HCM (08:30 - 17:30) · 14 ngày đồng hành xây kênh</small>
                 </div>
               </div>
               <a href="https://docs.google.com/forms/d/e/1FAIpQLSepAfBro_dd6fLU0Hj6dQpfPBSq8BkOecbS5xvoiyPW0TqbSw/viewform" target="_blank" rel="noopener noreferrer" class="mini-tool-btn" style="background:#FFDE59;color:#540B27;font-weight:900;padding:9px 18px;border:none;white-space:nowrap;display:inline-flex;align-items:center;gap:6px">
@@ -1163,16 +1272,6 @@
           <div>
             <div class="poster-wrap">
               <img src="assets/poster.jpg?v=2" alt="Poster Khoá học Personal Branding Mastery" width="825" height="1024">
-            </div>
-            <div style="margin-top:10px;background:#FFF1F5;border:1.5px solid #F1D4DF;border-radius:14px;padding:10px 14px;display:flex;align-items:center;justify-content:space-between;gap:8px;box-shadow:0 2px 8px rgba(112,26,57,0.06)">
-              <div style="display:flex;align-items:center;gap:8px">
-                <span style="font-size:16px">📍</span>
-                <div>
-                  <strong style="font-size:12.5px;color:var(--primary-dark);display:block;line-height:1.2">WORK X · 182 Điện Biên Phủ, TP.HCM</strong>
-                  <small style="color:var(--text-muted);font-size:11px">Địa điểm tổ chức chính thức</small>
-                </div>
-              </div>
-              <span style="background:var(--primary);color:#fff;padding:4px 10px;border-radius:99px;font-weight:850;font-size:11.5px">2.393.000đ</span>
             </div>
           </div>
         </div>
@@ -1335,39 +1434,99 @@
         </p>
 
         <div class="trainers-row">
-          <!-- Ngọc Tâm -->
-          <div class="trainer-box">
-            <div class="t-avatar">
-              <img src="assets/trainer_ngoc_tam.png" alt="Trainer Ngọc Tâm - Founder Ngáo Content">
-            </div>
-            <div>
-              <div class="t-role">Trainer</div>
-              <h3>Ngọc Tâm</h3>
-              <p style="font-size:12px;font-weight:800;color:var(--primary-dark);margin-bottom:6px">Founder Ngáo Content & Personal Branding Strategist</p>
-              <p class="t-desc">
-                12+ năm kinh nghiệm hoạt động trong lĩnh vực triển khai và vận hành Marketing cho cá nhân và doanh nghiệp để hệ thống hoá truyền thông và sáng tạo bền vững. Đã đồng hành cùng hàng ngàn học viên bóc tách bản sắc độc bản và xây dựng cộng đồng uy tín.
-              </p>
-              <div class="t-quote">
-                “Thương hiệu cá nhân không phải là vẽ ra một vỏ bọc lung linh, mà là can đảm sống đúng với chất người của mình và lan toả nó một cách kiên định.”
+          <!-- NGỌC TÂM -->
+          <div class="trainer-card">
+            <div class="trainer-top">
+              <div class="trainer-avatar-frame">
+                <img src="assets/trainer_ngoc_tam_real.jpg" alt="Trainer Ngọc Tâm - Founder Ngáo Content" loading="lazy">
               </div>
+              <div class="trainer-meta">
+                <span class="t-badge">Speaker & Trainer</span>
+                <h3>Ngọc Tâm</h3>
+                <p class="trainer-title">Founder Ngáo Content · Personal Branding & Marketing Strategist</p>
+              </div>
+            </div>
+
+            <div class="trainer-bio">
+              12+ năm kinh nghiệm hoạt động trong lĩnh vực triển khai và vận hành Marketing cho cá nhân và doanh nghiệp để hệ thống hoá truyền thông và sáng tạo bền vững. Với định hướng giáo dục bản chất và tinh thần Self-made Creative, Tâm đã đồng hành với 5500+ người học để giúp các bạn hiểu bản chất vấn đề, rèn luyện tư duy chiến lược, phát triển năng lực sáng tạo và làm chủ công cụ, thay vì phụ thuộc vào những công thức có sẵn. Tâm tin rằng xây dựng thương hiệu bền vững phải bắt đầu từ việc hiểu mình, có năng lực thực chất và tạo ra giá trị có ý nghĩa cho người khác.
+            </div>
+
+            <div class="trainer-trust-block">
+              <div class="trust-block-title">
+                <span>🌐</span> Hệ thống kênh truyền thông:
+              </div>
+              <div class="trainer-channels-chips">
+                <a href="https://ngaocontent.com" target="_blank" rel="noopener noreferrer" class="channel-chip">
+                  <span>🌐</span> ngaocontent.com
+                </a>
+                <a href="https://www.facebook.com/groups/ngaocontent" target="_blank" rel="noopener noreferrer" class="channel-chip">
+                  <span>👥</span> Group Ngáo Content (120K+)
+                </a>
+                <a href="https://www.tiktok.com/@ngaocontent" target="_blank" rel="noopener noreferrer" class="channel-chip">
+                  <span>📱</span> TikTok / Fanpage Ngáo Content
+                </a>
+              </div>
+
+              <div class="trust-block-title" style="margin-top:10px">
+                <span>🏆</span> Background & Dấu ấn thực chiến:
+              </div>
+              <ul class="trust-bullets">
+                <li><strong>12+ năm</strong> kinh nghiệm thực chiến Marketing cá nhân & doanh nghiệp.</li>
+                <li>Đồng hành cùng <strong>5.500+ học viên</strong> xây dựng bản sắc & thương hiệu thực chất.</li>
+                <li>Tác giả nhiều chương trình & cẩm nang Content Marketing uy tín hàng đầu.</li>
+              </ul>
+            </div>
+
+            <div class="trainer-quote-box">
+              “Hiểu nhân cho rõ, xây hiệu cho sâu. Mình tin thương hiệu cá nhân không phải là cố trở thành ai đó trong mắt người khác, mà là hiểu mình đủ rõ, rèn mình đủ vững và tạo ra những giá trị đủ thật để người khác tự có lý do ghi nhớ.”
             </div>
           </div>
 
-          <!-- Nguyễn Hoà -->
-          <div class="trainer-box">
-            <div class="t-avatar">
-              <img src="assets/trainer_nguyen_hoa.png" alt="Trainer Nguyễn Hoà - Founder Edit Không Khó">
-            </div>
-            <div>
-              <div class="t-role">Trainer</div>
-              <h3>Nguyễn Hoà</h3>
-              <p style="font-size:12px;font-weight:800;color:var(--primary-dark);margin-bottom:6px">Founder Edit Không Khó | Editor, Filmmaker, Trainer & Vibe Coder</p>
-              <p class="t-desc">
-                Là người sáng lập Edit Không Khó và phát triển EKK Tools, Nguyễn Hoà tập trung vào lĩnh vực dựng phim, Motion Graphics và ứng dụng AI trong sáng tạo nội dung. Với tư duy kết hợp giữa kỹ thuật, thẩm mỹ và công nghệ, Hoà không chỉ chia sẻ kiến thức thực chiến mà còn phát triển các công cụ giúp tối ưu quy trình làm việc. Anh hướng đến việc giúp người học làm chủ kỹ năng, khai thác sức mạnh AI và tự tin biến ý tưởng sáng tạo thành sản phẩm thực tế.
-              </p>
-              <div class="t-quote">
-                “Kết hợp giữa kỹ thuật, thẩm mỹ và công nghệ để giúp người học làm chủ kỹ năng, khai thác sức mạnh AI và tự tin biến ý tưởng sáng tạo thành sản phẩm thực tế.”
+          <!-- NGUYỄN HOÀ -->
+          <div class="trainer-card">
+            <div class="trainer-top">
+              <div class="trainer-avatar-frame">
+                <img src="assets/trainer_nguyen_hoa_portrait.jpg" alt="Trainer Nguyễn Hoà - Founder Edit Không Khó" loading="lazy">
               </div>
+              <div class="trainer-meta">
+                <span class="t-badge">Speaker & AI Trainer</span>
+                <h3>Nguyễn Hoà</h3>
+                <p class="trainer-title">Founder Edit Không Khó · Editor, Filmmaker, Trainer & Vibe Coder</p>
+              </div>
+            </div>
+
+            <div class="trainer-bio">
+              Là người sáng lập Edit Không Khó và phát triển bộ công cụ EKK Tools, Nguyễn Hoà tập trung vào lĩnh vực dựng phim, Motion Graphics và ứng dụng AI trong sáng tạo nội dung và lập trình ứng dụng. Với tư duy kết hợp giữa kỹ thuật, thẩm mỹ và công nghệ, Hoà không chỉ chia sẻ kiến thức thực chiến mà còn phát triển các công cụ giúp tối ưu quy trình làm việc. Anh hướng đến việc giúp người học làm chủ kỹ năng, khai thác sức mạnh AI và tự tin biến ý tưởng sáng tạo thành sản phẩm thực tế.
+            </div>
+
+            <div class="trainer-trust-block">
+              <div class="trust-block-title">
+                <span>🎬</span> Hệ thống kênh truyền thông:
+              </div>
+              <div class="trainer-channels-chips">
+                <a href="https://www.tiktok.com/@editkhongkho" target="_blank" rel="noopener noreferrer" class="channel-chip">
+                  <span>🎬</span> Kênh Edit Không Khó (150K+)
+                </a>
+                <a href="https://ekkdungphim.com" target="_blank" rel="noopener noreferrer" class="channel-chip">
+                  <span>🛠️</span> ekkdungphim.com & EKK Tools
+                </a>
+                <a href="https://www.facebook.com/groups/editkhongkho" target="_blank" rel="noopener noreferrer" class="channel-chip">
+                  <span>👥</span> Cộng đồng Dựng Phim & AI (50K+)
+                </a>
+              </div>
+
+              <div class="trust-block-title" style="margin-top:10px">
+                <span>🏆</span> Background & Dấu ấn thực chiến:
+              </div>
+              <ul class="trust-bullets">
+                <li>Diễn giả Workshop dựng phim & ứng dụng AI tại <strong>FPT Arena Multimedia</strong>.</li>
+                <li>Tiên phong <strong>Vibe Coding</strong> với Claude & Gemini, xây dựng bot AI & công cụ tự động hóa.</li>
+                <li>Tác giả Ebook độc quyền <em>"Dùng Claude làm web và video thực chiến"</em> cho học viên.</li>
+              </ul>
+            </div>
+
+            <div class="trainer-quote-box">
+              “Điều quan trọng không phải là AI có thể làm được bao nhiêu thứ, mà là bạn có đủ tư duy để biết nên dùng nó làm gì cho thương hiệu của mình.”
             </div>
           </div>
         </div>
@@ -1388,7 +1547,7 @@
         <span class="sec-badge">Thông tin tổ chức</span>
         <h2 class="sec-title">Thời Gian, Địa Điểm & Học Phí Chính Thức</h2>
         <p class="sec-desc">
-          Personal Branding Mastery được tổ chức dưới hình thức Workshop Offline chuyên sâu tại không gian làm việc sáng tạo WORK X.
+          Personal Branding Mastery được tổ chức dưới hình thức Workshop Offline chuyên sâu tại không gian sáng tạo TP. Hồ Chí Minh.
         </p>
 
         <!-- PRICING BANNER -->
@@ -1411,8 +1570,8 @@
           <div class="log-card">
             <div class="icon">📍</div>
             <span>Địa điểm học trực tiếp</span>
-            <strong>WORK X</strong>
-            <p>182 Điện Biên Phủ, Phường Xuân Hòa, TP. Hồ Chí Minh.</p>
+            <strong>Mi Casa Coffee & Kitchen</strong>
+            <p>104 Cư xá Nguyễn Văn Trỗi, P. Phú Nhuận, TP.HCM (chân cầu Công Lý).</p>
           </div>
           <div class="log-card">
             <div class="icon">💻</div>
@@ -1482,7 +1641,7 @@
             <div style="width:100%;max-width:440px;background:#fff;border:1px solid #F3CFDC;border-radius:12px;padding:14px 18px;margin-bottom:20px;text-align:left;font-size:12.5px;color:var(--primary-dark);box-shadow:0 2px 8px rgba(112,26,57,0.04)">
               <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
                 <span>📍</span>
-                <strong>WORK X · 182 Điện Biên Phủ, Phường Xuân Hòa, TP.HCM</strong>
+                <strong>Mi Casa Coffee & Kitchen · 104 Cư xá Nguyễn Văn Trỗi, P. Phú Nhuận, TP.HCM</strong>
               </div>
               <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
                 <span>📅</span>
@@ -1500,7 +1659,7 @@
             </a>
 
             <div style="margin-top:20px;padding-top:14px;border-top:1px dashed #E0B7C6;width:100%;max-width:440px;font-size:12px;color:var(--primary-dark)">
-              <strong>Hotline hỗ trợ:</strong> 090 987 6543 (Ngáo Content)
+              <strong>Hotline hỗ trợ:</strong> 0902 596 059 (Ngáo Content)
             </div>
           </div>
         </div>
@@ -1527,12 +1686,12 @@
     <div class="container footer-inner">
       <div style="display:flex;align-items:center;gap:12px">
         <img src="assets/logo_ngao_content.png" alt="Ngáo Content Logo" style="height:36px;width:auto;object-fit:contain">
-        <span>© 2026 Ngáo Content · Personal Branding Mastery · WORK X, 182 Điện Biên Phủ, TP.HCM</span>
+        <span>© 2026 Ngáo Content · Personal Branding Mastery · TP. Hồ Chí Minh</span>
       </div>
       <div style="display:flex;gap:16px;flex-wrap:wrap">
         <a href="#ebook" onclick="goToPart('ebook')" style="color:var(--primary-dark);font-weight:800">🔒 Ebook Học Viên (Claude Web & Video)</a>
         <a href="brand-discovery.html" style="color:var(--primary);font-weight:700">Khảo sát Brand Discovery (15 câu)</a>
-        <span>Hotline: 090 987 6543</span>
+        <span>Hotline: 0902 596 059</span>
       </div>
     </div>
   </footer>
@@ -1543,7 +1702,7 @@
       <div style="width:52px;height:52px;background:#EAF6ED;color:#2F7A48;border-radius:50%;display:grid;place-items:center;font-size:26px;margin:0 auto 12px">✓</div>
       <h3>Đăng Ký Thành Công!</h3>
       <p id="modalMsg">
-        Cảm ơn bạn đã đăng ký tham gia <strong>Personal Branding Mastery (12/12/2026 tại WORK X)</strong>. Học phí: 2.393.000đ. Bộ phận tuyển sinh Ngáo Content đã ghi nhận và sẽ liên hệ xác nhận trong vòng 15 phút.
+        Cảm ơn bạn đã đăng ký tham gia <strong>Personal Branding Mastery (12/12/2026 tại TP.HCM)</strong>. Học phí: 2.393.000đ. Bộ phận tuyển sinh Ngáo Content đã ghi nhận và sẽ liên hệ xác nhận trong vòng 15 phút.
       </p>
       <div style="background:var(--bg-alt);padding:12px;border-radius:10px;margin-bottom:18px;font-size:12.5px;color:var(--primary-dark);text-align:left">
         <strong>Khuyến nghị cho học viên:</strong><br>
@@ -1658,7 +1817,7 @@
 
       const modalMsg = document.getElementById('modalMsg');
       if (modalMsg) {
-        modalMsg.innerHTML = `Cảm ơn <strong>${name}</strong> (${phone})! Ngáo Content đã lưu giữ chỗ của bạn cho khoá học ngày <strong>12/12/2026 tại WORK X</strong> (Học phí: 2.393.000đ). Chúng tôi sẽ liên hệ trong thời gian sớm nhất.`;
+        modalMsg.innerHTML = `Cảm ơn <strong>${name}</strong> (${phone})! Ngáo Content đã lưu giữ chỗ của bạn cho khoá học ngày <strong>12/12/2026 tại TP.HCM</strong> (Học phí: 2.393.000đ). Chúng tôi sẽ liên hệ trong thời gian sớm nhất.`;
       }
       document.getElementById('successModal').classList.add('active');
     }
