@@ -543,8 +543,12 @@
                   <small style="color:#F6C6D8;font-size:12px">Huấn luyện 100% từ Ebook của Trainer Nguyễn Hoà — Hỏi bất kỳ khái niệm hay câu lệnh nào!</small>
                 </div>
               </div>
-              <div style="display:flex;align-items:center;gap:12px">
-                <div class="eb-bot-wave" title="AI Ready">
+              <div style="display:flex;align-items:center;gap:8px">
+                <button type="button" class="eb-bot-voice-toggle" id="ebBotVoiceToggle" onclick="window.EbookApp.toggleAutoVoice()" title="Bật/Tắt chế độ tự động đọc câu trả lời bằng giọng nói">
+                  <span>🔊</span>
+                  <span id="ebVoiceToggleText">Giọng nói: Tắt</span>
+                </button>
+                <div class="eb-bot-wave" id="ebBotHeaderWave" title="AI Voice Ready">
                   <span></span><span></span><span></span>
                 </div>
                 <button type="button" class="eb-bot-close-btn" onclick="window.EbookApp.toggleBotModal(false)" aria-label="Đóng popup bot">✕</button>
@@ -571,7 +575,13 @@
                   <div class="bot-cite-tag">🎬 Xin chào học viên Personal Branding Mastery!</div>
                   <div>
                     Mình là <strong>Ngáo Bot — Trợ Lý Ebook của Trainer Nguyễn Hoà</strong>. Mình nắm rõ từng bài học, công thức <strong>4 mảnh</strong>, <strong>4K</strong>, cách tạo <strong>Project / Skill</strong>, làm <strong>Web từ 15 câu hỏi</strong> cho tới lệnh cài <strong>FFmpeg & Whisper làm phụ đề video</strong>.<br><br>
-                    👉 Bạn có thể <strong>bấm vào các câu hỏi gợi ý phía trên</strong> hoặc <strong>gõ câu hỏi bất kỳ</strong> vào ô bên dưới nhé!
+                    👉 Bạn có thể <strong>bấm vào các câu hỏi gợi ý phía trên</strong> hoặc <strong>gõ câu hỏi / bấm 🎙️ nói câu hỏi</strong> vào ô bên dưới nhé!
+                  </div>
+                  <div class="eb-bot-voice-actions">
+                    <button type="button" class="bot-voice-btn" onclick="window.EbookApp.speakGreeting(this)">
+                      <span>🔊</span>
+                      <span>Bấm nghe Ngáo Bot chào mừng</span>
+                    </button>
                   </div>
                 </div>
               </div>
@@ -579,11 +589,12 @@
 
             <!-- Input Bar -->
             <form class="eb-bot-input-bar" onsubmit="window.EbookApp.handleBotSubmit(event)">
+              <button type="button" class="eb-bot-mic-btn" id="ebBotMicBtn" onclick="window.EbookApp.toggleVoiceInput()" title="Nói câu hỏi bằng giọng nói tiếng Việt (Microphone)">🎙️</button>
               <input
                 type="text"
                 id="ebBotInput"
                 class="eb-bot-input"
-                placeholder="Hỏi Bot về Ebook (VD: Công thức 4K là gì? Làm sao đưa web lên GitHub Pages? Lệnh /RE dùng khi nào?)..."
+                placeholder="Hỏi Bot về Ebook (hoặc bấm 🎙️ để nói bằng giọng nói)..."
                 autocomplete="off"
               >
               <button type="submit" class="eb-bot-send">Gửi câu hỏi ↗</button>
@@ -2136,6 +2147,10 @@ Kết quả: Mỗi câu dưới 10 chữ, giọng ấm áp, gần gũi. Ghi thê
     // ========================================================================
     // VIRTUAL AI BOT ASSISTANT LOGIC (MASCOT NGÁO CONTENT & MODAL POPUP)
     // ========================================================================
+    // Voice TTS & Voice Input State
+    isAutoVoice: false,
+    activeRecognition: null,
+
     toggleBotModal(show) {
       const modal = document.getElementById('ngaoBotModalBackdrop');
       if (!modal) return;
@@ -2148,6 +2163,12 @@ Kết quả: Mỗi câu dưới 10 chữ, giọng ấm áp, gần gũi. Ghi thê
       if (modal.classList.contains('active')) {
         const inp = document.getElementById('ebBotInput');
         if (inp) setTimeout(() => inp.focus(), 250);
+      } else {
+        this.stopSpeech();
+        if (this.activeRecognition) {
+          try { this.activeRecognition.stop(); } catch(e){}
+          this.activeRecognition = null;
+        }
       }
     },
 
@@ -2159,6 +2180,173 @@ Kết quả: Mỗi câu dưới 10 chữ, giọng ấm áp, gần gũi. Ghi thê
 
     scrollToBot() {
       this.toggleBotModal(true);
+    },
+
+    toggleAutoVoice() {
+      this.isAutoVoice = !this.isAutoVoice;
+      const btn = document.getElementById('ebBotVoiceToggle');
+      const txt = document.getElementById('ebVoiceToggleText');
+      if (btn && txt) {
+        btn.classList.toggle('active', this.isAutoVoice);
+        txt.textContent = this.isAutoVoice ? 'Giọng nói: Bật' : 'Giọng nói: Tắt';
+      }
+      if (!this.isAutoVoice) {
+        this.stopSpeech();
+      }
+    },
+
+    stopSpeech() {
+      if ('speechSynthesis' in window) {
+        try { window.speechSynthesis.cancel(); } catch(e){}
+      }
+      document.querySelectorAll('.bot-voice-btn.speaking').forEach(btn => {
+        btn.classList.remove('speaking');
+        btn.innerHTML = '<span>🔊</span><span>Nghe lại câu trả lời</span>';
+      });
+      const wave = document.getElementById('ebBotHeaderWave');
+      if (wave) wave.classList.remove('active');
+    },
+
+    speakText(text, btnElement) {
+      if (!('speechSynthesis' in window)) {
+        alert('Trình duyệt của bạn chưa bật Web Speech API. Bạn hãy mở trên Google Chrome hoặc Safari để nghe giọng nói nhé!');
+        return;
+      }
+
+      if (btnElement && btnElement.classList.contains('speaking')) {
+        this.stopSpeech();
+        return;
+      }
+
+      this.stopSpeech();
+
+      // Clean text for natural speech reading
+      let clean = (text || '')
+        .replace(/<[^>]+>/g, ' ')
+        .replace(/\[[^\]]+\]/g, ' ')
+        .replace(/[#*`_~]/g, '')
+        .replace(/https?:\/\/\S+/g, 'đường dẫn liên kết')
+        .replace(/\s+/g, ' ')
+        .trim();
+
+      if (clean.length > 450) {
+        clean = clean.substring(0, 450) + '... Bạn có thể xem chi tiết trong bài học nhé.';
+      }
+
+      const utterance = new SpeechSynthesisUtterance(clean);
+      utterance.lang = 'vi-VN';
+      utterance.rate = 1.0;
+      utterance.pitch = 1.0;
+
+      // Select Vietnamese voice if available
+      try {
+        const voices = window.speechSynthesis.getVoices();
+        const viVoice = voices.find(v => v.lang === 'vi-VN' || v.lang.startsWith('vi'));
+        if (viVoice) utterance.voice = viVoice;
+      } catch(e){}
+
+      const wave = document.getElementById('ebBotHeaderWave');
+
+      utterance.onstart = () => {
+        if (wave) wave.classList.add('active');
+        if (btnElement) {
+          btnElement.classList.add('speaking');
+          btnElement.innerHTML = `
+            <span class="bot-soundwave"><span></span><span></span><span></span></span>
+            <span>Đang đọc... (Bấm dừng)</span>
+          `;
+        }
+      };
+
+      utterance.onend = () => {
+        if (wave) wave.classList.remove('active');
+        if (btnElement) {
+          btnElement.classList.remove('speaking');
+          btnElement.innerHTML = '<span>🔊</span><span>Nghe lại câu trả lời</span>';
+        }
+      };
+
+      utterance.onerror = () => {
+        if (wave) wave.classList.remove('active');
+        if (btnElement) {
+          btnElement.classList.remove('speaking');
+          btnElement.innerHTML = '<span>🔊</span><span>Nghe đọc câu trả lời</span>';
+        }
+      };
+
+      window.speechSynthesis.speak(utterance);
+    },
+
+    speakGreeting(btn) {
+      const text = 'Xin chào học viên Personal Branding Mastery! Mình là Ngáo Bot, trợ lý AI huấn luyện từ Ebook của Trainer Nguyễn Hoà. Mình có thể giúp bạn giải đáp công thức bốn mảnh, bốn K, cách tạo Project, làm Web từ mười lăm câu hỏi và tự động tạo phụ đề video. Bạn có thể bấm vào các câu hỏi gợi ý hoặc gõ câu hỏi bất kỳ nhé!';
+      this.speakText(text, btn);
+    },
+
+    speakMessage(btn) {
+      if (!btn) return;
+      const rawEncoded = btn.getAttribute('data-speech');
+      const text = rawEncoded ? decodeURIComponent(rawEncoded) : '';
+      if (!text) return;
+      this.speakText(text, btn);
+    },
+
+    toggleVoiceInput() {
+      const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+      if (!SpeechRecognition) {
+        alert('Trình duyệt của bạn chưa hỗ trợ nhận diện giọng nói (Microphone). Bạn hãy mở trên Google Chrome hoặc Edge để sử dụng nhé!');
+        return;
+      }
+
+      const micBtn = document.getElementById('ebBotMicBtn');
+      const inp = document.getElementById('ebBotInput');
+
+      if (this.activeRecognition) {
+        try { this.activeRecognition.stop(); } catch(e){}
+        this.activeRecognition = null;
+        if (micBtn) micBtn.classList.remove('listening');
+        return;
+      }
+
+      try {
+        const recognition = new SpeechRecognition();
+        recognition.lang = 'vi-VN';
+        recognition.interimResults = false;
+        recognition.maxAlternatives = 1;
+
+        recognition.onstart = () => {
+          if (micBtn) micBtn.classList.add('listening');
+          if (inp) inp.placeholder = 'Đang lắng nghe bạn nói... Hãy nói câu hỏi của bạn nhé! 🎙️';
+        };
+
+        recognition.onresult = (event) => {
+          const transcript = event.results[0][0].transcript;
+          if (inp) {
+            inp.value = transcript;
+            inp.placeholder = 'Hỏi Bot về Ebook (hoặc bấm 🎙️ để nói bằng giọng nói)...';
+          }
+          const matched = this.findBestAnswer(transcript);
+          this.appendBotConversation(transcript, matched);
+        };
+
+        recognition.onerror = (event) => {
+          console.warn('Speech recognition error:', event.error);
+          if (micBtn) micBtn.classList.remove('listening');
+          if (inp) inp.placeholder = 'Hỏi Bot về Ebook (hoặc bấm 🎙️ để nói bằng giọng nói)...';
+          this.activeRecognition = null;
+        };
+
+        recognition.onend = () => {
+          if (micBtn) micBtn.classList.remove('listening');
+          if (inp) inp.placeholder = 'Hỏi Bot về Ebook (hoặc bấm 🎙️ để nói bằng giọng nói)...';
+          this.activeRecognition = null;
+        };
+
+        this.activeRecognition = recognition;
+        recognition.start();
+      } catch (err) {
+        console.error('Voice recognition error:', err);
+        if (micBtn) micBtn.classList.remove('listening');
+      }
     },
 
     askBotPreset(kbId) {
@@ -2225,7 +2413,7 @@ Kết quả: Mỗi câu dưới 10 chữ, giọng ấm áp, gần gũi. Ghi thê
       box.appendChild(userRow);
       box.scrollTop = box.scrollHeight;
 
-      // 2. Bot response with citation + optional prompt + jump to chapter button
+      // 2. Bot response with citation + speech button + prompt + jump to chapter button
       setTimeout(() => {
         const botRow = document.createElement('div');
         botRow.className = 'bot-msg-row bot';
@@ -2236,14 +2424,27 @@ Kết quả: Mỗi câu dưới 10 chữ, giọng ấm áp, gần gũi. Ghi thê
           .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
           .replace(/\*([^*]+)\*/g, '<em>$1</em>')
           .replace(/`([^`]+)`/g, '<code style="background:#FFF0F5;color:#9A1144;padding:2px 6px;border-radius:5px;font-weight:700">$1</code>');
+
+        const rawSpeechText = (kbItem.answer || '')
+          .replace(/<[^>]+>/g, ' ')
+          .replace(/[#*`_~]/g, '')
+          .replace(/https?:\/\/\S+/g, 'đường dẫn liên kết')
+          .replace(/\s+/g, ' ')
+          .trim();
+        const encodedSpeech = encodeURIComponent(rawSpeechText);
+
         botRow.innerHTML = `
           <div class="bot-msg-bubble">
             <div class="bot-cite-tag">📌 Nguồn Ebook: ${kbItem.chapterName}</div>
             <div>${formattedAnswer}</div>
             ${promptHTML}
-            <div>
+            <div class="eb-bot-voice-actions">
+              <button type="button" class="bot-voice-btn" data-speech="${encodedSpeech}" onclick="window.EbookApp.speakMessage(this)">
+                <span>🔊</span>
+                <span>Nghe đọc câu trả lời</span>
+              </button>
               <button type="button" class="bot-jump-btn" onclick="window.EbookApp.switchChapter('${kbItem.chapter}'); window.EbookApp.toggleBotModal(false);">
-                <span>📖 Mở xem chi tiết "${kbItem.chapterName}" trong Ebook</span>
+                <span>📖 Mở xem chi tiết "${kbItem.chapterName}"</span>
                 <span>→</span>
               </button>
             </div>
@@ -2251,6 +2452,12 @@ Kết quả: Mỗi câu dưới 10 chữ, giọng ấm áp, gần gũi. Ghi thê
         `;
         box.appendChild(botRow);
         box.scrollTop = box.scrollHeight;
+
+        // Auto speak if enabled
+        if (window.EbookApp.isAutoVoice) {
+          const vBtn = botRow.querySelector('.bot-voice-btn');
+          if (vBtn) window.EbookApp.speakMessage(vBtn);
+        }
       }, 240);
     }
   };
@@ -2264,6 +2471,13 @@ Kết quả: Mỗi câu dưới 10 chữ, giọng ấm áp, gần gũi. Ghi thê
       }
     }
   });
+
+  // Preload voices for speech synthesis
+  if ('speechSynthesis' in window) {
+    window.speechSynthesis.onvoiceschanged = () => {
+      try { window.speechSynthesis.getVoices(); } catch(e){}
+    };
+  }
 
   // Initialize when DOM is ready
   if (document.readyState === 'loading') {
