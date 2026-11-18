@@ -58,9 +58,125 @@
   }
 
   // ==========================================================================
-  // VIRTUAL AI BOT KNOWLEDGE BASE (100% EBOOK GROUNDED)
+  // VIRTUAL AI BOT KNOWLEDGE BASE (TOÀN BỘ NỘI DUNG WEBSITE & EBOOK)
   // ==========================================================================
   const BOT_KNOWLEDGE = [
+    // --- NỘI DUNG TOÀN BỘ WEBSITE WORKSHOP 12/12/2026 ---
+    {
+      id: 'kb_course_overview',
+      targetPart: 'overview',
+      targetLabel: 'Xem Tổng quan khoá học (Phần 1)',
+      keywords: ['khóa học', 'khoá học', 'tổng quan', 'personal branding mastery', 'mục tiêu', 'giới thiệu', 'là gì', 'hiểu nhân cho rõ', 'xây hiệu cho lâu', 'workshop'],
+      question: 'Khoá học Personal Branding Mastery là gì? Giải quyết vấn đề gì?',
+      answer: `**Personal Branding Mastery** là chương trình Workshop Offline thực chiến chuyên sâu do **Ngáo Content** và **Edit Không Khó** tổ chức vào Thứ Bảy, 12/12/2026 tại TP.HCM.<br><br>• **Thông điệp cốt lõi:** *"Hiểu Nhân cho rõ, Xây Hiệu cho lâu"*. Khoá học không dạy bạn vẽ ra một vỏ bọc lung linh trên mạng, mà giúp bạn bóc tách năng lực thực chất, định vị độc bản và xây dựng thương hiệu cá nhân bền vững.<br>• **Điểm khác biệt:** Kết hợp tư duy chiến lược thương hiệu của Ngọc Tâm và phương pháp **Vibe Coding & làm video với AI** của Nguyễn Hoà, giúp bạn tự làm website và tự động hoá video mang về ngay sau ngày học!`
+    },
+    {
+      id: 'kb_logistics',
+      targetPart: 'logistics',
+      targetLabel: 'Xem Thời gian & Địa điểm (Phần 5)',
+      keywords: ['thời gian', 'địa điểm', 'ngày học', 'lịch học', 'ở đâu', 'mấy giờ', 'mi casa', 'phú nhuận', '12/12', '12/12/2026', 'thứ bảy', 'cư xá', 'nguyễn văn trỗi'],
+      question: 'Lịch học, thời gian và địa điểm tổ chức khoá học ở đâu?',
+      answer: `Thông tin tổ chức chính thức của khoá học Personal Branding Mastery:<br><br>📅 **Thời gian:** Thứ Bảy · **12/12/2026** (Từ **08:30 – 17:30**, trọn vẹn 1 ngày Offline thực chiến tập trung cao độ).<br>📍 **Địa điểm tổ chức:** **Mi Casa Coffee & Kitchen**, số **104 Cư xá Nguyễn Văn Trỗi, Phường 17, Quận Phú Nhuận, TP. Hồ Chí Minh** (ngay chân cầu Công Lý).<br>🤝 **Sau ngày học:** 14 ngày đồng hành thực hành xây kênh + 01 buổi Zoom chữa bài trực tiếp cùng 2 giảng viên!`
+    },
+    {
+      id: 'kb_tuition',
+      targetPart: 'logistics',
+      targetLabel: 'Xem Học phí & Quyền lợi (Phần 5)',
+      keywords: ['học phí', 'giá', 'chi phí', 'bao nhiêu tiền', '2.393.000', '2393000', 'học phí bao nhiêu', 'trọn gói', 'ưu đãi', 'tiền học'],
+      question: 'Học phí khoá học là bao nhiêu? Học phí bao gồm những quyền lợi gì?',
+      answer: `💰 **Học phí chính thức:** **2.393.000đ / học viên** (Học phí trọn gói).<br><br>🎁 **Đã bao gồm toàn bộ quyền lợi:**<br>1. **01 ngày Workshop Offline trực tiếp** (08:30 - 17:30) tại Mi Casa Coffee & Kitchen.<br>2. **14 ngày đồng hành thực chiến** xây kênh cùng giảng viên & trợ giảng.<br>3. **02 Video record** buổi học xem lại trọn đời.<br>4. **01 buổi Zoom chữa bài chuyên sâu** phản biện và tinh chỉnh bài làm của bạn.<br>5. **Toàn bộ Ebook thực chiến & Tool AI** mang về ứng dụng trọn đời.`
+    },
+    {
+      id: 'kb_hotline',
+      targetPart: 'register',
+      targetLabel: 'Đến phần Hotline & Đăng ký',
+      keywords: ['hotline', 'số điện thoại', 'sđt', 'liên hệ', 'tư vấn', 'hỗ trợ', '0902', '0902596059', 'gặp ai', 'gọi ai'],
+      question: 'Số điện thoại Hotline hỗ trợ và tư vấn khoá học là gì?',
+      answer: `📞 **Hotline hỗ trợ chính thức của Ngáo Content:** **0902 596 059**.<br><br>Bạn có thể gọi điện hoặc nhắn tin Zalo tới số hotline trên để được ban tuyển sinh hỗ trợ tư vấn lộ trình, giải đáp thắc mắc và xác nhận giữ chỗ nhanh nhất nhé!`
+    },
+    {
+      id: 'kb_trainers',
+      targetPart: 'trainers',
+      targetLabel: 'Gặp gỡ 2 Giảng viên (Phần 4)',
+      keywords: ['giảng viên', 'trainer', 'speaker', 'ai dạy', 'ai giảng dạy', 'người dạy', 'thầy cô', 'ngọc tâm', 'nguyễn hoà'],
+      question: 'Ai là người trực tiếp giảng dạy trong khoá học Personal Branding Mastery?',
+      answer: `Khoá học do **2 chuyên gia thực chiến** hàng đầu trực tiếp đứng lớp và đồng hành cùng bạn:<br><br>1. **Speaker Ngọc Tâm** — Founder Ngáo Content · Personal Branding & Marketing Strategist với **12+ năm kinh nghiệm**, đã đồng hành cùng 5.500+ học viên bóc tách bản sắc độc bản và hệ thống hoá sáng tạo bền vững.<br>2. **Speaker Nguyễn Hoà** — Founder Edit Không Khó & EKK Tools · Diễn giả tại FPT Arena Multimedia, tiên phong Vibe Coding với Claude & Gemini, hướng dẫn bạn làm chủ công nghệ AI để tự làm web và dựng video thực chiến!`
+    },
+    {
+      id: 'kb_trainer_ngoc_tam',
+      targetPart: 'trainers',
+      targetLabel: 'Xem Profile Speaker Ngọc Tâm',
+      keywords: ['ngọc tâm', 'ngoc tam', 'founder ngáo content', 'self-made creative', '12 năm', '5500 học viên', 'ngaocontent.com', 'kênh của ngọc tâm'],
+      question: 'Giảng viên Ngọc Tâm là ai? Có kinh nghiệm và triết lý gì?',
+      answer: `**Ngọc Tâm** là Founder của **Ngáo Content** và là Personal Branding Strategist uy tín:<br><br>• **12+ năm kinh nghiệm** triển khai và vận hành Marketing cho cá nhân và doanh nghiệp.<br>• **5.500+ học viên** đã được chị đồng hành theo tinh thần giáo dục bản chất và sáng tạo *Self-made Creative*.<br>• **Slogan nổi tiếng:** *“Hiểu nhân cho rõ, xây hiệu cho sâu. Mình tin thương hiệu cá nhân không phải là cố trở thành ai đó trong mắt người khác, mà là hiểu mình đủ rõ, rèn mình đủ vững và tạo ra những giá trị đủ thật để người khác tự có lý do ghi nhớ.”*<br>• **Hệ thống 3 kênh:** Website \`ngaocontent.com\` (1M+ đọc giả), Group Facebook Ngáo Content (120K+ thành viên), Fanpage & TikTok.`
+    },
+    {
+      id: 'kb_trainer_nguyen_hoa',
+      targetPart: 'trainers',
+      targetLabel: 'Xem Profile Speaker Nguyễn Hoà',
+      keywords: ['nguyễn hoà', 'nguyen hoa', 'founder edit không khó', 'ekk', 'vibe coding', 'dựng phim', 'fpt arena', 'youtube', 'editkhongkhoo', 'kênh của nguyễn hoà'],
+      question: 'Giảng viên Nguyễn Hoà là ai? Có kinh nghiệm và triết lý gì?',
+      answer: `**Nguyễn Hoà** là Founder của **Edit Không Khó** và bộ công cụ **EKK Tools**:<br><br>• Chuyên gia dựng phim, Motion Graphics, lập trình công cụ và tiên phong phương pháp **Vibe Coding** với Claude & Gemini.<br>• **Diễn giả Workshop** dựng phim và ứng dụng AI tại **FPT Arena Multimedia**.<br>• **Tác giả Ebook** *"Dùng Claude làm web và video thực chiến"* độc quyền cho học viên.<br>• **Slogan:** *“Điều quan trọng không phải là AI có thể làm được bao nhiêu thứ, mà là bạn có đủ tư duy để biết nên dùng nó làm gì cho thương hiệu của mình.”*<br>• **Hệ thống 3 kênh:** YouTube \`@EditKhongKhoo\`, TikTok \`@editkhongkho\` (150K+) và hệ sinh thái \`ekkdungphim.com\`.`
+    },
+    {
+      id: 'kb_curriculum_3pillars',
+      targetPart: 'curriculum',
+      targetLabel: 'Xem 3 Trục tư duy (Phần 2)',
+      keywords: ['3 trục', 'ba trục', 'nội dung học', 'giáo trình', 'chương trình', 'học gì', 'học những gì', 'bản sắc độc bản', 'phễu nội dung', 'trục 1', 'trục 2', 'trục 3'],
+      question: 'Chương trình khoá học gồm những nội dung gì? 3 Trục tư duy là gì?',
+      answer: `Chương trình đào tạo được xây dựng trên **3 Trục tư duy vững chắc**:<br><br>1. **Trục 1 — Bản sắc độc bản (Identity):** Hiểu nhân cho rõ, tìm ra chất người thực tế, câu chuyện nghề đáng nhớ và định vị độc bản thay vì vẽ vỏ bọc hào nhoáng.<br>2. **Trục 2 — Hệ thống phễu truyền thông (Funnel & System):** Xây dựng phễu nội dung đa kênh, thiết lập trụ cột nội dung và tạo lý do đủ rõ để người khác tin tưởng, ghi nhớ.<br>3. **Trục 3 — Công nghệ AI & Vibe Coding thực chiến:** Ứng dụng Claude Desktop, prompt 4 mảnh, khảo sát 15 câu xuất Brand Guideline 24 slide, tự tay làm trang web cá nhân và quy trình làm video AI nhanh gấp 5-10 lần!`
+    },
+    {
+      id: 'kb_benefits',
+      targetPart: 'benefits',
+      targetLabel: 'Xem Quyền lợi & AI (Phần 3)',
+      keywords: ['quyền lợi', '14 ngày đồng hành', 'video record', 'zoom sửa bài', 'nhận được gì', 'lợi ích học viên', 'ưu đãi'],
+      question: 'Học viên nhận được những quyền lợi gì khi tham gia khoá học?',
+      answer: `Khi tham gia Personal Branding Mastery, bạn nhận được gói hỗ trợ thực chiến toàn diện:<br><br>✨ **01 ngày Workshop Offline** thực hành trực tiếp tại lớp cùng 2 giảng viên.<br>🚀 **14 ngày đồng hành thực chiến** có trợ giảng và trainer giải đáp hàng ngày.<br>📹 **02 Video record chất lượng cao** xem lại trọn đời bất cứ khi nào cần.<br>🎯 **01 buổi Zoom sửa bài trực tiếp** sau thời gian thực hành.<br>🛠️ **Hệ thống AI & Tool mang về:** Trọn bộ Brand Guideline 24 slide PDF, file mã màu .md, mã nguồn website cá nhân và kho prompt thực chiến chuẩn hoá.`
+    },
+    {
+      id: 'kb_target_audience',
+      targetPart: 'logistics',
+      targetLabel: 'Xem Đối tượng phù hợp tại Phần 5',
+      keywords: ['phù hợp', 'dành cho ai', 'ai nên học', 'không biết code', 'người mới', 'chưa có kênh', 'creator', 'freelancer', 'chủ shop', 'founder', 'bác sĩ', 'giảng viên'],
+      question: 'Khoá học phù hợp với ai? Không biết lập trình hay công nghệ có học được không?',
+      answer: `Khoá học được may đo cho các nhóm đối tượng:<br><br>• **Content Creator / KOC**: Muốn định vị rõ ràng và xây kênh bài bản, bền vững.<br>• **Chuyên gia / Giảng viên / Bác sĩ / Cố vấn**: Muốn lan toả chuyên môn và xây dựng uy tín.<br>• **Freelancer**: Muốn nâng giá trị bản thân, thu hút khách hàng cao cấp.<br>• **Marketer / Truyền thông**: Muốn hệ thống hoá tư duy sáng tạo và ứng dụng AI thực tế.<br>• **Chủ shop / Founder / Doanh nghiệp**: Xây dựng thương hiệu lãnh đạo (CEO Branding).<br><br>💡 **Hoàn toàn KHÔNG cần biết code hay kỹ thuật!** Phương pháp Vibe Coding hướng dẫn bạn dùng tiếng Việt tự nhiên để giao việc cho Claude, AI sẽ tự viết mã và dựng trang web hoàn chỉnh cho bạn!`
+    },
+    {
+      id: 'kb_requirements',
+      targetPart: 'logistics',
+      targetLabel: 'Xem Yêu cầu chuẩn bị tại Phần 5',
+      keywords: ['chuẩn bị', 'cần mang gì', 'laptop', 'claude pro', 'yêu cầu', 'mang theo', 'cần gì', 'mang gì đi học'],
+      question: 'Học viên cần chuẩn bị những thiết bị và công cụ gì khi đến lớp?',
+      answer: `Để đạt hiệu quả thực hành cao nhất, bạn cần chuẩn bị:<br><br>💻 **01 Laptop cá nhân** (đã sạc đầy hoặc mang kèm sạc) để thực hành trực tiếp tại lớp.<br>🤖 **01 Tài khoản Claude Pro** (đăng ký gói 20$/tháng trên claude.ai) để sử dụng tính năng tạo Project, Artifact và thực hành Vibe Coding không giới hạn.<br>🎨 **Làm trước bài khảo sát 15 câu trên web:** Mở trang \`brand-discovery.html\` làm bài trắc nghiệm thị giác và tải trước file Brand Guideline mang theo!`
+    },
+    {
+      id: 'kb_register',
+      targetPart: 'register',
+      targetLabel: 'Đến Phần 6: Đăng ký & Quét QR',
+      targetUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSepAfBro_dd6fLU0Hj6dQpfPBSq8BkOecbS5xvoiyPW0TqbSw/viewform',
+      keywords: ['đăng ký', 'cách đăng ký', 'giữ chỗ', 'quét qr', 'form', 'chuyển khoản', 'thanh toán', 'ghi danh', 'làm sao để học'],
+      question: 'Làm thế nào để đăng ký tham gia khoá học và chuyển khoản giữ chỗ?',
+      answer: `Có 2 cách đăng ký vô cùng thuận tiện:<br><br>1. **Quét mã QR trực tiếp trên website:** Chuyển đến tab **Phần 6: Đăng ký & QR**, mở app ngân hàng quét mã QR để chuyển khoản học phí 2.393.000đ.<br>2. **Mở Google Form chính thức:** Bấm nút *"Mở Google Form Đăng Ký Trực Tiếp"* để điền thông tin liên hệ.<br><br>Sau khi nhận được thông tin, ban tuyển sinh Ngáo Content sẽ gọi điện hoặc nhắn tin Zalo xác nhận trong vòng 15 phút. Nếu cần hỗ trợ khẩn cấp, bạn hãy gọi hotline **0902 596 059** nhé!`
+    },
+    {
+      id: 'kb_brandguide_tool',
+      targetUrl: 'brand-discovery.html',
+      targetLabel: 'Mở công cụ Khảo sát 15 câu',
+      keywords: ['15 câu', 'khảo sát 15 câu', 'brand discovery', 'trắc nghiệm', 'moodboard', 'bản học viên', '24 slide', 'pdf', 'brand guideline'],
+      question: 'Công cụ Khảo sát Brand Discovery 15 câu trên web hoạt động như thế nào?',
+      answer: `**NGAO Brand Discovery (15 câu)** là công cụ trắc nghiệm thị giác trực quan độc quyền:<br><br>• **Cách làm:** Bạn xem hình ảnh minh hoạ trực quan để chọn phong cách (Màu sắc, Typography, Tone of voice, Bố cục), hoặc bấm *"Nhờ AI gợi ý"* nếu phân vân.<br>• **4 Preset thiết kế chuẩn hoá:** B (Corporate Clean), C (Editorial Split), D (Visual First), E (Modular Grid).<br>• **Xuất thành phẩm:** Bấm nút in để xuất bộ **Brand Guideline 24 slide chuẩn PDF** và tải file **Markdown (.md)** để nạp vào Claude làm Web và Video!`
+    },
+    {
+      id: 'kb_ebook_pass',
+      targetPart: 'ebook',
+      targetLabel: 'Đến tab Ebook Học Viên',
+      keywords: ['mật khẩu', 'pass', 'mã khóa', 'mở ebook', 'xem ebook', 'ngao2026', '1212', 'hocvien', 'mật khẩu ebook', 'xem sách'],
+      question: 'Mật khẩu mở Ebook học viên là gì? Làm sao để xem Ebook trên web?',
+      answer: `Mục **🔒 Ebook Học Viên** trên web chứa toàn bộ 13 bài học và kho câu lệnh thực chiến của Trainer Nguyễn Hoà.<br><br>🔑 **Mật khẩu mở khoá:** Nhập **\`NGAO2026\`** hoặc **\`1212\`** vào ô nhập rồi bấm Mở khóa (hoặc bấm *"Mở khóa nhanh demo"*).<br>Sau khi mở, bạn có thể tra cứu từng bài học, sao chép prompt 1 chạm và sử dụng các widget tương tác trực tiếp trên màn hình!`
+    },
+
+    // --- NỘI DUNG CẨM NANG EBOOK CLAUDE LÀM WEB & VIDEO ---
     {
       id: 'kb_4k',
       chapter: 'mindset',
@@ -320,6 +436,7 @@
   // RENDER COMPLETE EBOOK SECTION INTO #part-ebook
   // ==========================================================================
   function initEbookSection() {
+    mountGlobalBot();
     const container = document.getElementById('ebookMountRoot');
     if (!container) return;
 
@@ -513,20 +630,33 @@
             ${renderAllModules()}
           </div>
         </div>
-
       </div>
+    `;
+  }
 
-      <!-- 3. FLOATING MASCOT BOT TRIGGER (Con bot vẫy tay mời chào) -->
-      <div class="ngao-bot-floating-widget" id="ngaoBotFloatingWidget" style="${isUnlocked ? 'display:flex' : 'display:none'}">
-        <button type="button" class="ngao-bot-mascot-btn" onclick="window.EbookApp.toggleBotModal(true)" aria-label="Mở Trợ lý AI Ebook">
-          <div class="ngao-bot-bubble">👋 Bấm vào mình để hỏi Bot AI nhé!</div>
+  // ==========================================================================
+  // MOUNT GLOBAL AI ASSISTANT (NGÁO BOT) TRÊN TOÀN BỘ WEBSITE
+  // Cho phép khách truy cập bấm vào hỏi & nói về toàn bộ thông tin có trên web
+  // ==========================================================================
+  function mountGlobalBot() {
+    let mountRoot = document.getElementById('globalBotMountRoot');
+    if (!mountRoot) {
+      mountRoot = document.createElement('div');
+      mountRoot.id = 'globalBotMountRoot';
+      document.body.appendChild(mountRoot);
+    }
+    mountRoot.innerHTML = `
+      <!-- 1. FLOATING MASCOT BOT TRIGGER (Con bot vẫy tay mời chào trên toàn web) -->
+      <div class="ngao-bot-floating-widget" id="ngaoBotFloatingWidget" style="display:flex">
+        <button type="button" class="ngao-bot-mascot-btn" onclick="window.EbookApp.toggleBotModal(true)" aria-label="Mở Trợ lý AI Ngáo Bot">
+          <div class="ngao-bot-bubble">👋 Bấm để hỏi bất kỳ thông tin nào trên Web!</div>
           <div class="ngao-bot-floater">
             ${renderNgaoMascotSVG({ width: 135, height: 135, idPrefix: 'ngaoFloatBot' })}
           </div>
         </button>
       </div>
 
-      <!-- 4. VIRTUAL AI ASSISTANT MODAL (Hiện ra khi bấm vào con bot) -->
+      <!-- 2. VIRTUAL AI ASSISTANT MODAL (Hiện ra khi bấm vào con bot) -->
       <div class="ngao-bot-modal-backdrop" id="ngaoBotModalBackdrop" onclick="window.EbookApp.handleBackdropClick(event)">
         <div class="ngao-bot-modal-container">
           <div class="eb-bot-dock" id="ebookAiBotDock">
@@ -537,10 +667,10 @@
                 </div>
                 <div>
                   <div style="display:flex;align-items:center;gap:8px">
-                    <strong style="font-size:15.5px;color:#fff">Trợ Lý AI Ebook · Ngáo Bot</strong>
+                    <strong style="font-size:15.5px;color:#fff">Trợ Lý AI Toàn Năng · Ngáo Bot</strong>
                     <span style="background:rgba(34,197,94,0.2);color:#4ADE80;border:1px solid rgba(74,222,128,0.4);font-size:10.5px;font-weight:800;padding:2px 8px;border-radius:99px">● Trực tuyến 24/7</span>
                   </div>
-                  <small style="color:#F6C6D8;font-size:12px">Huấn luyện 100% từ Ebook của Trainer Nguyễn Hoà — Hỏi bất kỳ khái niệm hay câu lệnh nào!</small>
+                  <small style="color:#F6C6D8;font-size:12px">Hỏi đáp & nói bằng giọng nói về toàn bộ thông tin Website, Khoá học 12/12 & Ebook thực chiến!</small>
                 </div>
               </div>
               <div style="display:flex;align-items:center;gap:8px">
@@ -555,27 +685,37 @@
               </div>
             </div>
 
-            <!-- Quick Question Chips -->
+            <!-- Quick Question Chips Covering Entire Website -->
             <div class="eb-bot-suggestions">
-              <span style="font-size:11px;font-weight:800;color:#FFDE59;white-space:nowrap">💡 Hỏi nhanh:</span>
-              <button type="button" class="eb-bot-chip" onclick="window.EbookApp.askBotPreset('kb_4k')">Công thức 4K là gì?</button>
-              <button type="button" class="eb-bot-chip" onclick="window.EbookApp.askBotPreset('kb_4manh')">Câu lệnh 4 mảnh (Bài 1)</button>
-              <button type="button" class="eb-bot-chip" onclick="window.EbookApp.askBotPreset('kb_interview')">Cách để AI phỏng vấn (Bài 3)</button>
-              <button type="button" class="eb-bot-chip" onclick="window.EbookApp.askBotPreset('kb_brandguide')">Khảo sát 15 câu & Brand Guideline (Bài 4)</button>
-              <button type="button" class="eb-bot-chip" onclick="window.EbookApp.askBotPreset('kb_project_skill')">Project khác Skill thế nào?</button>
-              <button type="button" class="eb-bot-chip" onclick="window.EbookApp.askBotPreset('kb_web')">Làm Web theo Brand Guideline</button>
-              <button type="button" class="eb-bot-chip" onclick="window.EbookApp.askBotPreset('kb_claudecode')">Lệnh /RE & Reset 60% context</button>
-              <button type="button" class="eb-bot-chip" onclick="window.EbookApp.askBotPreset('kb_video_ekk')">Tự động làm phụ đề Video (.srt)</button>
+              <span style="font-size:11px;font-weight:800;color:#FFDE59;white-space:nowrap">💡 Hỏi nhanh trên Web:</span>
+              <button type="button" class="eb-bot-chip" onclick="window.EbookApp.askBotPreset('kb_logistics')">📍 Lịch học & Địa điểm ở đâu?</button>
+              <button type="button" class="eb-bot-chip" onclick="window.EbookApp.askBotPreset('kb_tuition')">💳 Học phí bao nhiêu, gồm những gì?</button>
+              <button type="button" class="eb-bot-chip" onclick="window.EbookApp.askBotPreset('kb_trainers')">👥 Giới thiệu 2 giảng viên?</button>
+              <button type="button" class="eb-bot-chip" onclick="window.EbookApp.askBotPreset('kb_curriculum_3pillars')">📚 Khoá học gồm những nội dung gì?</button>
+              <button type="button" class="eb-bot-chip" onclick="window.EbookApp.askBotPreset('kb_benefits')">🎁 Quyền lợi học viên & 14 ngày?</button>
+              <button type="button" class="eb-bot-chip" onclick="window.EbookApp.askBotPreset('kb_brandguide_tool')">🎨 Khảo sát 15 câu dùng làm gì?</button>
+              <button type="button" class="eb-bot-chip" onclick="window.EbookApp.askBotPreset('kb_register')">✍️ Làm sao để đăng ký giữ chỗ?</button>
+              <button type="button" class="eb-bot-chip" onclick="window.EbookApp.askBotPreset('kb_requirements')">💻 Cần chuẩn bị gì khi đi học?</button>
+              <button type="button" class="eb-bot-chip" onclick="window.EbookApp.askBotPreset('kb_4k')">🧠 Công thức 4K là gì?</button>
+              <button type="button" class="eb-bot-chip" onclick="window.EbookApp.askBotPreset('kb_ebook_pass')">🔒 Mật khẩu xem Ebook học viên?</button>
             </div>
 
             <!-- Chat History -->
             <div class="eb-bot-messages" id="ebBotMessages">
               <div class="bot-msg-row bot">
                 <div class="bot-msg-bubble">
-                  <div class="bot-cite-tag">🎬 Xin chào học viên Personal Branding Mastery!</div>
+                  <div class="bot-cite-tag">🎬 Xin chào bạn đến với Personal Branding Mastery!</div>
                   <div>
-                    Mình là <strong>Ngáo Bot — Trợ Lý Ebook của Trainer Nguyễn Hoà</strong>. Mình nắm rõ từng bài học, công thức <strong>4 mảnh</strong>, <strong>4K</strong>, cách tạo <strong>Project / Skill</strong>, làm <strong>Web từ 15 câu hỏi</strong> cho tới lệnh cài <strong>FFmpeg & Whisper làm phụ đề video</strong>.<br><br>
-                    👉 Bạn có thể <strong>bấm vào các câu hỏi gợi ý phía trên</strong> hoặc <strong>gõ câu hỏi / bấm 🎙️ nói câu hỏi</strong> vào ô bên dưới nhé!
+                    Mình là <strong>Ngáo Bot — Trợ Lý AI của Website & Khoá học Personal Branding Mastery</strong>.<br><br>
+                    Bạn có thể <strong>gõ câu hỏi</strong> hoặc <strong>bấm nút micro 🎙️ để nói bằng giọng nói</strong> về bất kỳ nội dung nào có trên web:
+                    <ul style="margin:8px 0 0 16px;padding:0;line-height:1.6;font-size:12.5px">
+                      <li>📅 <strong>Thời gian, địa điểm & học phí</strong> khoá học 12/12/2026.</li>
+                      <li>👥 <strong>Thông tin 2 giảng viên</strong> Ngọc Tâm & Nguyễn Hoà.</li>
+                      <li>📚 <strong>Nội dung 3 Trục tư duy</strong> & quyền lợi 14 ngày đồng hành.</li>
+                      <li>🎨 <strong>Bài test 15 câu</strong> & cách xuất bộ Brand Guideline 24 slide.</li>
+                      <li>✍️ <strong>Cách đăng ký</strong> giữ chỗ & hotline hỗ trợ.</li>
+                      <li>📖 <strong>Toàn bộ cẩm nang Ebook</strong> làm web & video bằng AI!</li>
+                    </ul>
                   </div>
                   <div class="eb-bot-voice-actions">
                     <button type="button" class="bot-voice-btn" onclick="window.EbookApp.speakGreeting(this)">
@@ -594,7 +734,7 @@
                 type="text"
                 id="ebBotInput"
                 class="eb-bot-input"
-                placeholder="Hỏi Bot về Ebook (hoặc bấm 🎙️ để nói bằng giọng nói)..."
+                placeholder="Hỏi Bot về bất kỳ nội dung nào trên web (hoặc bấm 🎙️ để nói)..."
                 autocomplete="off"
               >
               <button type="submit" class="eb-bot-send">Gửi câu hỏi ↗</button>
@@ -1916,7 +2056,7 @@ Kết quả: Mỗi câu dưới 10 chữ, giọng ấm áp, gần gũi. Ghi thê
       const modal = document.getElementById('ngaoBotModalBackdrop');
       if (ws) ws.classList.remove('unlocked');
       if (gate) gate.style.display = 'block';
-      if (floater) floater.style.display = 'none';
+      if (floater) floater.style.display = 'flex'; // Vẫn giữ bot hiển thị trên toàn website để khách bấm hỏi
       if (modal) modal.classList.remove('active');
       if (input) input.value = '';
       if (feedback) feedback.textContent = '';
@@ -2278,7 +2418,7 @@ Kết quả: Mỗi câu dưới 10 chữ, giọng ấm áp, gần gũi. Ghi thê
     },
 
     speakGreeting(btn) {
-      const text = 'Xin chào học viên Personal Branding Mastery! Mình là Ngáo Bot, trợ lý AI huấn luyện từ Ebook của Trainer Nguyễn Hoà. Mình có thể giúp bạn giải đáp công thức bốn mảnh, bốn K, cách tạo Project, làm Web từ mười lăm câu hỏi và tự động tạo phụ đề video. Bạn có thể bấm vào các câu hỏi gợi ý hoặc gõ câu hỏi bất kỳ nhé!';
+      const text = 'Xin chào bạn! Mình là Ngáo Bot, trợ lý AI của khoá học Personal Branding Mastery. Bạn có thể hỏi mình mọi thông tin về lịch học ngày mười hai tháng mười hai, địa điểm Mi Casa Coffee Phú Nhuận, học phí hai triệu ba trăm chín mươi ba ngàn, hai giảng viên Ngọc Tâm và Nguyễn Hoà, bài trắc nghiệm mười lăm câu, hoặc cẩm nang Ebook thực chiến. Hãy bấm các câu hỏi gợi ý hoặc nói qua micro nhé!';
       this.speakText(text, btn);
     },
 
@@ -2322,7 +2462,7 @@ Kết quả: Mỗi câu dưới 10 chữ, giọng ấm áp, gần gũi. Ghi thê
           const transcript = event.results[0][0].transcript;
           if (inp) {
             inp.value = transcript;
-            inp.placeholder = 'Hỏi Bot về Ebook (hoặc bấm 🎙️ để nói bằng giọng nói)...';
+            inp.placeholder = 'Hỏi Bot về bất kỳ nội dung nào trên web (hoặc bấm 🎙️ để nói)...';
           }
           const matched = this.findBestAnswer(transcript);
           this.appendBotConversation(transcript, matched);
@@ -2331,13 +2471,13 @@ Kết quả: Mỗi câu dưới 10 chữ, giọng ấm áp, gần gũi. Ghi thê
         recognition.onerror = (event) => {
           console.warn('Speech recognition error:', event.error);
           if (micBtn) micBtn.classList.remove('listening');
-          if (inp) inp.placeholder = 'Hỏi Bot về Ebook (hoặc bấm 🎙️ để nói bằng giọng nói)...';
+          if (inp) inp.placeholder = 'Hỏi Bot về bất kỳ nội dung nào trên web (hoặc bấm 🎙️ để nói)...';
           this.activeRecognition = null;
         };
 
         recognition.onend = () => {
           if (micBtn) micBtn.classList.remove('listening');
-          if (inp) inp.placeholder = 'Hỏi Bot về Ebook (hoặc bấm 🎙️ để nói bằng giọng nói)...';
+          if (inp) inp.placeholder = 'Hỏi Bot về bất kỳ nội dung nào trên web (hoặc bấm 🎙️ để nói)...';
           this.activeRecognition = null;
         };
 
@@ -2347,6 +2487,27 @@ Kết quả: Mỗi câu dưới 10 chữ, giọng ấm áp, gần gũi. Ghi thê
         console.error('Voice recognition error:', err);
         if (micBtn) micBtn.classList.remove('listening');
       }
+    },
+
+    jumpToPart(partId) {
+      if (typeof window.goToPart === 'function') {
+        window.goToPart(partId);
+      }
+      this.toggleBotModal(false);
+    },
+
+    openEbookChapter(chapterId) {
+      if (typeof window.goToPart === 'function') {
+        window.goToPart('ebook');
+      }
+      const isUnlocked = sessionStorage.getItem(STORAGE_KEY) === '1';
+      if (!isUnlocked) {
+        alert('Nội dung này nằm trong Ebook thực chiến dành cho học viên. Bạn hãy nhập mật khẩu "NGAO2026" hoặc "1212" để mở khóa học liệu nhé!');
+        this.toggleBotModal(false);
+        return;
+      }
+      this.switchChapter(chapterId);
+      this.toggleBotModal(false);
     },
 
     askBotPreset(kbId) {
@@ -2388,17 +2549,19 @@ Kết quả: Mỗi câu dưới 10 chữ, giọng ấm áp, gần gũi. Ghi thê
 
       if (bestItem && bestScore > 0) return bestItem;
 
-      // Fallback comprehensive guide response grounded in the Ebook
+      // Fallback comprehensive guide response grounded in whole website
       return {
-        chapter: 'cheatsheet',
-        chapterName: 'Cẩm nang Ebook Nguyễn Hoà',
-        answer: `Dựa trên Ebook <strong>"Dùng Claude làm web và video"</strong> của Trainer Nguyễn Hoà, đây là nguyên tắc cốt lõi cho câu hỏi của bạn:
-<br><br>
-• Nếu bạn muốn <strong>giao việc rõ ràng</strong>: Dùng <strong>công thức 4 mảnh</strong> (Vai trò + Bối cảnh + Việc cần làm + Kết quả) ở <em>Bài 1</em>.<br>
-• Nếu muốn <strong>AI hiểu sâu về bạn</strong>: Đừng tự kể, hãy dùng câu lệnh <strong>AI phỏng vấn 12 câu</strong> ở <em>Bài 3</em> rồi cất vào <strong>Project</strong> ở <em>Bài 4</em>.<br>
-• Nếu <strong>AI làm sai</strong>: Dùng lệnh <code>/RE</code> (trong Claude Code) và góp ý bằng <strong>công thức 4K</strong> (Khoanh - Kỳ vọng - Kiểm nguyên nhân - Khóa quy tắc).<br>
-• Nếu muốn <strong>làm Web hoặc làm Phụ đề Video (.srt)</strong>: Xem <em>Bài 5 (Làm web từ 15 câu hỏi)</em> hoặc <em>Phụ lục EKK (FFmpeg + Whisper)</em>.`,
-        prompt: `Bạn là [vai trò]. Tôi là [bối cảnh]. Trước khi làm [việc cần làm], hãy phỏng vấn tôi từng câu một (tối đa 7 câu) để hiểu rõ mục tiêu và giọng điệu. Phần nào bạn suy luận, hãy ghi rõ là (AI suy luận).`
+        targetPart: 'overview',
+        targetLabel: 'Xem Tổng quan trên Website',
+        answer: `Cảm ơn bạn đã hỏi Ngáo Bot!<br><br>Để tìm hiểu thông tin chi tiết, bạn có thể tham khảo các phần chính sau trên website:<br>
+• **Phần 1: Tổng quan** — Định vị *"Hiểu Nhân cho rõ, Xây Hiệu cho lâu"*. Giải quyết câu chuyện bóc tách năng lực thực chất.<br>
+• **Phần 2: 3 Trục tư duy** — Bản sắc độc bản, Phễu truyền thông đa kênh, AI & Vibe Coding thực chiến.<br>
+• **Phần 3: Quyền lợi** — 1 ngày offline + 14 ngày đồng hành + 2 record + 1 Zoom sửa bài.<br>
+• **Phần 4: Giảng viên** — Gặp gỡ Trainer Ngọc Tâm (12+ năm KN) & Trainer Nguyễn Hoà (Edit Không Khó).<br>
+• **Phần 5: Địa điểm & Học phí** — Mi Casa Coffee & Kitchen Phú Nhuận (12/12/2026), học phí 2.393.000đ trọn gói.<br>
+• **Phần 6: Đăng ký & QR** — Quét QR thanh toán hoặc gọi Hotline 0902 596 059.<br>
+• **Phần 7: Ebook Học Viên** — Cẩm nang làm web & video bằng Claude AI (Mật khẩu: NGAO2026).<br><br>
+👉 Bạn cũng có thể bấm vào các câu hỏi gợi ý bên trên hoặc nói trực tiếp qua micro 🎙️ nhé!`
       };
     },
 
@@ -2413,7 +2576,7 @@ Kết quả: Mỗi câu dưới 10 chữ, giọng ấm áp, gần gũi. Ghi thê
       box.appendChild(userRow);
       box.scrollTop = box.scrollHeight;
 
-      // 2. Bot response with citation + speech button + prompt + jump to chapter button
+      // 2. Bot response with citation + speech button + prompt + jump button
       setTimeout(() => {
         const botRow = document.createElement('div');
         botRow.className = 'bot-msg-row bot';
@@ -2433,9 +2596,40 @@ Kết quả: Mỗi câu dưới 10 chữ, giọng ấm áp, gần gũi. Ghi thê
           .trim();
         const encodedSpeech = encodeURIComponent(rawSpeechText);
 
+        let citeText = '💡 Giải đáp chính thức từ Website';
+        if (kbItem.targetLabel) {
+          citeText = `📍 ${kbItem.targetLabel}`;
+        } else if (kbItem.chapterName) {
+          citeText = `📖 Nguồn Ebook: ${kbItem.chapterName}`;
+        }
+
+        let navBtnHTML = '';
+        if (kbItem.targetPart) {
+          navBtnHTML = `
+            <button type="button" class="bot-jump-btn" onclick="window.EbookApp.jumpToPart('${kbItem.targetPart}')">
+              <span>📍 ${kbItem.targetLabel || 'Xem trên Website'}</span>
+              <span>→</span>
+            </button>
+          `;
+        } else if (kbItem.targetUrl) {
+          navBtnHTML = `
+            <a href="${kbItem.targetUrl}" target="_blank" rel="noopener noreferrer" class="bot-jump-btn" style="text-decoration:none">
+              <span>🔗 ${kbItem.targetLabel || 'Mở liên kết'}</span>
+              <span>↗</span>
+            </a>
+          `;
+        } else if (kbItem.chapter) {
+          navBtnHTML = `
+            <button type="button" class="bot-jump-btn" onclick="window.EbookApp.openEbookChapter('${kbItem.chapter}')">
+              <span>📖 Mở xem chi tiết "${kbItem.chapterName || 'bài học'}"</span>
+              <span>→</span>
+            </button>
+          `;
+        }
+
         botRow.innerHTML = `
           <div class="bot-msg-bubble">
-            <div class="bot-cite-tag">📌 Nguồn Ebook: ${kbItem.chapterName}</div>
+            <div class="bot-cite-tag">${citeText}</div>
             <div>${formattedAnswer}</div>
             ${promptHTML}
             <div class="eb-bot-voice-actions">
@@ -2443,10 +2637,7 @@ Kết quả: Mỗi câu dưới 10 chữ, giọng ấm áp, gần gũi. Ghi thê
                 <span>🔊</span>
                 <span>Nghe đọc câu trả lời</span>
               </button>
-              <button type="button" class="bot-jump-btn" onclick="window.EbookApp.switchChapter('${kbItem.chapter}'); window.EbookApp.toggleBotModal(false);">
-                <span>📖 Mở xem chi tiết "${kbItem.chapterName}"</span>
-                <span>→</span>
-              </button>
+              ${navBtnHTML}
             </div>
           </div>
         `;
@@ -2481,8 +2672,12 @@ Kết quả: Mỗi câu dưới 10 chữ, giọng ấm áp, gần gũi. Ghi thê
 
   // Initialize when DOM is ready
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initEbookSection);
+    document.addEventListener('DOMContentLoaded', () => {
+      mountGlobalBot();
+      initEbookSection();
+    });
   } else {
+    mountGlobalBot();
     initEbookSection();
   }
 })();

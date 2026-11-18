@@ -1751,11 +1751,10 @@
         sec.classList.toggle('active', sec.id === 'part-' + partId);
       });
 
-      // Sync Mascot Bot visibility (only on unlocked ebook tab or in full scroll)
+      // Sync Mascot Bot visibility: Always visible across all sections so visitors can ask anytime!
       const floater = document.getElementById('ngaoBotFloatingWidget');
       if (floater) {
-        const isUnlocked = sessionStorage.getItem('NGAO_EBOOK_UNLOCKED_V1') === '1';
-        floater.style.display = (isUnlocked && (partId === 'ebook' || isFullScroll)) ? 'flex' : 'none';
+        floater.style.display = 'flex';
       }
 
       // Scroll to content view smoothly
@@ -1770,6 +1769,7 @@
         history.replaceState(null, '', '#' + partId);
       } catch (e) {}
     }
+    window.goToPart = goToPart;
 
     function toggleViewMode() {
       isFullScroll = !isFullScroll;
