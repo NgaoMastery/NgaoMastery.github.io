@@ -599,7 +599,7 @@ Thêm vào CLAUDE.md quy tắc này: "Mỗi khi thêm gì vào file này, nếu 
 
 ### 2. Chuyển dự án sang AI khác
 
-Khi chuyển dự án sang Codex hay một AI khác, nhờ Claude làm thêm file **AGENTS.md** để AI kia hiểu dự án. Nên có thêm một file bàn giao bằng .md.
+Khi chuyển dự án sang một công cụ AI khác, nhờ Claude làm thêm file **AGENTS.md** để AI kia hiểu dự án. Nên có thêm một file bàn giao bằng .md.
 
 ### 3. Khi context bị đầy
 

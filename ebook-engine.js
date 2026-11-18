@@ -100,7 +100,7 @@
       targetLabel: 'Gặp gỡ 2 Giảng viên (Phần 4)',
       keywords: ['giảng viên', 'trainer', 'speaker', 'ai dạy', 'ai giảng dạy', 'người dạy', 'thầy cô', 'ngọc tâm', 'nguyễn hoà'],
       question: 'Ai là người trực tiếp giảng dạy trong khoá học Personal Branding Mastery?',
-      answer: `Khoá học do **2 chuyên gia thực chiến** hàng đầu trực tiếp đứng lớp và đồng hành cùng bạn:<br><br>1. **Speaker Ngọc Tâm** — Founder Ngáo Content · Personal Branding & Marketing Strategist với **12+ năm kinh nghiệm**, đã đồng hành cùng 5.500+ học viên bóc tách bản sắc độc bản và hệ thống hoá sáng tạo bền vững.<br>2. **Speaker Nguyễn Hoà** — Founder Edit Không Khó & EKK Tools · Diễn giả tại FPT Arena Multimedia, tiên phong Vibe Coding với Claude & Gemini, hướng dẫn bạn làm chủ công nghệ AI để tự làm web và dựng video thực chiến!`
+      answer: `Khoá học do **2 chuyên gia thực chiến** hàng đầu trực tiếp đứng lớp và đồng hành cùng bạn:<br><br>1. **Speaker Ngọc Tâm** — Founder Ngáo Content · Personal Branding & Marketing Strategist với **12+ năm kinh nghiệm**, đã đồng hành cùng 5.500+ học viên bóc tách bản sắc độc bản và hệ thống hoá sáng tạo bền vững.<br>2. **Speaker Nguyễn Hoà** — Founder Edit Không Khó & EKK Tools · **5+ năm trong nghề video editing**, đã đào tạo hơn **300+ học viên**, hướng dẫn bạn làm chủ công nghệ AI để tự làm web và dựng video thực chiến!`
     },
     {
       id: 'kb_trainer_ngoc_tam',
@@ -114,9 +114,9 @@
       id: 'kb_trainer_nguyen_hoa',
       targetPart: 'trainers',
       targetLabel: 'Xem Profile Speaker Nguyễn Hoà',
-      keywords: ['nguyễn hoà', 'nguyen hoa', 'founder edit không khó', 'ekk', 'vibe coding', 'dựng phim', 'fpt arena', 'youtube', 'editkhongkhoo', 'kênh của nguyễn hoà'],
+      keywords: ['nguyễn hoà', 'nguyen hoa', 'founder edit không khó', 'ekk', 'video editing', 'dựng phim', '300 học viên', '5 năm', 'youtube', 'editkhongkhoo', 'kênh của nguyễn hoà'],
       question: 'Giảng viên Nguyễn Hoà là ai? Có kinh nghiệm và triết lý gì?',
-      answer: `**Nguyễn Hoà** là Founder của **Edit Không Khó** và bộ công cụ **EKK Tools**:<br><br>• Chuyên gia dựng phim, Motion Graphics, lập trình công cụ và tiên phong phương pháp **Vibe Coding** với Claude & Gemini.<br>• **Diễn giả Workshop** dựng phim và ứng dụng AI tại **FPT Arena Multimedia**.<br>• **Tác giả Ebook** *"Dùng Claude làm web và video thực chiến"* độc quyền cho học viên.<br>• **Slogan:** *“Điều quan trọng không phải là AI có thể làm được bao nhiêu thứ, mà là bạn có đủ tư duy để biết nên dùng nó làm gì cho thương hiệu của mình.”*<br>• **Hệ thống 3 kênh:** YouTube \`@EditKhongKhoo\`, TikTok \`@editkhongkho\` (150K+) và hệ sinh thái \`ekkdungphim.com\`.`
+      answer: `**Nguyễn Hoà** là Founder của **Edit Không Khó** và bộ công cụ **EKK Tools**:<br><br>• **5+ năm kinh nghiệm** chuyên sâu trong nghề video editing, Motion Graphics và ứng dụng AI vào sản xuất nội dung.<br>• Đã trực tiếp **đào tạo hơn 300+ học viên** làm chủ kỹ năng dựng phim và công cụ sáng tạo.<br>• **Tác giả Ebook độc quyền** *"Dùng Claude làm web và video thực chiến"* cho học viên.<br>• **Slogan:** *“Điều quan trọng không phải là AI có thể làm được bao nhiêu thứ, mà là bạn có đủ tư duy để biết nên dùng nó làm gì cho thương hiệu của mình.”*<br>• **Hệ thống kênh:** YouTube \`@EditKhongKhoo\`, TikTok \`@editkhongkho\` (150K+) và hệ sinh thái \`ekkdungphim.com\`.`
     },
     {
       id: 'kb_curriculum_3pillars',
@@ -276,7 +276,7 @@
       answer: `Khi dùng **Claude Code**, đây là 6 nguyên tắc vàng giúp AI luôn thông minh và tiết kiệm token:
 <br><br>
 1. **Giữ \`CLAUDE.md\` dưới 50 dòng:** Dặn Claude tự đề nghị rút gọn nếu vượt quá 50 dòng.<br>
-2. **Dùng \`AGENTS.md\`:** Khi cần bàn giao dự án sang AI khác (như Codex).<br>
+2. **Dùng \`AGENTS.md\`:** Khi cần bàn giao dự án sang một công cụ AI khác.<br>
 3. **Khi context đầy:** Dùng \`/compact\` (tóm tắt gọn) hoặc \`/clear\` (làm sạch bàn mới).<br>
 4. **Khi Claude trả lời sai — Dùng \`/RE\` (\`/rewind\`):** Đừng nhắn *"Không phải, làm lại đi"* vì phần sai vẫn nằm trong context. Gõ \`/RE\` để quay lại tin nhắn trước, xóa phần sai rồi áp dụng **công thức 4K**.<br>
 5. **Reset thủ công ở mức 60% context:** Đừng chờ 95% máy tự nén. Ở mức 60%: Bảo Claude tóm tắt → Copy → Gõ \`/clear\` → Dán tóm tắt vào phiên mới.`,
@@ -1672,7 +1672,7 @@ Kết quả: Mỗi câu dưới 10 chữ, giọng ấm áp, gần gũi. Ghi thê
               </tr>
               <tr>
                 <td><code>AGENTS.md</code></td>
-                <td>Nhờ Claude tạo file này kèm file bàn giao <code>.md</code> khi muốn chuyển dự án sang AI khác (như Codex).</td>
+                <td>Nhờ Claude tạo file này kèm file bàn giao <code>.md</code> khi muốn chuyển dự án sang công cụ AI khác.</td>
               </tr>
             </tbody>
           </table>
