@@ -663,20 +663,20 @@
             <div class="eb-bot-header">
               <div class="eb-bot-identity">
                 <div class="eb-bot-avatar-mascot">
-                  ${renderNgaoMascotSVG({ width: 44, height: 44, idPrefix: 'ngaoHeaderBot' })}
+                  ${renderNgaoMascotSVG({ width: 38, height: 38, idPrefix: 'ngaoHeaderBot' })}
                 </div>
-                <div>
-                  <div style="display:flex;align-items:center;gap:8px">
-                    <strong style="font-size:15.5px;color:#fff">Trợ Lý AI Toàn Năng · Ngáo Bot</strong>
-                    <span style="background:rgba(34,197,94,0.2);color:#4ADE80;border:1px solid rgba(74,222,128,0.4);font-size:10.5px;font-weight:800;padding:2px 8px;border-radius:99px">● Trực tuyến 24/7</span>
+                <div class="eb-bot-title-group">
+                  <div class="eb-bot-title-line">
+                    <strong class="eb-bot-title-text">Ngáo Bot · Trợ Lý AI</strong>
+                    <span class="eb-bot-online-badge">● 24/7</span>
                   </div>
-                  <small style="color:#F6C6D8;font-size:12px">Hỏi đáp & nói bằng giọng nói về toàn bộ thông tin Website, Khoá học 12/12 & Ebook thực chiến!</small>
+                  <div class="eb-bot-subtext">Hỏi đáp & phát âm thanh về toàn bộ Website & Khoá học!</div>
                 </div>
               </div>
-              <div style="display:flex;align-items:center;gap:8px">
+              <div class="eb-bot-actions-row">
                 <button type="button" class="eb-bot-voice-toggle" id="ebBotVoiceToggle" onclick="window.EbookApp.toggleAutoVoice()" title="Bật/Tắt chế độ tự động đọc câu trả lời bằng giọng nói">
                   <span>🔊</span>
-                  <span id="ebVoiceToggleText">Giọng nói: Tắt</span>
+                  <span id="ebVoiceToggleText">Giọng nói</span>
                 </button>
                 <div class="eb-bot-wave" id="ebBotHeaderWave" title="AI Voice Ready">
                   <span></span><span></span><span></span>

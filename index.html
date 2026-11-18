@@ -36,7 +36,11 @@
     }
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; }
+    html {
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+      max-width: 100vw;
+    }
     body {
       background: var(--bg);
       color: var(--text);
@@ -44,6 +48,7 @@
       line-height: 1.58;
       -webkit-font-smoothing: antialiased;
       overflow-x: hidden;
+      max-width: 100vw;
       min-height: 100vh;
       display: flex;
       flex-direction: column;
@@ -1102,7 +1107,10 @@
       margin-bottom: 20px;
     }
 
-    /* RESPONSIVE */
+    .btn-reg-short { display: none; }
+    .btn-reg-full { display: inline; }
+
+    /* RESPONSIVE & MOBILE FIRST OPTIMIZATION */
     @media (max-width: 900px) {
       .overview-grid { grid-template-columns: 1fr; gap: 24px; }
       .trainers-row { grid-template-columns: 1fr; }
@@ -1115,19 +1123,295 @@
       .part-card { padding: 24px 20px; }
       .quick-stats { grid-template-columns: repeat(2, 1fr); }
     }
+
     @media (max-width: 768px) {
-      .nav-wrap { flex-wrap: wrap; gap: 10px; }
-      .nav-actions { gap: 8px; }
-      .btn-ebook-nav { height: 38px; padding: 0 14px; font-size: 12px; }
-      .btn-primary { height: 38px; padding: 0 16px; font-size: 12.5px; }
+      .part-card { padding: 22px 16px; border-radius: 20px; }
+      .hero-h1 { font-size: 32px; letter-spacing: -0.5px; }
     }
+
     @media (max-width: 640px) {
-      .trainer-top { grid-template-columns: 95px 1fr; gap: 12px; }
-      .trainer-avatar-frame { width: 95px; height: 128px; }
-      .trainer-meta h3 { font-size: 19px; }
+      body {
+        overflow-x: hidden !important;
+      }
+      /* 1. Header & Navigation Fixes */
+      header {
+        height: auto;
+      }
+      .nav-wrap {
+        height: 52px;
+        padding: 0 10px;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        gap: 6px;
+      }
+      .brand-logo {
+        gap: 6px;
+        flex-shrink: 0;
+      }
+      .brand-logo-img {
+        height: 30px;
+      }
+      .brand-info b {
+        font-size: 12.5px;
+        letter-spacing: -0.2px;
+      }
+      .brand-info small {
+        display: none; /* Hide subtitle on tiny screens for single-line compact header */
+      }
+      .nav-actions {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        flex-shrink: 0;
+      }
+      .btn-ebook-suffix,
+      .vip-pill,
+      .btn-reg-full {
+        display: none !important;
+      }
+      .btn-reg-short {
+        display: inline !important;
+      }
+      .btn-ebook-nav {
+        height: 32px;
+        padding: 0 8px;
+        font-size: 11px;
+        gap: 4px;
+        white-space: nowrap;
+      }
+      .btn-primary {
+        height: 32px;
+        padding: 0 10px;
+        font-size: 11.5px;
+        font-weight: 800;
+        white-space: nowrap;
+      }
+
+      /* 2. Subnav Bar */
+      .part-nav-bar {
+        top: 54px; /* Matches 54px mobile header exactly */
+      }
+      .part-nav-container {
+        padding: 6px 10px;
+        gap: 8px;
+      }
+      .part-tab-btn {
+        padding: 6px 9px;
+        font-size: 11px;
+        gap: 4px;
+      }
+      .part-tab-btn .badge-num {
+        width: 17px;
+        height: 17px;
+        font-size: 9.5px;
+      }
+      .view-mode-toggle {
+        padding: 5px 9px;
+        font-size: 10.5px;
+      }
+
+      /* 3. Cards & Hero */
+      .part-card {
+        padding: 18px 14px;
+        border-radius: 18px;
+      }
+      .sec-badge {
+        max-width: 100%;
+        white-space: normal;
+        text-align: center;
+        line-height: 1.35;
+        font-size: 10px;
+        padding: 5px 10px;
+        box-sizing: border-box;
+        word-break: break-word;
+      }
+      .hero-h1 {
+        font-size: 27px;
+        line-height: 1.1;
+      }
+      .hero-slogan {
+        font-size: 12px;
+        letter-spacing: 0.5px;
+      }
+      .pain-box {
+        padding: 14px 12px;
+        font-size: 12.5px;
+      }
+      .hero-quote-highlight {
+        padding: 12px 14px;
+        font-size: 12px;
+      }
+      .container {
+        padding: 0 12px;
+      }
+      .quick-stats {
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+      }
+      .stat-pill {
+        padding: 8px 10px;
+      }
+      .stat-pill strong {
+        font-size: 13.5px;
+      }
+      .stat-pill small {
+        font-size: 10px;
+      }
+      .countdown-bar {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 8px;
+        padding: 10px 12px;
+      }
+      .cd-title {
+        min-width: 0;
+        text-align: center;
+        font-size: 10.5px;
+      }
+      .cd-items {
+        gap: 6px;
+      }
+      .cd-box {
+        padding: 4px 2px;
+      }
+      .cd-box b {
+        font-size: 16px;
+      }
+      .cd-box small {
+        font-size: 8.5px;
+      }
+      .poster-wrap {
+        margin: 16px auto 0;
+        border-radius: 14px;
+      }
+      .mini-tool-banner {
+        flex-direction: column !important;
+        align-items: stretch !important;
+        gap: 12px !important;
+        padding: 14px 12px !important;
+      }
+      .mini-tool-banner .mini-tool-btn {
+        width: 100% !important;
+        justify-content: center !important;
+        padding: 10px 14px !important;
+      }
+
+      /* 4. Part 2: 3 Pillars */
+      .pillar-tab-card {
+        padding: 12px 10px;
+        border-radius: 14px;
+      }
+      .p-icon {
+        width: 32px;
+        height: 32px;
+        font-size: 14px;
+      }
+      .p-detail-content {
+        padding: 16px 12px;
+        border-radius: 14px;
+      }
+      .p-detail-content h3 {
+        font-size: 15px;
+      }
+      .p-list li {
+        font-size: 12.5px;
+      }
+
+      /* 5. Part 3: Benefits */
+      .benefit-card {
+        padding: 14px 12px;
+      }
+      .benefit-icon {
+        width: 36px;
+        height: 36px;
+        font-size: 16px;
+      }
+      .ai-highlight-card {
+        padding: 16px 14px;
+      }
+
+      /* 6. Part 4: Trainers */
+      .trainer-top {
+        grid-template-columns: 82px 1fr;
+        gap: 12px;
+      }
+      .trainer-avatar-frame {
+        width: 82px;
+        height: 110px;
+        border-radius: 12px;
+      }
+      .trainer-meta h3 {
+        font-size: 18px;
+      }
+      .trainer-title {
+        font-size: 11px;
+      }
+      .trainer-bio {
+        font-size: 12.5px;
+        line-height: 1.55;
+      }
+      .trainer-channels-chips {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 6px;
+      }
+      .channel-chip {
+        width: 100%;
+        justify-content: center;
+        font-size: 11px;
+        padding: 6px 10px;
+      }
+      .trainer-quote-box {
+        font-size: 11.5px;
+        padding: 8px 12px;
+      }
+
+      /* 7. Part 5: Logistics & Pricing */
+      .logistics-card {
+        padding: 14px 12px;
+      }
+      .logistics-card h4 {
+        font-size: 14px;
+      }
+      .pricing-box {
+        padding: 16px 12px;
+      }
+      .pricing-digits {
+        font-size: 28px;
+      }
+
+      /* 8. Part 6: Register & QR */
+      .qr-card {
+        padding: 16px 12px;
+      }
+      .qr-box-wrap img {
+        max-width: 180px;
+        height: auto;
+      }
+      .btn-register-lg {
+        padding: 12px 14px;
+        font-size: 13px;
+      }
+      .hotline-pill {
+        padding: 9px 12px;
+        font-size: 12.5px;
+      }
+
+      /* 9. Part Nav Footer */
+      .part-nav-footer {
+        flex-direction: column-reverse;
+        align-items: stretch;
+        gap: 10px;
+      }
+      .btn-step-prev, .btn-step-next {
+        width: 100%;
+        justify-content: center;
+        padding: 10px 14px;
+        font-size: 12.5px;
+      }
     }
   </style>
-  <link rel="stylesheet" href="ebook-style.css?v=20261118_v3">
+  <link rel="stylesheet" href="ebook-style.css?v=20261119_v5">
 </head>
 <body>
 
@@ -1145,10 +1429,14 @@
       <div class="nav-actions">
         <button type="button" class="btn-ebook-nav" onclick="goToPart('ebook')" title="Ebook thực chiến Claude làm Web & Video — Chỉ dành cho học viên có mã PASS">
           <span>📘</span>
-          <span>Ebook Thực Chiến</span>
+          <span class="btn-ebook-label">Ebook</span>
+          <span class="btn-ebook-suffix">&nbsp;Thực Chiến</span>
           <span class="vip-pill">🔒 HỌC VIÊN</span>
         </button>
-        <button type="button" class="btn-primary" onclick="goToPart('register')">Đăng ký ngay</button>
+        <button type="button" class="btn-primary" onclick="goToPart('register')">
+          <span class="btn-reg-full">Đăng ký ngay</span>
+          <span class="btn-reg-short">Đăng ký</span>
+        </button>
       </div>
     </div>
   </header>
@@ -1728,7 +2016,7 @@
     </div>
   </div>
 
-  <script src="ebook-engine.js?v=20261118_v3"></script>
+  <script src="ebook-engine.js?v=20261119_v5"></script>
   <script>
     // Part Navigation Controller
     const PARTS = ['overview', 'curriculum', 'benefits', 'trainers', 'logistics', 'register', 'ebook'];
