@@ -74,9 +74,9 @@
       id: 'kb_logistics',
       targetPart: 'logistics',
       targetLabel: 'Xem Thời gian & Địa điểm (Phần 5)',
-      keywords: ['thời gian', 'địa điểm', 'ngày học', 'lịch học', 'ở đâu', 'mấy giờ', 'mi casa', 'phú nhuận', '12/12', '12/12/2026', 'thứ bảy', 'cư xá', 'nguyễn văn trỗi'],
+      keywords: ['thời gian', 'địa điểm', 'ngày học', 'lịch học', 'ở đâu', 'mấy giờ', 'work x', 'điện biên phủ', '12/12', '12/12/2026', 'thứ bảy', 'tp hcm'],
       question: 'Lịch học, thời gian và địa điểm tổ chức khoá học ở đâu?',
-      answer: `Thông tin tổ chức chính thức của khoá học Personal Branding Mastery:<br><br>📅 **Thời gian:** Thứ Bảy · **12/12/2026** (Từ **08:30 – 17:30**, trọn vẹn 1 ngày Offline thực chiến tập trung cao độ).<br>📍 **Địa điểm tổ chức:** **Mi Casa Coffee & Kitchen**, số **104 Cư xá Nguyễn Văn Trỗi, Phường 17, Quận Phú Nhuận, TP. Hồ Chí Minh** (ngay chân cầu Công Lý).<br>🤝 **Sau ngày học:** 14 ngày đồng hành thực hành xây kênh + 01 buổi Zoom chữa bài trực tiếp cùng 2 giảng viên!`
+      answer: `Thông tin tổ chức chính thức của khoá học Personal Branding Mastery:<br><br>📅 **Thời gian:** Thứ Bảy · **12/12/2026** (Từ **08:30 – 17:30**, trọn vẹn 1 ngày Offline thực chiến tập trung cao độ).<br>📍 **Địa điểm tổ chức:** **WORK X**, số **182 Điện Biên Phủ, phường Xuân Hoà, TP. Hồ Chí Minh**.<br>🤝 **Sau ngày học:** 14 ngày đồng hành thực hành xây kênh + 01 buổi Zoom chữa bài trực tiếp cùng 2 giảng viên!`
     },
     {
       id: 'kb_tuition',
@@ -84,7 +84,7 @@
       targetLabel: 'Xem Học phí & Quyền lợi (Phần 5)',
       keywords: ['học phí', 'giá', 'chi phí', 'bao nhiêu tiền', '2.393.000', '2393000', 'học phí bao nhiêu', 'trọn gói', 'ưu đãi', 'tiền học'],
       question: 'Học phí khoá học là bao nhiêu? Học phí bao gồm những quyền lợi gì?',
-      answer: `💰 **Học phí chính thức:** **2.393.000đ / học viên** (Học phí trọn gói).<br><br>🎁 **Đã bao gồm toàn bộ quyền lợi:**<br>1. **01 ngày Workshop Offline trực tiếp** (08:30 - 17:30) tại Mi Casa Coffee & Kitchen.<br>2. **14 ngày đồng hành thực chiến** xây kênh cùng giảng viên & trợ giảng.<br>3. **02 Video record** buổi học xem lại trọn đời.<br>4. **01 buổi Zoom chữa bài chuyên sâu** phản biện và tinh chỉnh bài làm của bạn.<br>5. **Toàn bộ Ebook thực chiến & Tool AI** mang về ứng dụng trọn đời.`
+      answer: `💰 **Học phí chính thức:** **2.393.000đ / học viên** (Học phí trọn gói).<br><br>🎁 **Đã bao gồm toàn bộ quyền lợi:**<br>1. **01 ngày Workshop Offline trực tiếp** (08:30 - 17:30) tại WORK X - 182 Điện Biên Phủ.<br>2. **14 ngày đồng hành thực chiến** xây kênh cùng giảng viên & trợ giảng.<br>3. **02 Video record** buổi học xem lại trọn đời.<br>4. **01 buổi Zoom chữa bài chuyên sâu** phản biện và tinh chỉnh bài làm của bạn.<br>5. **Toàn bộ Ebook thực chiến & Tool AI** mang về ứng dụng trọn đời.`
     },
     {
       id: 'kb_hotline',
@@ -674,9 +674,14 @@
                 </div>
               </div>
               <div class="eb-bot-actions-row">
+                <select class="eb-bot-voice-select" id="ebBotVoiceSelect" onchange="window.EbookApp.changeVoice(this.value)" title="Chọn giọng AI đọc câu trả lời">
+                  <option value="female" selected>🌸 Giọng Nữ AI (Hoài My)</option>
+                  <option value="male">🎙️ Giọng Nam AI (Nam Minh)</option>
+                  <option value="system">🤖 Giọng Thiết Bị (Browser)</option>
+                </select>
                 <button type="button" class="eb-bot-voice-toggle" id="ebBotVoiceToggle" onclick="window.EbookApp.toggleAutoVoice()" title="Bật/Tắt chế độ tự động đọc câu trả lời bằng giọng nói">
                   <span>🔊</span>
-                  <span id="ebVoiceToggleText">Giọng nói</span>
+                  <span id="ebVoiceToggleText">Tự đọc</span>
                 </button>
                 <div class="eb-bot-wave" id="ebBotHeaderWave" title="AI Voice Ready">
                   <span></span><span></span><span></span>
@@ -718,7 +723,7 @@
                     </ul>
                   </div>
                   <div class="eb-bot-voice-actions">
-                    <button type="button" class="bot-voice-btn" onclick="window.EbookApp.speakGreeting(this)">
+                    <button type="button" class="bot-voice-btn" data-audio-key="greeting" onclick="window.EbookApp.speakGreeting(this)">
                       <span>🔊</span>
                       <span>Bấm nghe Ngáo Bot chào mừng</span>
                     </button>
@@ -2290,6 +2295,14 @@ Kết quả: Mỗi câu dưới 10 chữ, giọng ấm áp, gần gũi. Ghi thê
     // Voice TTS & Voice Input State
     isAutoVoice: false,
     activeRecognition: null,
+    selectedVoice: (typeof localStorage !== 'undefined' && localStorage.getItem('NGAO_BOT_VOICE')) || 'female',
+    currentAudio: null,
+
+    changeVoice(v) {
+      this.selectedVoice = v;
+      try { localStorage.setItem('NGAO_BOT_VOICE', v); } catch(e){}
+      this.stopSpeech();
+    },
 
     toggleBotModal(show) {
       const modal = document.getElementById('ngaoBotModalBackdrop');
@@ -2301,6 +2314,8 @@ Kết quả: Mỗi câu dưới 10 chữ, giọng ấm áp, gần gũi. Ghi thê
         modal.classList.toggle('active');
       }
       if (modal.classList.contains('active')) {
+        const sel = document.getElementById('ebBotVoiceSelect');
+        if (sel) sel.value = this.selectedVoice || 'female';
         const inp = document.getElementById('ebBotInput');
         if (inp) setTimeout(() => inp.focus(), 250);
       } else {
@@ -2336,6 +2351,13 @@ Kết quả: Mỗi câu dưới 10 chữ, giọng ấm áp, gần gũi. Ghi thê
     },
 
     stopSpeech() {
+      if (this.currentAudio) {
+        try {
+          this.currentAudio.pause();
+          this.currentAudio.currentTime = 0;
+        } catch(e){}
+        this.currentAudio = null;
+      }
       if ('speechSynthesis' in window) {
         try { window.speechSynthesis.cancel(); } catch(e){}
       }
@@ -2347,18 +2369,64 @@ Kết quả: Mỗi câu dưới 10 chữ, giọng ấm áp, gần gũi. Ghi thê
       if (wave) wave.classList.remove('active');
     },
 
-    speakText(text, btnElement) {
-      if (!('speechSynthesis' in window)) {
-        alert('Trình duyệt của bạn chưa bật Web Speech API. Bạn hãy mở trên Google Chrome hoặc Safari để nghe giọng nói nhé!');
-        return;
-      }
-
+    speakAudioOrTTS(audioKey, text, btnElement) {
       if (btnElement && btnElement.classList.contains('speaking')) {
         this.stopSpeech();
         return;
       }
 
       this.stopSpeech();
+
+      const wave = document.getElementById('ebBotHeaderWave');
+      const voice = this.selectedVoice || 'female';
+
+      if (voice !== 'system' && audioKey) {
+        const audioSrc = `assets/audio/${voice}_${audioKey}.mp3`;
+        const audio = new Audio(audioSrc);
+        this.currentAudio = audio;
+
+        audio.onplay = () => {
+          if (wave) wave.classList.add('active');
+          if (btnElement) {
+            btnElement.classList.add('speaking');
+            btnElement.innerHTML = `
+              <span class="bot-soundwave"><span></span><span></span><span></span></span>
+              <span>Đang đọc giọng AI... (Bấm dừng)</span>
+            `;
+          }
+        };
+
+        audio.onended = () => {
+          if (wave) wave.classList.remove('active');
+          if (btnElement) {
+            btnElement.classList.remove('speaking');
+            btnElement.innerHTML = '<span>🔊</span><span>Nghe lại câu trả lời</span>';
+          }
+          this.currentAudio = null;
+        };
+
+        audio.onerror = () => {
+          this.currentAudio = null;
+          this.speakText(text, btnElement);
+        };
+
+        const playPromise = audio.play();
+        if (playPromise !== undefined) {
+          playPromise.catch(() => {
+            this.currentAudio = null;
+            this.speakText(text, btnElement);
+          });
+        }
+      } else {
+        this.speakText(text, btnElement);
+      }
+    },
+
+    speakText(text, btnElement) {
+      if (!('speechSynthesis' in window)) {
+        alert('Trình duyệt của bạn chưa bật Web Speech API. Bạn hãy mở trên Google Chrome hoặc Safari để nghe giọng nói nhé!');
+        return;
+      }
 
       // Clean text for natural speech reading
       let clean = (text || '')
@@ -2375,13 +2443,14 @@ Kết quả: Mỗi câu dưới 10 chữ, giọng ấm áp, gần gũi. Ghi thê
 
       const utterance = new SpeechSynthesisUtterance(clean);
       utterance.lang = 'vi-VN';
-      utterance.rate = 1.0;
-      utterance.pitch = 1.0;
+      utterance.rate = 0.96;
+      utterance.pitch = 1.02;
 
-      // Select Vietnamese voice if available
+      // Select Vietnamese voice with priority for natural voices
       try {
         const voices = window.speechSynthesis.getVoices();
-        const viVoice = voices.find(v => v.lang === 'vi-VN' || v.lang.startsWith('vi'));
+        const viVoice = voices.find(v => (v.lang === 'vi-VN' || v.lang.startsWith('vi')) && (v.name.includes('Google') || v.name.includes('Natural') || v.name.includes('Linh')))
+          || voices.find(v => v.lang === 'vi-VN' || v.lang.startsWith('vi'));
         if (viVoice) utterance.voice = viVoice;
       } catch(e){}
 
@@ -2418,16 +2487,17 @@ Kết quả: Mỗi câu dưới 10 chữ, giọng ấm áp, gần gũi. Ghi thê
     },
 
     speakGreeting(btn) {
-      const text = 'Xin chào bạn! Mình là Ngáo Bot, trợ lý AI của khoá học Personal Branding Mastery. Bạn có thể hỏi mình mọi thông tin về lịch học ngày mười hai tháng mười hai, địa điểm Mi Casa Coffee Phú Nhuận, học phí hai triệu ba trăm chín mươi ba ngàn, hai giảng viên Ngọc Tâm và Nguyễn Hoà, bài trắc nghiệm mười lăm câu, hoặc cẩm nang Ebook thực chiến. Hãy bấm các câu hỏi gợi ý hoặc nói qua micro nhé!';
-      this.speakText(text, btn);
+      const text = 'Xin chào bạn! Mình là Ngáo Bot, trợ lý AI của khoá học Personal Branding Mastery. Bạn có thể hỏi mình mọi thông tin về lịch học ngày mười hai tháng mười hai, địa điểm WORK X Điện Biên Phủ, học phí hai triệu ba trăm chín mươi ba ngàn, hai giảng viên Ngọc Tâm và Nguyễn Hoà, bài trắc nghiệm mười lăm câu, hoặc cẩm nang Ebook thực chiến. Hãy bấm các câu hỏi gợi ý hoặc nói qua micro nhé!';
+      this.speakAudioOrTTS('greeting', text, btn);
     },
 
     speakMessage(btn) {
       if (!btn) return;
+      const audioKey = btn.getAttribute('data-audio-key');
       const rawEncoded = btn.getAttribute('data-speech');
       const text = rawEncoded ? decodeURIComponent(rawEncoded) : '';
-      if (!text) return;
-      this.speakText(text, btn);
+      if (!text && !audioKey) return;
+      this.speakAudioOrTTS(audioKey, text, btn);
     },
 
     toggleVoiceInput() {
@@ -2558,7 +2628,7 @@ Kết quả: Mỗi câu dưới 10 chữ, giọng ấm áp, gần gũi. Ghi thê
 • **Phần 2: 3 Trục tư duy** — Bản sắc độc bản, Phễu truyền thông đa kênh, AI & Vibe Coding thực chiến.<br>
 • **Phần 3: Quyền lợi** — 1 ngày offline + 14 ngày đồng hành + 2 record + 1 Zoom sửa bài.<br>
 • **Phần 4: Giảng viên** — Gặp gỡ Trainer Ngọc Tâm (12+ năm KN) & Trainer Nguyễn Hoà (Edit Không Khó).<br>
-• **Phần 5: Địa điểm & Học phí** — Mi Casa Coffee & Kitchen Phú Nhuận (12/12/2026), học phí 2.393.000đ trọn gói.<br>
+• **Phần 5: Địa điểm & Học phí** — WORK X, 182 Điện Biên Phủ (12/12/2026), học phí 2.393.000đ trọn gói.<br>
 • **Phần 6: Đăng ký & QR** — Quét QR thanh toán hoặc gọi Hotline 0902 596 059.<br>
 • **Phần 7: Ebook Học Viên** — Cẩm nang làm web & video bằng Claude AI (Mật khẩu: NGAO2026).<br><br>
 👉 Bạn cũng có thể bấm vào các câu hỏi gợi ý bên trên hoặc nói trực tiếp qua micro 🎙️ nhé!`
@@ -2633,7 +2703,7 @@ Kết quả: Mỗi câu dưới 10 chữ, giọng ấm áp, gần gũi. Ghi thê
             <div>${formattedAnswer}</div>
             ${promptHTML}
             <div class="eb-bot-voice-actions">
-              <button type="button" class="bot-voice-btn" data-speech="${encodedSpeech}" onclick="window.EbookApp.speakMessage(this)">
+              <button type="button" class="bot-voice-btn" data-audio-key="${kbItem.id || ''}" data-speech="${encodedSpeech}" onclick="window.EbookApp.speakMessage(this)">
                 <span>🔊</span>
                 <span>Nghe đọc câu trả lời</span>
               </button>

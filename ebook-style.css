@@ -1512,6 +1512,29 @@
   100% { height: 12px; }
 }
 
+.eb-bot-voice-select {
+  background: rgba(255, 255, 255, 0.16);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 99px;
+  font-size: 11px;
+  font-weight: 750;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+.eb-bot-voice-select:hover,
+.eb-bot-voice-select:focus {
+  background: rgba(255, 255, 255, 0.28);
+  border-color: #FFDE59;
+}
+.eb-bot-voice-select option {
+  background: #540B27;
+  color: #fff;
+}
+
 .eb-bot-voice-toggle {
   background: rgba(255, 255, 255, 0.14);
   border: 1px solid rgba(255, 255, 255, 0.25);
@@ -2136,6 +2159,11 @@
     align-items: center !important;
     gap: 6px !important;
     flex-shrink: 0 !important;
+  }
+  .eb-bot-voice-select {
+    padding: 3px 6px !important;
+    font-size: 9.5px !important;
+    max-width: 105px !important;
   }
   .eb-bot-voice-toggle {
     padding: 4px 7px !important;
