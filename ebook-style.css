@@ -113,7 +113,7 @@
 .gate-content {
   position: relative;
   z-index: 2;
-  max-width: 540px;
+  max-width: 680px;
   margin: 0 auto;
 }
 
@@ -186,15 +186,21 @@
 
 .gate-title {
   font-family: var(--font-serif);
-  font-size: clamp(24px, 3.4vw, 32px);
+  font-size: clamp(20px, 3vw, 31px);
   color: var(--primary-dark);
-  line-height: 1.25;
+  line-height: 1.28;
   margin-bottom: 10px;
+  text-wrap: balance;
+}
+.gate-title-line2 {
+  display: inline-block;
+  white-space: nowrap;
 }
 .gate-subtitle {
   font-size: 14px;
   color: var(--text-muted);
-  margin-bottom: 22px;
+  max-width: 540px;
+  margin: 0 auto 22px;
   line-height: 1.6;
 }
 
@@ -2298,7 +2304,7 @@
     padding: 4px 10px !important;
   }
   .gate-title {
-    font-size: 21px !important;
+    font-size: clamp(16px, 4.4vw, 20px) !important;
   }
   .gate-subtitle {
     font-size: 12.5px !important;

@@ -461,7 +461,7 @@
           </div>
 
           <span class="gate-badge">🔒 Học liệu độc quyền · Chỉ dành cho học viên</span>
-          <h2 class="gate-title">Dùng Claude Làm Web & Video:<br>Câu Lệnh Thực Chiến Cho Người Mới</h2>
+          <h2 class="gate-title">Dùng Claude Làm Web & Video:<br><span class="gate-title-line2">Câu Lệnh Thực Chiến Cho Người&nbsp;Mới</span></h2>
           <p class="gate-subtitle">
             Cẩm nang tương tác Motion Graphic từ <strong>Trainer Nguyễn Hoà</strong> (Founder Edit Không Khó).<br>
             Tích hợp <strong>Máy ghép câu lệnh</strong>, <strong>Mô phỏng 4K</strong> và <strong>Bot AI giải đáp 24/7</strong>.
