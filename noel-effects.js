@@ -15,19 +15,19 @@
     const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
     const state = {
-      masterOn: false,        // Default OFF until visitor clicks the 3D Light Switch
-      flashlight: false,      // Pivoting conical flashlight in Trainers section
-      musicTrack: 'off',      // 'off' | 'jingle' | 'wish' | 'silent'
-      musicVolume: 0.55,
-      sleigh: true,
-      snow: true,
-      lights: true,
-      garlandStyle: 'classic', // 'classic' | 'stars' | 'pine'
-      corners: false,
-      hat: true,
-      sparkle: false,
-      crystals: true,
-      count: 58,
+      masterOn: false,         // Default OFF until visitor drags Plug into Wall Outlet
+      flashlight: false,       // Pivoting conical flashlight in Trainers section
+      musicTrack: 'off',       // Auto-starts 'wish' (We Wish You) on plug-in
+      musicVolume: 1.0,        // 100% volume matching user's preferred setting
+      sleigh: true,            // Tuần lộc & Ông già Noel kéo xe
+      snow: true,              // Tuyết rơi 3 lớp
+      lights: true,            // Dây đèn viền trên
+      garlandStyle: 'classic', // 💡 Bóng cổ điển
+      corners: false,          // Lá thông 2 góc (tắt)
+      hat: true,               // Mũ Noel Ngáo Bot
+      sparkle: true,           // Bụi sao theo chuột (bật)
+      crystals: true,          // Bông tuyết pha lê (bật)
+      count: 58,               // Mật độ tuyết 58
       paused: prefersReduced,
       windTarget: 0,
       wind: 0
@@ -529,11 +529,18 @@
       state.masterOn = nextOn;
       if (nextOn) {
         state.paused = false;
-        if (changed) triggerPlugSpark();
+        if (changed) {
+          triggerPlugSpark();
+          playPlugSound(true);
+        }
+        // Auto-start "We Wish You a Merry Christmas" at 100% volume when plugged in
+        if (state.musicTrack === 'off') {
+          startMusic('wish');
+        }
       } else {
         stopMusic();
+        if (changed) playPlugSound(false);
       }
-      if (changed) playPlugSound(nextOn);
       applyUI();
     }
 
@@ -1294,7 +1301,8 @@
       densityVal.textContent = state.count;
 
       const on = state.masterOn;
-      controlDock.classList.toggle('is-hidden', !on);
+      // Never auto-open the control dock on plug-in (clean unobstructed page)
+      controlDock.classList.add('is-hidden');
       canvas.classList.toggle('hidden', !on);
       sleighTrack.classList.toggle('hidden', !on || !state.sleigh);
       sleighTrack.classList.toggle('paused', !on || state.paused);
