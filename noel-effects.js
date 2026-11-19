@@ -241,7 +241,7 @@
             <strong id="noelDensityVal" style="min-width:28px;text-align:right;color:#FFDE59">58</strong>
           </div>
 
-          <button type="button" class="noel-off-btn" id="noelOffBtn">🔌 Tắt công tắc Noel</button>
+          <button type="button" class="noel-off-btn" id="noelOffBtn">🔌 Rút phích cắm Noel</button>
         </div>
       </aside>
     `;
@@ -452,49 +452,237 @@
     }
 
     /* ------------------------------------------------------------------
-       3. Mount Physical 3D Light Switch, Pivoting Flashlight & Santa Hat
+       3. Mount Draggable Power Plug & Wall Outlet, Flashlight & Santa Hat
        ------------------------------------------------------------------ */
+    let plugDragging = false;
+    let plugDragOffset = 0;
+
+    function getPlugMetrics(widget) {
+      const w = widget ? widget.clientWidth : 196;
+      const isCompact = w <= 130;
+      const startLeft = isCompact ? 6 : 10;
+      const plugW = isCompact ? 34 : 44;
+      const socketW = isCompact ? 22 : 30;
+      const socketRight = isCompact ? 4 : 6;
+      // Slide plug so its 2 metallic prongs tuck cleanly inside the wall outlet holes
+      const maxTravel = Math.max(24, w - socketRight - socketW - startLeft - plugW + (isCompact ? 11 : 14));
+      return { w, h: widget ? widget.clientHeight : 42, startLeft, plugW, maxTravel };
+    }
+
+    function updatePlugVisual(xPx) {
+      const widget = document.getElementById('noelPlugWidget');
+      const head = document.getElementById('noelPlugHead');
+      const cordBase = document.getElementById('noelCordBase');
+      const cordEnergy = document.getElementById('noelCordEnergy');
+      if (!widget || !head) return;
+
+      const m = getPlugMetrics(widget);
+      const clamped = Math.max(0, Math.min(m.maxTravel, xPx));
+      const progress = m.maxTravel > 0 ? clamped / m.maxTravel : 0;
+
+      head.style.transform = `translate3d(${clamped.toFixed(1)}px, 0, 0)`;
+      widget.classList.toggle('near-socket', plugDragging && progress >= 0.58 && !state.masterOn);
+
+      // Update live curved SVG cord path stretching dynamically behind the plug
+      const cy = m.h / 2;
+      const plugBackX = m.startLeft + clamped + 4;
+      const midX = (4 + plugBackX) / 2;
+      const sag = cy + (1 - progress * 0.72) * (m.h <= 34 ? 5 : 7.5);
+      const d = `M 3,${cy.toFixed(1)} Q ${midX.toFixed(1)},${sag.toFixed(1)} ${plugBackX.toFixed(1)},${cy.toFixed(1)}`;
+      if (cordBase) cordBase.setAttribute('d', d);
+      if (cordEnergy) cordEnergy.setAttribute('d', d);
+    }
+
+    function triggerPlugSpark() {
+      const spark = document.getElementById('noelPlugSpark');
+      if (!spark) return;
+      spark.classList.remove('burst');
+      void spark.offsetWidth;
+      spark.classList.add('burst');
+    }
+
+    function playPlugSound(pluggingIn) {
+      playSwitchClick(pluggingIn);
+      if (!pluggingIn) return;
+      try {
+        const ac = ensureAudio();
+        if (!ac) return;
+        const now = ac.currentTime + 0.03;
+        [523.25, 659.25, 783.99].forEach((freq, i) => {
+          const osc = ac.createOscillator();
+          const g = ac.createGain();
+          osc.type = 'sine';
+          osc.frequency.setValueAtTime(freq, now + i * 0.045);
+          g.gain.setValueAtTime(0.0001, now + i * 0.045);
+          g.gain.linearRampToValueAtTime(0.06, now + i * 0.045 + 0.01);
+          g.gain.exponentialRampToValueAtTime(0.0008, now + i * 0.045 + 0.24);
+          osc.connect(g);
+          g.connect(ac.destination);
+          osc.start(now + i * 0.045);
+          osc.stop(now + i * 0.045 + 0.26);
+        });
+      } catch (e) {}
+    }
+
+    function setMasterPlugState(nextOn) {
+      const changed = state.masterOn !== nextOn;
+      state.masterOn = nextOn;
+      if (nextOn) {
+        state.paused = false;
+        if (changed) triggerPlugSpark();
+      } else {
+        stopMusic();
+      }
+      if (changed) playPlugSound(nextOn);
+      applyUI();
+    }
+
     function mountLightSwitch() {
       const navActions = document.querySelector('.nav-actions');
       if (!navActions) return;
-      let sw = document.getElementById('noelLightSwitch');
-      if (!sw) {
-        sw = document.createElement('button');
-        sw.type = 'button';
-        sw.id = 'noelLightSwitch';
-        sw.className = 'noel-wall-switch';
-        sw.setAttribute('role', 'switch');
-        sw.setAttribute('aria-label', 'Công tắc bật hoặc tắt hiệu ứng Giáng Sinh');
-        sw.innerHTML = `
-          <span class="noel-rocker-well" aria-hidden="true">
-            <span class="noel-rocker-paddle">
-              <span class="noel-mark-i"></span>
-              <span class="noel-led-slit"></span>
-              <span class="noel-mark-o"></span>
+      let widget = document.getElementById('noelPlugWidget');
+      if (!widget) {
+        widget = document.createElement('div');
+        widget.id = 'noelPlugWidget';
+        widget.className = 'noel-plug-widget';
+        widget.setAttribute('role', 'switch');
+        widget.setAttribute('tabindex', '0');
+        widget.setAttribute('aria-label', 'Kéo phích cắm vào ổ điện để bật hoặc rút ra để tắt hiệu ứng Giáng Sinh');
+        widget.innerHTML = `
+          <svg class="noel-cord-svg" aria-hidden="true">
+            <path id="noelCordBase" d="M 3,21 Q 10,28 16,21" fill="none" stroke="#184231" stroke-width="3.2" stroke-linecap="round"/>
+            <path id="noelCordEnergy" class="noel-cord-energy" d="M 3,21 Q 10,28 16,21" fill="none" stroke="#FFDE59" stroke-width="1.6" stroke-linecap="round"/>
+          </svg>
+          <span class="noel-plug-hint" id="noelPlugHint">Kéo cắm <span class="noel-hint-arrow">››</span></span>
+          <button type="button" id="noelPlugHead" class="noel-plug-head" aria-label="Cầm phích cắm kéo sang phải để cắm vào ổ điện">
+            <svg viewBox="0 0 44 26" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <defs>
+                <linearGradient id="nPlugBody" x1="0%" y1="0%" x2="0%" y2="100%">
+                  <stop offset="0%" stop-color="#C82061"/>
+                  <stop offset="55%" stop-color="#8A1243"/>
+                  <stop offset="100%" stop-color="#4A0A24"/>
+                </linearGradient>
+                <linearGradient id="nProngMetal" x1="0%" y1="0%" x2="0%" y2="100%">
+                  <stop offset="0%" stop-color="#FFF5C0"/>
+                  <stop offset="50%" stop-color="#F5B82E"/>
+                  <stop offset="100%" stop-color="#A66B08"/>
+                </linearGradient>
+              </defs>
+              <!-- 2 Metallic Prongs -->
+              <rect x="29" y="6.2" width="13.5" height="3.6" rx="1.6" fill="url(#nProngMetal)" stroke="#704704" stroke-width="0.6"/>
+              <rect x="29" y="16.2" width="13.5" height="3.6" rx="1.6" fill="url(#nProngMetal)" stroke="#704704" stroke-width="0.6"/>
+              <!-- Strain relief collar -->
+              <rect x="1" y="9.2" width="6" height="7.6" rx="2" fill="#184231"/>
+              <!-- Molded Plug Grip Housing -->
+              <path d="M6,5.5 C6,3.6 7.6,2.5 9.5,2.5 L24,2.5 C27.2,2.5 29.8,5.1 29.8,8.3 L29.8,17.7 C29.8,20.9 27.2,23.5 24,23.5 L9.5,23.5 C7.6,23.5 6,22.4 6,20.5 Z" fill="url(#nPlugBody)" stroke="#3D071D" stroke-width="1"/>
+              <!-- Tactile grip ribs -->
+              <line x1="11.5" y1="6.5" x2="11.5" y2="19.5" stroke="rgba(255,255,255,0.28)" stroke-width="1.5" stroke-linecap="round"/>
+              <line x1="15.5" y1="6.5" x2="15.5" y2="19.5" stroke="rgba(255,255,255,0.28)" stroke-width="1.5" stroke-linecap="round"/>
+              <!-- Festive Gold Star Emblem -->
+              <circle cx="22.5" cy="13" r="3" fill="#FFDE59"/>
+            </svg>
+          </button>
+          <div id="noelSocket" class="noel-socket" title="Ổ điện Noel — kéo phích cắm qua đây">
+            <span class="noel-socket-led"></span>
+            <span class="noel-socket-holes">
+              <span class="noel-socket-hole"></span>
+              <span class="noel-socket-hole"></span>
             </span>
-          </span>
-          <span class="noel-switch-text">
-            <span class="noel-switch-eyebrow">🎄 ĐÈN NOEL</span>
-            <span class="noel-switch-state" id="noelSwitchStateLabel">ĐANG TẮT</span>
-          </span>
+          </div>
+          <svg id="noelPlugSpark" class="noel-plug-spark" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <g stroke="#FFDE59" stroke-width="2.4" stroke-linecap="round">
+              <line x1="16" y1="2" x2="16" y2="8"/>
+              <line x1="16" y1="24" x2="16" y2="30"/>
+              <line x1="2" y1="16" x2="8" y2="16"/>
+              <line x1="24" y1="16" x2="30" y2="16"/>
+              <line x1="6" y1="6" x2="10.5" y2="10.5"/>
+              <line x1="21.5" y1="21.5" x2="26" y2="26"/>
+              <line x1="26" y1="6" x2="21.5" y2="10.5"/>
+              <line x1="10.5" y1="21.5" x2="6" y2="26"/>
+            </g>
+          </svg>
         `;
-        sw.addEventListener('click', () => {
-          state.masterOn = !state.masterOn;
-          if (state.masterOn) {
-            state.paused = false;
-          } else {
-            stopMusic();
-          }
-          playSwitchClick(state.masterOn);
-          applyUI();
+
+        const head = widget.querySelector('#noelPlugHead');
+        const socket = widget.querySelector('#noelSocket');
+
+        let startClientX = 0;
+        let startPlugX = 0;
+        let movedPx = 0;
+
+        head.addEventListener('pointerdown', (e) => {
+          e.preventDefault();
+          const m = getPlugMetrics(widget);
+          plugDragging = true;
+          startClientX = e.clientX;
+          startPlugX = state.masterOn ? m.maxTravel : 0;
+          plugDragOffset = startPlugX;
+          movedPx = 0;
+          widget.classList.add('is-dragging');
+          if (head.setPointerCapture) head.setPointerCapture(e.pointerId);
         });
-        navActions.insertBefore(sw, navActions.firstChild);
+
+        head.addEventListener('pointermove', (e) => {
+          if (!plugDragging) return;
+          const m = getPlugMetrics(widget);
+          const dx = e.clientX - startClientX;
+          movedPx = Math.max(movedPx, Math.abs(dx));
+          plugDragOffset = Math.max(0, Math.min(m.maxTravel, startPlugX + dx));
+          updatePlugVisual(plugDragOffset);
+        });
+
+        function finishPlugDrag(e) {
+          if (!plugDragging) return;
+          plugDragging = false;
+          widget.classList.remove('is-dragging', 'near-socket');
+          if (head.releasePointerCapture && e && e.pointerId != null) {
+            try { head.releasePointerCapture(e.pointerId); } catch (err) {}
+          }
+          const m = getPlugMetrics(widget);
+          // Quick click/tap toggles cleanly; drag checks snap threshold
+          if (movedPx < 6) {
+            setMasterPlugState(!state.masterOn);
+            return;
+          }
+          const progress = m.maxTravel > 0 ? plugDragOffset / m.maxTravel : 0;
+          const shouldPlugIn = state.masterOn ? (progress >= 0.52) : (progress >= 0.62);
+          setMasterPlugState(shouldPlugIn);
+        }
+
+        head.addEventListener('pointerup', finishPlugDrag);
+        head.addEventListener('pointercancel', finishPlugDrag);
+
+        // Clicking socket also conveniently plugs in / unplugs
+        socket.addEventListener('click', () => setMasterPlugState(!state.masterOn));
+
+        // Keyboard accessibility (Enter / Space)
+        widget.addEventListener('keydown', (e) => {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            setMasterPlugState(!state.masterOn);
+          }
+        });
+
+        navActions.insertBefore(widget, navActions.firstChild);
       }
-      sw.classList.toggle('is-on', state.masterOn);
-      sw.setAttribute('aria-checked', state.masterOn ? 'true' : 'false');
-      sw.title = state.masterOn ? 'Nhấn công tắc để tắt hiệu ứng Noel' : 'Nhấn công tắc để bật hiệu ứng Noel';
-      const lbl = document.getElementById('noelSwitchStateLabel');
-      if (lbl) lbl.textContent = state.masterOn ? 'ĐANG BẬT' : 'ĐANG TẮT';
+
+      widget.classList.toggle('is-on', state.masterOn);
+      widget.setAttribute('aria-checked', state.masterOn ? 'true' : 'false');
+      widget.title = state.masterOn
+        ? 'Kéo phích cắm sang trái (hoặc bấm) để rút điện tắt Noel'
+        : 'Cầm phích cắm kéo sang phải cắm vào ổ điện để bật hiệu ứng Noel!';
+
+      const hint = document.getElementById('noelPlugHint');
+      if (hint) {
+        hint.innerHTML = state.masterOn
+          ? '🎄 ĐÃ CẮM'
+          : 'Kéo cắm <span class="noel-hint-arrow">››</span>';
+      }
+
+      if (!plugDragging) {
+        const m = getPlugMetrics(widget);
+        updatePlugVisual(state.masterOn ? m.maxTravel : 0);
+      }
     }
 
     function mountTrainerFlashlight() {
@@ -929,6 +1117,13 @@
       flCanvas.height = Math.floor(H * dpr);
       flCtx.setTransform(dpr, 0, 0, dpr, 0, 0);
       renderGarland();
+      if (!plugDragging) {
+        const w = document.getElementById('noelPlugWidget');
+        if (w) {
+          const m = getPlugMetrics(w);
+          updatePlugVisual(state.masterOn ? m.maxTravel : 0);
+        }
+      }
     }
 
     function makeFlake(randomY = true) {
