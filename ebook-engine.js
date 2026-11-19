@@ -106,9 +106,9 @@
       id: 'kb_trainer_ngoc_tam',
       targetPart: 'trainers',
       targetLabel: 'Xem Profile Speaker Ngọc Tâm',
-      keywords: ['ngọc tâm', 'ngoc tam', 'founder ngáo content', 'self-made creative', '12 năm', '5500 học viên', 'ngaocontent.com', 'kênh của ngọc tâm'],
+      keywords: ['ngọc tâm', 'ngoc tam', 'trần hoàng ngọc tâm', 'founder ngáo content', 'self-made creative', '12 năm', '5500 học viên', 'ngaocontent.com', 'mỗi ngày một chút content', 'motchutcontent', 'kênh của ngọc tâm'],
       question: 'Giảng viên Ngọc Tâm là ai? Có kinh nghiệm và triết lý gì?',
-      answer: `**Ngọc Tâm** là Founder của **Ngáo Content** và là Personal Branding Strategist uy tín:<br><br>• **12+ năm kinh nghiệm** triển khai và vận hành Marketing cho cá nhân và doanh nghiệp.<br>• **5.500+ học viên** đã được chị đồng hành theo tinh thần giáo dục bản chất và sáng tạo *Self-made Creative*.<br>• **Slogan nổi tiếng:** *“Hiểu nhân cho rõ, xây hiệu cho sâu. Mình tin thương hiệu cá nhân không phải là cố trở thành ai đó trong mắt người khác, mà là hiểu mình đủ rõ, rèn mình đủ vững và tạo ra những giá trị đủ thật để người khác tự có lý do ghi nhớ.”*<br>• **Hệ thống 3 kênh:** Website \`ngaocontent.com\` (1M+ đọc giả), Group Facebook Ngáo Content (120K+ thành viên), Fanpage & TikTok.`
+      answer: `**Trần Hoàng Ngọc Tâm** là Founder của **Ngáo Content** và là Personal Branding Strategist uy tín:<br><br>• **12+ năm kinh nghiệm** triển khai và vận hành Marketing cho cá nhân và doanh nghiệp.<br>• **5.500+ học viên** đã được chị đồng hành theo tinh thần giáo dục bản chất và sáng tạo *Self-made Creative*.<br>• **Slogan nổi tiếng:** *“Hiểu nhân cho rõ, xây hiệu cho sâu. Mình tin thương hiệu cá nhân không phải là cố trở thành ai đó trong mắt người khác, mà là hiểu mình đủ rõ, rèn mình đủ vững và tạo ra những giá trị đủ thật để người khác tự có lý do ghi nhớ.”*<br>• **Hệ thống 5 kênh chính thức:** Facebook cá nhân \`Trần Hoàng Ngọc Tâm\`, Fanpage \`Ngáo Content\`, Group cộng đồng \`Mỗi Ngày Một Chút Content\`, TikTok \`@ngaocontent.com\` và Website \`ngaocontent.com\`.`
     },
     {
       id: 'kb_trainer_nguyen_hoa',
