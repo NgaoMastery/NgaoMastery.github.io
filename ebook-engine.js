@@ -1,5 +1,5 @@
 /* ==========================================================================
-   NGAO CONTENT x EDIT KHONG KHO — INTERACTIVE EBOOK ENGINE & VIRTUAL AI BOT
+   NGAO CONTENT x EDIT KHONG KHO: INTERACTIVE EBOOK ENGINE & VIRTUAL AI BOT
    Author: @Nguyễn Hoà (Nov 18, 2026)
    ========================================================================== */
 
@@ -76,7 +76,7 @@
       targetLabel: 'Xem Thời gian & Địa điểm (Phần 5)',
       keywords: ['thời gian', 'địa điểm', 'ngày học', 'lịch học', 'ở đâu', 'mấy giờ', 'work x', 'điện biên phủ', '12/12', '12/12/2026', 'thứ bảy', 'tp hcm'],
       question: 'Lịch học, thời gian và địa điểm tổ chức khoá học ở đâu?',
-      answer: `Thông tin tổ chức chính thức của khoá học Personal Branding Mastery:<br><br>📅 **Thời gian:** Thứ Bảy · **12/12/2026** (Từ **08:30 – 17:30**, trọn vẹn 1 ngày Offline thực chiến tập trung cao độ).<br>📍 **Địa điểm tổ chức:** **WORK X**, số **182 Điện Biên Phủ, phường Xuân Hoà, TP. Hồ Chí Minh**.<br>🤝 **Sau ngày học:** 14 ngày đồng hành thực hành xây kênh + 01 buổi Zoom chữa bài trực tiếp cùng 2 giảng viên!`
+      answer: `Thông tin tổ chức chính thức của khoá học Personal Branding Mastery:<br><br>📅 **Thời gian:** Thứ Bảy · **12/12/2026** (Từ **08:30 đến 17:30**, trọn vẹn 1 ngày Offline thực chiến tập trung cao độ).<br>📍 **Địa điểm tổ chức:** **WORK X**, số **182 Điện Biên Phủ, phường Xuân Hoà, TP. Hồ Chí Minh**.<br>🤝 **Sau ngày học:** 14 ngày đồng hành thực hành xây kênh + 01 buổi Zoom chữa bài trực tiếp cùng 2 giảng viên!`
     },
     {
       id: 'kb_tuition',
@@ -84,7 +84,7 @@
       targetLabel: 'Xem Học phí & Quyền lợi (Phần 5)',
       keywords: ['học phí', 'giá', 'chi phí', 'bao nhiêu tiền', '2.393.000', '2393000', 'học phí bao nhiêu', 'trọn gói', 'ưu đãi', 'tiền học'],
       question: 'Học phí khoá học là bao nhiêu? Học phí bao gồm những quyền lợi gì?',
-      answer: `💰 **Học phí chính thức:** **2.393.000đ / học viên** (Học phí trọn gói).<br><br>🎁 **Đã bao gồm toàn bộ quyền lợi:**<br>1. **01 ngày Workshop Offline trực tiếp** (08:30 - 17:30) tại WORK X - 182 Điện Biên Phủ.<br>2. **14 ngày đồng hành thực chiến** xây kênh cùng giảng viên & trợ giảng.<br>3. **02 Video record** buổi học xem lại trọn đời.<br>4. **01 buổi Zoom chữa bài chuyên sâu** phản biện và tinh chỉnh bài làm của bạn.<br>5. **Toàn bộ Ebook thực chiến & Tool AI** mang về ứng dụng trọn đời.`
+      answer: `💰 **Học phí chính thức:** **2.393.000đ / học viên** (Học phí trọn gói).<br><br>🎁 **Đã bao gồm toàn bộ quyền lợi:**<br>1. **01 ngày Workshop Offline trực tiếp** (08:30 đến 17:30) tại WORK X, 182 Điện Biên Phủ.<br>2. **14 ngày đồng hành thực chiến** xây kênh cùng giảng viên & trợ giảng.<br>3. **02 Video record** buổi học xem lại trọn đời.<br>4. **01 buổi Zoom chữa bài chuyên sâu** phản biện và tinh chỉnh bài làm của bạn.<br>5. **Toàn bộ Ebook thực chiến & Tool AI** mang về ứng dụng trọn đời.`
     },
     {
       id: 'kb_hotline',
@@ -100,7 +100,7 @@
       targetLabel: 'Gặp gỡ 2 Giảng viên (Phần 4)',
       keywords: ['giảng viên', 'trainer', 'speaker', 'ai dạy', 'ai giảng dạy', 'người dạy', 'thầy cô', 'ngọc tâm', 'nguyễn hoà'],
       question: 'Ai là người trực tiếp giảng dạy trong khoá học Personal Branding Mastery?',
-      answer: `Khoá học do **2 chuyên gia thực chiến** hàng đầu trực tiếp đứng lớp và đồng hành cùng bạn:<br><br>1. **Speaker Ngọc Tâm** — Founder Ngáo Content · Personal Branding & Marketing Strategist với **12+ năm kinh nghiệm**, đã đồng hành cùng 5.500+ học viên bóc tách bản sắc độc bản và hệ thống hoá sáng tạo bền vững.<br>2. **Speaker Nguyễn Hoà** — Founder Edit Không Khó & EKK Tools · **5+ năm trong nghề video editing**, đã đào tạo hơn **300+ học viên**, hướng dẫn bạn làm chủ công nghệ AI để tự làm web và dựng video thực chiến!`
+      answer: `Khoá học do **2 chuyên gia thực chiến** hàng đầu trực tiếp đứng lớp và đồng hành cùng bạn:<br><br>1. **Speaker Ngọc Tâm:** Founder Ngáo Content · Personal Branding & Marketing Strategist với **12+ năm kinh nghiệm**, đã đồng hành cùng 5.500+ học viên bóc tách bản sắc độc bản và hệ thống hoá sáng tạo bền vững.<br>2. **Speaker Nguyễn Hoà:** Founder Edit Không Khó & EKK Tools · **5+ năm trong nghề video editing**, đã đào tạo hơn **300+ học viên**, hướng dẫn bạn làm chủ công nghệ AI để tự làm web và dựng video thực chiến!`
     },
     {
       id: 'kb_trainer_ngoc_tam',
@@ -114,9 +114,9 @@
       id: 'kb_trainer_nguyen_hoa',
       targetPart: 'trainers',
       targetLabel: 'Xem Profile Speaker Nguyễn Hoà',
-      keywords: ['nguyễn hoà', 'nguyen hoa', 'founder edit không khó', 'ekk', 'video editing', 'dựng phim', '300 học viên', '5 năm', 'youtube', 'editkhongkhoo', 'kênh của nguyễn hoà'],
+      keywords: ['nguyễn hoà', 'nguyen hoa', 'founder edit không khó', 'ekk', 'video editing', 'dựng phim', '300 học viên', '5 năm', 'youtube', 'editkhongkhoo', 'kênh của nguyễn hoà', 'fpt skill', 'studify', 'cinepro', 'amway', 'vietcap', 'doanh nghiệp'],
       question: 'Giảng viên Nguyễn Hoà là ai? Có kinh nghiệm và triết lý gì?',
-      answer: `**Nguyễn Hoà** là Founder của **Edit Không Khó** và bộ công cụ **EKK Tools**:<br><br>• **5+ năm kinh nghiệm** chuyên sâu trong nghề video editing, Motion Graphics và ứng dụng AI vào sản xuất nội dung.<br>• Đã trực tiếp **đào tạo hơn 300+ học viên** làm chủ kỹ năng dựng phim và công cụ sáng tạo.<br>• **Tác giả Ebook độc quyền** *"Dùng Claude làm web và video thực chiến"* cho học viên.<br>• **Slogan:** *“Điều quan trọng không phải là AI có thể làm được bao nhiêu thứ, mà là bạn có đủ tư duy để biết nên dùng nó làm gì cho thương hiệu của mình.”*<br>• **Hệ thống kênh:** YouTube \`@EditKhongKhoo\`, TikTok \`@editkhongkho\` (150K+) và hệ sinh thái \`ekkdungphim.com\`.`
+      answer: `**Nguyễn Hoà** là Founder của **Edit Không Khó** và bộ công cụ **EKK Tools**:<br><br>• **5+ năm kinh nghiệm** chuyên sâu trong nghề video editing, Motion Graphics và ứng dụng AI vào sản xuất nội dung.<br>• Đã trực tiếp **đào tạo hơn 300+ học viên** làm chủ kỹ năng dựng phim và công cụ sáng tạo.<br>• **Đào tạo cùng doanh nghiệp & tổ chức giáo dục:** Kết hợp cùng FPT Skill thực hiện workshop CapCut; diễn giả và đào tạo tại Studify, CinePro, Amway, Vietcap, Ngáo Content cùng nhiều công ty, trường đại học và tổ chức giáo dục.<br>• **Tác giả Ebook độc quyền** *"Dùng Claude làm web và video thực chiến"* cho học viên.<br>• **Slogan:** *“Điều quan trọng không phải là AI có thể làm được bao nhiêu thứ, mà là bạn có đủ tư duy để biết nên dùng nó làm gì cho thương hiệu của mình.”*<br>• **Hệ thống kênh:** YouTube \`@EditKhongKhoo\`, TikTok \`@editkhongkho\` (150K+) và hệ sinh thái \`ekkdungphim.com\`.`
     },
     {
       id: 'kb_curriculum_3pillars',
@@ -124,7 +124,7 @@
       targetLabel: 'Xem 3 Trục tư duy (Phần 2)',
       keywords: ['3 trục', 'ba trục', 'nội dung học', 'giáo trình', 'chương trình', 'học gì', 'học những gì', 'bản sắc độc bản', 'phễu nội dung', 'trục 1', 'trục 2', 'trục 3'],
       question: 'Chương trình khoá học gồm những nội dung gì? 3 Trục tư duy là gì?',
-      answer: `Chương trình đào tạo được xây dựng trên **3 Trục tư duy vững chắc**:<br><br>1. **Trục 1 — Bản sắc độc bản (Identity):** Hiểu nhân cho rõ, tìm ra chất người thực tế, câu chuyện nghề đáng nhớ và định vị độc bản thay vì vẽ vỏ bọc hào nhoáng.<br>2. **Trục 2 — Hệ thống phễu truyền thông (Funnel & System):** Xây dựng phễu nội dung đa kênh, thiết lập trụ cột nội dung và tạo lý do đủ rõ để người khác tin tưởng, ghi nhớ.<br>3. **Trục 3 — Công nghệ AI & Vibe Coding thực chiến:** Ứng dụng Claude Desktop, prompt 4 mảnh, khảo sát 15 câu xuất Brand Guideline 24 slide, tự tay làm trang web cá nhân và quy trình làm video AI nhanh gấp 5-10 lần!`
+      answer: `Chương trình đào tạo được xây dựng trên **3 Trục tư duy vững chắc**:<br><br>1. **Trục 1: Bản sắc độc bản (Identity):** Hiểu nhân cho rõ, tìm ra chất người thực tế, câu chuyện nghề đáng nhớ và định vị độc bản thay vì vẽ vỏ bọc hào nhoáng.<br>2. **Trục 2: Hệ thống phễu truyền thông (Funnel & System):** Xây dựng phễu nội dung đa kênh, thiết lập trụ cột nội dung và tạo lý do đủ rõ để người khác tin tưởng, ghi nhớ.<br>3. **Trục 3: Công nghệ AI & Vibe Coding thực chiến:** Ứng dụng Claude Desktop, prompt 4 mảnh, khảo sát 15 câu xuất Brand Guideline 24 slide, tự tay làm trang web cá nhân và quy trình làm video AI nhanh gấp 5 đến 10 lần!`
     },
     {
       id: 'kb_benefits',
@@ -185,10 +185,10 @@
       question: 'Công thức 4K khi AI làm sai là gì? Khác gì 4A của Netflix?',
       answer: `Khi Claude làm sai, đừng chỉ nói *"làm lại đi"* vì AI sẽ đoán mò. Hãy dùng **Công thức 4K của Nguyễn Hoà**:
 <br><br>
-1. **K - Khoanh:** Chỉ đúng chỗ sai (*"Câu mở đầu đoạn 2 nghe quá quảng cáo"*).<br>
-2. **K - Kỳ vọng:** Nói rõ kết quả bạn muốn (*"Mình muốn giọng nhẹ nhàng như nói với khách quen"*).<br>
-3. **K - Kiểm nguyên nhân:** Hỏi lại AI (*"Bạn hiểu yêu cầu của mình thế nào nên viết như vậy?"*).<br>
-4. **K - Khóa quy tắc:** Biến bài học thành quy tắc ngắn ghi vào Project để lần sau không sai lại.
+1. **K (Khoanh):** Chỉ đúng chỗ sai (*"Câu mở đầu đoạn 2 nghe quá quảng cáo"*).<br>
+2. **K (Kỳ vọng):** Nói rõ kết quả bạn muốn (*"Mình muốn giọng nhẹ nhàng như nói với khách quen"*).<br>
+3. **K (Kiểm nguyên nhân):** Hỏi lại AI (*"Bạn hiểu yêu cầu của mình thế nào nên viết như vậy?"*).<br>
+4. **K (Khóa quy tắc):** Biến bài học thành quy tắc ngắn ghi vào Project để lần sau không sai lại.
 <br><br>
 💡 **Vì sao không dùng khung 4A của Netflix?** Khung 4A (*Aim to assist, Actionable, Appreciate, Accept/discard*) dành cho người với người. Với AI, hai bước cuối không phù hợp nên 4K thay bằng bước **Khóa quy tắc** vào Project.`,
       prompt: `Chỗ này chưa đúng ý mình: [dán hoặc mô tả đúng chỗ sai]. Mình muốn [kết quả mong muốn]. Bạn hiểu yêu cầu của mình thế nào nên mới viết như vậy? Sau đó hãy viết lại, rồi cho mình một quy tắc ngắn để ghi vào hướng dẫn của Project (Bài 5), để lần sau bạn không sai như thế nữa.`
@@ -196,21 +196,21 @@
     {
       id: 'kb_4manh',
       chapter: 'lesson1',
-      chapterName: 'Bài 1 — Câu lệnh 4 mảnh',
+      chapterName: 'Bài 1: Câu lệnh 4 mảnh',
       keywords: ['4 mảnh', 'bốn mảnh', 'câu lệnh đầu tiên', 'bài 1', 'giao việc', 'vai trò', 'bối cảnh', 'khẩu hiệu', 'chị mai', 'bếp mai'],
       question: 'Công thức câu lệnh 4 mảnh ở Bài 1 gồm những gì?',
       answer: `Một câu lệnh tốt giống lời dặn việc đầy đủ cho nhân viên mới, gồm **4 mảnh** nằm chung trong 1 tin nhắn:
 <br><br>
-• **Mảnh 1 — Vai trò:** AI đóng vai ai? (*VD: Chuyên gia marketing cho tiệm nhỏ*)<br>
-• **Mảnh 2 — Bối cảnh:** Bạn là ai, bán gì, ở đâu, cho ai? (*VD: Tiệm bánh handmade Đà Nẵng, bán bánh ít đường cho mẹ bỉm 25–40 tuổi*)<br>
-• **Mảnh 3 — Việc cần làm:** Cụ thể cần làm gì? (*VD: Viết 5 câu khẩu hiệu*)<br>
-• **Mảnh 4 — Kết quả mong muốn:** Dài bao nhiêu, trình bày thế nào, giọng ra sao? (*VD: Dưới 10 chữ, giọng ấm áp, kèm 1 dòng lý do*)`,
+• **Mảnh 1: Vai trò:** AI đóng vai ai? (*VD: Chuyên gia marketing cho tiệm nhỏ*)<br>
+• **Mảnh 2: Bối cảnh:** Bạn là ai, bán gì, ở đâu, cho ai? (*VD: Tiệm bánh handmade Đà Nẵng, bán bánh ít đường cho mẹ bỉm 25 đến 40 tuổi*)<br>
+• **Mảnh 3: Việc cần làm:** Cụ thể cần làm gì? (*VD: Viết 5 câu khẩu hiệu*)<br>
+• **Mảnh 4: Kết quả mong muốn:** Dài bao nhiêu, trình bày thế nào, giọng ra sao? (*VD: Dưới 10 chữ, giọng ấm áp, kèm 1 dòng lý do*)`,
       prompt: `Bạn là [vai trò].\nTôi là [bạn làm nghề gì, bán gì, ở đâu], khách hàng của tôi là [ai].\nHãy [việc cần làm].\nKết quả: [dài bao nhiêu, trình bày thế nào, giọng văn ra sao].`
     },
     {
       id: 'kb_interview',
       chapter: 'lesson3',
-      chapterName: 'Bài 3 — Để AI phỏng vấn bạn',
+      chapterName: 'Bài 3: Để AI phỏng vấn bạn',
       keywords: ['phỏng vấn', 'bài 3', 'hồ sơ thương hiệu', 'trái tim', '12 câu', '7 câu', 'khách hàng thật', 'zalo', 'bác sĩ'],
       question: 'Làm sao để AI phỏng vấn mình tạo Hồ sơ thương hiệu (Bài 3)?',
       answer: `**Bài 3 là trái tim của cả hành trình!** Thay vì tự đoán phải kể gì, bạn đảo vai giống như đi khám bệnh: **để Claude hỏi từng câu (tối đa 12 câu), bạn chỉ việc trả lời tự nhiên**.
@@ -222,7 +222,7 @@
     {
       id: 'kb_brandguide',
       chapter: 'lesson4',
-      chapterName: 'Bài 4 — Khảo sát 15 câu & Brand Guideline',
+      chapterName: 'Bài 4: Khảo sát 15 câu & Brand Guideline',
       keywords: ['brand guideline', 'brand guiline', 'guideline', '15 câu', 'khảo sát', 'bản học viên', 'bài 4', 'corporate', 'editorial', 'visual', 'grid', 'pdf 24 slide', '24 slide', 'mã màu', 'mã hex', 'nhận diện'],
       question: 'Khảo sát 15 câu và xuất bộ Brand Guideline 24 slide ở Bài 4 như thế nào?',
       answer: `Ở **Bài 4**, sau khi hoàn thành phỏng vấn ở Bài 3, bạn thực hiện **Khảo sát định vị 15 câu [Bản Học Viên]** để số hóa Brand DNA và nhận diện thị giác:
@@ -241,15 +241,15 @@
     {
       id: 'kb_project_skill',
       chapter: 'lesson5',
-      chapterName: 'Bài 5 & Bài 7 — Project vs Skill',
+      chapterName: 'Bài 5 & Bài 7: Project vs Skill',
       keywords: ['project', 'skill', 'khác nhau', 'ngăn tủ', 'công thức nấu', 'bài 5', 'bài 7', 'instructions', 'knowledge', 'đóng gói'],
       question: 'Project (Bài 5) khác Skill (Bài 7) như thế nào?',
       answer: `Hãy hình dung căn bếp của bạn:
 <br><br>
-1. **Project (Ngăn tủ riêng - Bài 5):**<br>
+1. **Project (Ngăn tủ riêng, Bài 5):**<br>
    • **Chứa gì:** Thông tin bối cảnh (Bạn là ai, Hồ sơ thương hiệu Bài 3, file Brand Guideline .md Bài 4, bảng giá, logo). Gồm 2 phần: *Instructions (Hướng dẫn)* và *Knowledge (Tài liệu)*.<br>
    • **Hoạt động ở đâu:** Chỉ trong Project đó (gói miễn phí tạo được tối đa 5 Project tại \`claude.ai/projects\`).<br><br>
-2. **Skill (Công thức nấu - Bài 7):**<br>
+2. **Skill (Công thức nấu, Bài 7):**<br>
    • **Chứa gì:** Quy trình làm một việc lặp đi lặp lại (VD: cách viết kịch bản video 30 giây, cách báo giá).<br>
    • **Hoạt động ở đâu:** Mọi cuộc trò chuyện trong tài khoản khi việc cần đến (quản lý tại *Customize → Skills*).`,
       prompt: `Tôi muốn tạo một skill từ cách làm [viết kịch bản video 30 giây] mà tôi hay làm.\nSkill cần: [hỏi tôi chủ đề video, viết câu mở đầu 3 giây, kịch bản dạng bảng, danh sách cảnh quay, phụ đề và caption].\nLuôn theo giọng văn thương hiệu của tôi.\nHãy hỏi tôi thêm những gì bạn cần biết, rồi tạo skill để tôi lưu lại.`
@@ -257,20 +257,20 @@
     {
       id: 'kb_web',
       chapter: 'lesson6',
-      chapterName: 'Bài 6 — Làm trang web 1 câu lệnh',
+      chapterName: 'Bài 6: Làm trang web 1 câu lệnh',
       keywords: ['làm web', 'trang web', 'website', 'bài 6', '15 câu', 'brand discovery', 'github pages', 'quy tắc làm web', 'share', 'artifact', 'brand guideline'],
       question: 'Quy trình từ Brand Guideline (Bài 4) ra trang web (Bài 6)?',
       answer: `Để Claude làm được trang web, trước tiên hãy vào **Settings → Capabilities** và bật **Code execution and file creation** (*Create and edit files*). Sau đó đi qua **3 bước**:
 <br><br>
-1. **Bước 1 — Khảo sát 15 câu (Bài 4):** Trả lời 15 câu hỏi định vị trong công cụ Brand Discovery.<br>
-2. **Bước 2 — Xuất Brand Guideline:** Chọn 1 trong 4 preset khóa sẵn (B, C, D, E) → Tải file **Markdown (.md)** để nạp vào Claude và **PDF 24 slide** để xem trước.<br>
-3. **Bước 3 — Đưa vào Project (Bài 5) & Giao việc (Bài 6):** Tải file \`.md\` + 5 thông tin bán hàng (3 sản phẩm, feedback, Zalo/SĐT, MXH, logo) vào Project, dán **7 Quy tắc làm web**, rồi gõ lệnh tạo trang!`,
+1. **Bước 1: Khảo sát 15 câu (Bài 4):** Trả lời 15 câu hỏi định vị trong công cụ Brand Discovery.<br>
+2. **Bước 2: Xuất Brand Guideline:** Chọn 1 trong 4 preset khóa sẵn (B, C, D, E) → Tải file **Markdown (.md)** để nạp vào Claude và **PDF 24 slide** để xem trước.<br>
+3. **Bước 3: Đưa vào Project (Bài 5) & Giao việc (Bài 6):** Tải file \`.md\` + 5 thông tin bán hàng (3 sản phẩm, feedback, Zalo/SĐT, MXH, logo) vào Project, dán **7 Quy tắc làm web**, rồi gõ lệnh tạo trang!`,
       prompt: `Dựa vào Hồ sơ thương hiệu và file Brand Guideline (.md), làm cho tôi một trang web giới thiệu một trang.\nGồm: phần mở đầu có khẩu hiệu, câu chuyện thương hiệu, 3 sản phẩm nổi bật, cảm nhận khách hàng, nút "Nhắn Zalo đặt hàng" dẫn tới [số Zalo].\nMàu sắc, font chữ và giọng văn theo Brand Guideline. Xem đẹp trên điện thoại.\nChỗ nào thiếu thông tin thật (giá, cảm nhận khách) thì để ô trống có ghi chú, không tự bịa.`
     },
     {
       id: 'kb_claudecode',
       chapter: 'advanced89',
-      chapterName: 'Bài 9 — Giữ Claude nhanh & thông minh',
+      chapterName: 'Bài 9: Giữ Claude nhanh & thông minh',
       keywords: ['context', '60%', 'bị đầy', '/compact', '/clear', '/re', '/rewind', 'claude.md', 'agents.md', 'bài 9', 'tốn token'],
       question: 'Cách giữ Claude không bị đầy context và dùng lệnh /RE, /compact, /clear (Bài 9)?',
       answer: `Khi dùng **Claude Code**, đây là 6 nguyên tắc vàng giúp AI luôn thông minh và tiết kiệm token:
@@ -278,14 +278,14 @@
 1. **Giữ \`CLAUDE.md\` dưới 50 dòng:** Dặn Claude tự đề nghị rút gọn nếu vượt quá 50 dòng.<br>
 2. **Dùng \`AGENTS.md\`:** Khi cần bàn giao dự án sang một công cụ AI khác.<br>
 3. **Khi context đầy:** Dùng \`/compact\` (tóm tắt gọn) hoặc \`/clear\` (làm sạch bàn mới).<br>
-4. **Khi Claude trả lời sai — Dùng \`/RE\` (\`/rewind\`):** Đừng nhắn *"Không phải, làm lại đi"* vì phần sai vẫn nằm trong context. Gõ \`/RE\` để quay lại tin nhắn trước, xóa phần sai rồi áp dụng **công thức 4K**.<br>
+4. **Khi Claude trả lời sai, hãy dùng \`/RE\` (\`/rewind\`):** Đừng nhắn *"Không phải, làm lại đi"* vì phần sai vẫn nằm trong context. Gõ \`/RE\` để quay lại tin nhắn trước, xóa phần sai rồi áp dụng **công thức 4K**.<br>
 5. **Reset thủ công ở mức 60% context:** Đừng chờ 95% máy tự nén. Ở mức 60%: Bảo Claude tóm tắt → Copy → Gõ \`/clear\` → Dán tóm tắt vào phiên mới.`,
       prompt: `Thêm vào CLAUDE.md quy tắc này: "Mỗi khi thêm gì vào file này, nếu file dài quá 50 dòng thì đề nghị mình rút gọn trước, và chỉ rút gọn khi mình đồng ý."`
     },
     {
       id: 'kb_md_json',
       chapter: 'advanced89',
-      chapterName: 'Bài 8 — File .md và JSON',
+      chapterName: 'Bài 8: File .md và JSON',
       keywords: ['md', 'markdown', 'json', 'bài 8', 'định dạng', 'đuôi file', 'word', 'pdf'],
       question: 'Khi nào dùng file Markdown (.md) và khi nào dùng JSON (Bài 8)?',
       answer: `Hiểu cực nhanh hai định dạng phổ biến nhất khi làm việc với AI:
@@ -298,22 +298,22 @@
     {
       id: 'kb_video_ekk',
       chapter: 'appendix',
-      chapterName: 'Phụ lục — EKK Tự động làm Phụ đề & Thư mục Video',
+      chapterName: 'Phụ lục: EKK Tự động làm Phụ đề & Thư mục Video',
       keywords: ['video', 'phụ đề', 'srt', 'ekk', 'ekk-phu-de', 'whisper', 'ffmpeg', 'node', 'git', 'homebrew', 'mac', 'windows', '6 thư mục', '01_raw', 'phụ lục'],
       question: 'Làm sao để Claude tự làm phụ đề video (.srt) và tạo 6 thư mục video trên máy (Phụ lục)?',
-      answer: `Trong **Phụ lục Nâng cao (Claude Code - Gói Pro trở lên)**, Nguyễn Hoà hướng dẫn quy trình an toàn **3 bước**:
+      answer: `Trong **Phụ lục Nâng cao (Claude Code, Gói Pro trở lên)**, Nguyễn Hoà hướng dẫn quy trình an toàn **3 bước**:
 <br>
 **Bước 1: Kiểm tra máy (Chỉ đọc)** → **Bước 2: Cài công cụ thiếu (Có hỏi duyệt)** → **Bước 3: Tạo Skill \`/ekk-phu-de\`**.
 <br><br>
 🛠️ **5 công cụ cần có:** \`Node.js LTS + npm\`, \`Git\`, \`FFmpeg + FFprobe\`, \`whisper.cpp (whisper-cli)\`, và model đa ngôn ngữ \`ggml-base.bin\` (~148 MB). *(Lưu ý trên Mac: dùng Homebrew, kiểm tra \`xcode-select -p\` trước khi gọi git).*
 <br><br>
 📁 **Chuẩn 6 thư mục dự án video:** \`01_Raw\` (không bao giờ sửa/ghi đè), \`02_Broll\`, \`03_Tham-chieu\`, \`04_Brand-guideline\` (chứa Brand Guideline từ Bài 4), \`05_Sound-effect\`, \`06_Final\` kèm file \`CLAUDE.md\` bảo vệ dữ liệu.`,
-      prompt: `EKK – TẠO THƯ MỤC DỰ ÁN VIDEO\n\n1. MỤC TIÊU\nTạo bộ thư mục chuẩn cho dự án video tên [ten-du-an], nằm trong [Documents/EKK-Projects] của tài khoản máy tính này.\n\n2. PHẠM VI\n- Chỉ tạo thư mục mới và file CLAUDE.md. Không di chuyển, đổi tên, xoá file có sẵn.\n- Tạo đúng 6 thư mục: 01_Raw, 02_Broll, 03_Tham-chieu, 04_Brand-guideline, 05_Sound-effect, 06_Final.`
+      prompt: `EKK: TẠO THƯ MỤC DỰ ÁN VIDEO\n\n1. MỤC TIÊU\nTạo bộ thư mục chuẩn cho dự án video tên [ten-du-an], nằm trong [Documents/EKK-Projects] của tài khoản máy tính này.\n\n2. PHẠM VI\n- Chỉ tạo thư mục mới và file CLAUDE.md. Không di chuyển, đổi tên, xoá file có sẵn.\n- Tạo đúng 6 thư mục: 01_Raw, 02_Broll, 03_Tham-chieu, 04_Brand-guideline, 05_Sound-effect, 06_Final.`
     },
     {
       id: 'kb_blindspot',
       chapter: 'mindset',
-      chapterName: 'Tư duy — Quy tắc 2, 3 & Chống AI bịa',
+      chapterName: 'Tư duy: Quy tắc 2, 3 & Chống AI bịa',
       keywords: ['điểm mù', 'phản biện', 'suy luận', 'ai bịa', 'nguồn', 'web search', 'bài 2', 'kiểm tra'],
       question: 'Làm sao bắt AI phản biện chỉ ra điểm mù và không bịa thông tin?',
       answer: `Để AI không khen xã giao hoặc tự bịa số liệu:
@@ -326,20 +326,20 @@
     {
       id: 'kb_schedule',
       chapter: 'cheatsheet',
-      chapterName: 'Cẩm nang — Lịch học 60 phút & Bảo mật',
+      chapterName: 'Cẩm nang: Lịch học 60 phút & Bảo mật',
       keywords: ['60 phút', 'lịch học', 'thời gian', 'an toàn', 'bảo mật', 'lỗi thường gặp', 'cccd', 'mật khẩu'],
       question: 'Lộ trình thực hành Ebook trong 60 phút và nguyên tắc an toàn thông tin?',
       answer: `⏱️ **Lộ trình 60 phút thực chiến:**
 <br>
-• **Phút 0–8:** Đọc 4 quy tắc tư duy, đăng nhập Claude Desktop.<br>
-• **Phút 8–14:** Bài 1 (Câu lệnh 4 mảnh) + Bài 2 (Tìm hiểu thị trường có nguồn).<br>
-• **Phút 14–24:** Bài 3 (Để Claude phỏng vấn 12 câu → Ra Hồ sơ thương hiệu).<br>
-• **Phút 24–34:** Bài 4 (Khảo sát 15 câu: Xuất Brand Guideline 24 slide & File .md).<br>
-• **Phút 34–39:** Bài 5 (Tạo Project riêng "Trợ lý thương hiệu").<br>
-• **Phút 39–49:** Bài 6 (Làm trang web 1 trang theo Brand Guideline & link Share).<br>
-• **Phút 49–54:** Bài 7 (Đóng gói Skill).<br>
-• **Phút 54–58:** Bài 9 (Lệnh Claude Code /compact, /clear, /RE).<br>
-• **Phút 58–60:** Hỏi đáp, giới thiệu Bài 8 (.md & JSON) và Phụ lục Video.<br><br>
+• **Phút 0 đến 8:** Đọc 4 quy tắc tư duy, đăng nhập Claude Desktop.<br>
+• **Phút 8 đến 14:** Bài 1 (Câu lệnh 4 mảnh) + Bài 2 (Tìm hiểu thị trường có nguồn).<br>
+• **Phút 14 đến 24:** Bài 3 (Để Claude phỏng vấn 12 câu → Ra Hồ sơ thương hiệu).<br>
+• **Phút 24 đến 34:** Bài 4 (Khảo sát 15 câu: Xuất Brand Guideline 24 slide & File .md).<br>
+• **Phút 34 đến 39:** Bài 5 (Tạo Project riêng "Trợ lý thương hiệu").<br>
+• **Phút 39 đến 49:** Bài 6 (Làm trang web 1 trang theo Brand Guideline & link Share).<br>
+• **Phút 49 đến 54:** Bài 7 (Đóng gói Skill).<br>
+• **Phút 54 đến 58:** Bài 9 (Lệnh Claude Code /compact, /clear, /RE).<br>
+• **Phút 58 đến 60:** Hỏi đáp, giới thiệu Bài 8 (.md & JSON) và Phụ lục Video.<br><br>
 🔒 **An toàn thông tin:** Tuyệt đối KHÔNG dán mật khẩu, số thẻ ngân hàng, CCCD, OTP, và phải xóa tên/SĐT khách hàng thật trước khi đưa vào AI.`
     }
   ];
@@ -522,7 +522,7 @@
 
           <h2 class="eb-hero-title">Dùng Claude làm web và video: Câu lệnh thực chiến cho người mới</h2>
           <p class="eb-hero-desc">
-            AI là trợ lý, bạn là bà chủ. Không cần giỏi công nghệ — nếu biết nhắn Zalo, bạn đã biết dùng AI. Hãy bấm vào từng bước trên <strong>Bản đồ hành trình của chị Mai (tiệm bánh ít đường Bếp Mai)</strong> bên dưới để tương tác trực tiếp:
+            AI là trợ lý, bạn là bà chủ. Không cần giỏi công nghệ, nếu biết nhắn Zalo, bạn đã biết dùng AI. Hãy bấm vào từng bước trên <strong>Bản đồ hành trình của chị Mai (tiệm bánh ít đường Bếp Mai)</strong> bên dưới để tương tác trực tiếp:
           </p>
 
           <!-- Interactive 6-Step Journey Track -->
@@ -654,7 +654,7 @@
             <span>👋 Hỏi Ngáo Bot mọi thứ trên Web!</span>
           </div>
           <div class="ngao-bot-floater">
-            <img src="assets/ngao_bot_mascot_3d.png" alt="Ngáo Bot - Trợ lý AI 3D Mascot" class="ngao-bot-3d-floating-img" width="130" height="176">
+            <img src="assets/ngao_bot_mascot_3d.png" alt="Ngáo Bot, Trợ lý AI 3D Mascot" class="ngao-bot-3d-floating-img" width="130" height="176">
           </div>
         </button>
       </div>
@@ -714,7 +714,7 @@
                 <div class="bot-msg-bubble">
                   <div class="bot-cite-tag">🎬 Xin chào bạn đến với Personal Branding Mastery!</div>
                   <div>
-                    Mình là <strong>Ngáo Bot — Trợ Lý AI của Website & Khoá học Personal Branding Mastery</strong>.<br><br>
+                    Mình là <strong>Ngáo Bot, Trợ Lý AI của Website & Khoá học Personal Branding Mastery</strong>.<br><br>
                     Bạn có thể <strong>gõ câu hỏi</strong> hoặc <strong>bấm nút micro 🎙️ để nói bằng giọng nói</strong> về bất kỳ nội dung nào có trên web:
                     <ul style="margin:8px 0 0 16px;padding:0;line-height:1.6;font-size:12.5px">
                       <li>📅 <strong>Thời gian, địa điểm & học phí</strong> khoá học 12/12/2026.</li>
@@ -783,7 +783,7 @@
         <div class="eb-story-card">
           <div class="eb-story-avatar">🧁</div>
           <div>
-            <strong style="font-size:14px;color:var(--primary-dark);display:block;margin-bottom:4px">Ví dụ xuyên suốt: Câu chuyện của Chị Mai — Tiệm bánh "Bếp Mai"</strong>
+            <strong style="font-size:14px;color:var(--primary-dark);display:block;margin-bottom:4px">Ví dụ xuyên suốt: Câu chuyện của Chị Mai (Tiệm bánh "Bếp Mai")</strong>
             <p style="font-size:13px;color:var(--text-muted);margin:0;line-height:1.55">
               Chúng ta đồng hành cùng <em>chị Mai</em>, 8 năm làm bánh ít đường, chủ tiệm nhỏ <strong>"Bếp Mai"</strong> ở Đà Nẵng. Chị muốn có một trang web giới thiệu và những video ngắn để mọi người biết đến bánh của chị. Khi thực hành, bạn cứ thay câu chuyện của chị Mai bằng nghề của mình!
             </p>
@@ -893,7 +893,7 @@
           </div>
           <div class="eb-meta-item">
             <small>Công thức độc quyền</small>
-            <strong>4K (Khoanh - Kỳ vọng - Kiểm - Khóa)</strong>
+            <strong>4K (Khoanh, Kỳ vọng, Kiểm, Khóa)</strong>
           </div>
           <div class="eb-meta-item">
             <small>Hàng rào chống bịa</small>
@@ -1004,7 +1004,7 @@
             <strong style="color:var(--primary);font-size:12px">BƯỚC 1 & 2</strong>
             <h4 style="font-size:14.5px;color:var(--primary-dark);margin:4px 0">Tải đúng bản Mac hoặc Windows</h4>
             <p style="font-size:12.5px;color:var(--text-muted)">
-              Mở <a href="https://claude.com/download" target="_blank" rel="noopener" style="color:var(--primary);font-weight:800;text-decoration:underline">claude.com/download</a>. Chọn <strong>macOS</strong> hoặc <strong>Windows</strong> (x64 hoặc arm64 — kiểm tra trong <em>Settings → System → About → System type</em>).
+              Mở <a href="https://claude.com/download" target="_blank" rel="noopener" style="color:var(--primary);font-weight:800;text-decoration:underline">claude.com/download</a>. Chọn <strong>macOS</strong> hoặc <strong>Windows</strong> (x64 hoặc arm64, kiểm tra trong <em>Settings → System → About → System type</em>).
             </p>
           </div>
           <div style="background:var(--bg);border:1.5px solid var(--border);border-radius:14px;padding:14px">
@@ -1053,13 +1053,13 @@
         <div class="part-nav-footer" style="margin-top:24px">
           <button type="button" class="btn-step-prev" onclick="window.EbookApp.switchChapter('mindset')">← Tư duy & 4K</button>
           <button type="button" class="btn-step-next" onclick="window.EbookApp.switchChapter('lesson1')">
-            <span>Tiếp theo: Bài 1 — Câu lệnh 4 mảnh</span>
+            <span>Tiếp theo: Bài 1: Câu lệnh 4 mảnh</span>
             <span>→</span>
           </button>
         </div>
       </article>
 
-      <!-- MODULE 4: BÀI 1 — CÂU LỆNH 4 MẢNH -->
+      <!-- MODULE 4: BÀI 1: CÂU LỆNH 4 MẢNH -->
       <article class="eb-module" id="ebMod_lesson1">
         <div class="eb-meta-strip">
           <div class="eb-meta-item">
@@ -1076,7 +1076,7 @@
           </div>
         </div>
 
-        <h2 class="eb-h2">Bài 1 — Câu lệnh đầu tiên: Công thức 4 mảnh</h2>
+        <h2 class="eb-h2">Bài 1: Câu lệnh đầu tiên: Công thức 4 mảnh</h2>
         <p class="eb-p">
           AI trả lời chung chung vì ta hỏi chung chung. Một câu lệnh tốt giống lời dặn việc đầy đủ cho nhân viên mới, gồm <strong>4 mảnh nằm chung trong một tin nhắn</strong>:
         </p>
@@ -1102,7 +1102,7 @@
             </div>
             <div class="puzzle-piece-card">
               <label><span>2️⃣</span> Mảnh 2: Bối cảnh (Bạn là ai, bán gì, cho ai?)</label>
-              <input type="text" id="pzContext" value="tiệm bánh handmade ở Đà Nẵng, bán bánh ít đường, khách là mẹ bỉm 25–40 tuổi quan tâm sức khỏe gia đình" oninput="window.EbookApp.updatePuzzleOutput()">
+              <input type="text" id="pzContext" value="tiệm bánh handmade ở Đà Nẵng, bán bánh ít đường, khách là mẹ bỉm 25 đến 40 tuổi quan tâm sức khỏe gia đình" oninput="window.EbookApp.updatePuzzleOutput()">
             </div>
             <div class="puzzle-piece-card">
               <label><span>3️⃣</span> Mảnh 3: Việc cần làm (Cụ thể cần gì?)</label>
@@ -1122,7 +1122,7 @@
               </button>
             </div>
             <div class="eb-prompt-body" id="pzLiveOutput">Bạn là chuyên gia marketing cho các tiệm nhỏ.
-Tôi có tiệm bánh handmade ở Đà Nẵng, bán bánh ít đường, khách chủ yếu là mẹ bỉm 25–40 tuổi quan tâm sức khỏe gia đình.
+Tôi có tiệm bánh handmade ở Đà Nẵng, bán bánh ít đường, khách chủ yếu là mẹ bỉm 25 đến 40 tuổi quan tâm sức khỏe gia đình.
 Hãy viết 5 câu khẩu hiệu.
 Kết quả: Mỗi câu dưới 10 chữ, giọng ấm áp, gần gũi. Ghi thêm 1 dòng giải thích vì sao chọn câu đó.</div>
           </div>
@@ -1138,7 +1138,7 @@ Kết quả: Mỗi câu dưới 10 chữ, giọng ấm áp, gần gũi. Ghi thê
           <div style="background:#EEFBF3;border:1.5px solid #A6E9C0;border-radius:14px;padding:14px">
             <strong style="color:#1E7E48;font-size:12px">✅ SAU (Đủ 4 mảnh rõ ràng)</strong>
             <p style="font-family:monospace;font-size:12.5px;margin-top:6px;color:#13532F">
-              "Bạn là chuyên gia marketing cho các tiệm nhỏ. Tôi có tiệm bánh handmade ở Đà Nẵng, bán bánh ít đường, khách chủ yếu là mẹ bỉm 25–40 tuổi... Hãy viết 5 câu khẩu hiệu. Mỗi câu dưới 10 chữ, giọng ấm áp..."
+              "Bạn là chuyên gia marketing cho các tiệm nhỏ. Tôi có tiệm bánh handmade ở Đà Nẵng, bán bánh ít đường, khách chủ yếu là mẹ bỉm 25 đến 40 tuổi... Hãy viết 5 câu khẩu hiệu. Mỗi câu dưới 10 chữ, giọng ấm áp..."
             </p>
           </div>
         </div>
@@ -1153,13 +1153,13 @@ Kết quả: Mỗi câu dưới 10 chữ, giọng ấm áp, gần gũi. Ghi thê
         <div class="part-nav-footer" style="margin-top:24px">
           <button type="button" class="btn-step-prev" onclick="window.EbookApp.switchChapter('setup')">← Cài đặt</button>
           <button type="button" class="btn-step-next" onclick="window.EbookApp.switchChapter('lesson2')">
-            <span>Tiếp theo: Bài 2 — Tìm hiểu thị trường</span>
+            <span>Tiếp theo: Bài 2: Tìm hiểu thị trường</span>
             <span>→</span>
           </button>
         </div>
       </article>
 
-      <!-- MODULE 5: BÀI 2 — KHAI THÁC THÔNG TIN -->
+      <!-- MODULE 5: BÀI 2: KHAI THÁC THÔNG TIN -->
       <article class="eb-module" id="ebMod_lesson2">
         <div class="eb-meta-strip">
           <div class="eb-meta-item">
@@ -1176,18 +1176,18 @@ Kết quả: Mỗi câu dưới 10 chữ, giọng ấm áp, gần gũi. Ghi thê
           </div>
         </div>
 
-        <h2 class="eb-h2">Bài 2 — Khai thác thông tin: Để AI đi tìm hiểu giúp bạn</h2>
+        <h2 class="eb-h2">Bài 2: Khai thác thông tin: Để AI đi tìm hiểu giúp bạn</h2>
         <p class="eb-p">
           Trước khi làm thương hiệu, cần hiểu khách hàng và đối thủ. Bật công tắc <strong>Web search</strong> trong nút <code>+</code> cạnh ô nhập, hoặc chắc ăn nhất là viết thẳng cụm từ <strong>"Tìm trên web"</strong> vào đầu câu lệnh.
         </p>
 
-        <h3 class="eb-h3">1️⃣ Mẫu 1 — Hiểu khách hàng mục tiêu</h3>
-        ${renderPromptCard('Mẫu 1: Tìm hiểu nỗi lo & hành vi khách hàng', `Tìm trên web và cho tôi biết: khách hàng [mô tả khách, ví dụ: mẹ bỉm 25–40 tuổi ở Đà Nẵng] khi mua [sản phẩm] thường:\n1. Lo lắng điều gì nhất?\n2. Hay hỏi những câu gì?\n3. Tìm mua ở đâu (Facebook, TikTok, Shopee...)?\nTrình bày thành bảng ngắn, ghi nguồn cho từng ý.`)}
+        <h3 class="eb-h3">1️⃣ Mẫu 1: Hiểu khách hàng mục tiêu</h3>
+        ${renderPromptCard('Mẫu 1: Tìm hiểu nỗi lo & hành vi khách hàng', `Tìm trên web và cho tôi biết: khách hàng [mô tả khách, ví dụ: mẹ bỉm 25 đến 40 tuổi ở Đà Nẵng] khi mua [sản phẩm] thường:\n1. Lo lắng điều gì nhất?\n2. Hay hỏi những câu gì?\n3. Tìm mua ở đâu (Facebook, TikTok, Shopee...)?\nTrình bày thành bảng ngắn, ghi nguồn cho từng ý.`)}
 
-        <h3 class="eb-h3">2️⃣ Mẫu 2 — Soi đối thủ & Tìm khoảng trống thị trường</h3>
+        <h3 class="eb-h3">2️⃣ Mẫu 2: Soi đối thủ & Tìm khoảng trống thị trường</h3>
         ${renderPromptCard('Mẫu 2: Phân tích 5 đối thủ & gợi ý 3 khoảng trống', `Tìm trên web 5 thương hiệu [ngành của bạn] tại [khu vực] đang làm tốt trên mạng xã hội.\nVới mỗi thương hiệu cho biết: họ nói mình khác biệt ở điểm nào, giọng văn ra sao, điểm mạnh và điểm yếu.\nCuối cùng gợi ý 3 khoảng trống mà thương hiệu nhỏ như tôi có thể chiếm.`)}
 
-        <h3 class="eb-h3">3️⃣ Mẫu 3 — Bắt xu hướng TikTok & Facebook ngân sách thấp</h3>
+        <h3 class="eb-h3">3️⃣ Mẫu 3: Bắt xu hướng TikTok & Facebook ngân sách thấp</h3>
         ${renderPromptCard('Mẫu 3: Bắt 5 xu hướng nội dung kèm ý tưởng video', `Tìm trên web các xu hướng nội dung [ngành của bạn] gần đây trên TikTok và Facebook.\nChọn 5 xu hướng phù hợp với tiệm nhỏ, ngân sách thấp. Mỗi xu hướng cho 1 ý tưởng video cụ thể.`)}
 
         <div style="background:#FFF8E6;border:1.5px solid #F3C969;border-radius:14px;padding:15px 18px;margin-top:16px">
@@ -1201,13 +1201,13 @@ Kết quả: Mỗi câu dưới 10 chữ, giọng ấm áp, gần gũi. Ghi thê
         <div class="part-nav-footer" style="margin-top:24px">
           <button type="button" class="btn-step-prev" onclick="window.EbookApp.switchChapter('lesson1')">← Bài 1: 4 mảnh</button>
           <button type="button" class="btn-step-next" onclick="window.EbookApp.switchChapter('lesson3')">
-            <span>Tiếp theo: Bài 3 — Để AI phỏng vấn bạn ❤️</span>
+            <span>Tiếp theo: Bài 3: Để AI phỏng vấn bạn ❤️</span>
             <span>→</span>
           </button>
         </div>
       </article>
 
-      <!-- MODULE 6: BÀI 3 — ĐỂ AI PHỎNG VẤN BẠN (TRÁI TIM) -->
+      <!-- MODULE 6: BÀI 3: ĐỂ AI PHỎNG VẤN BẠN (TRÁI TIM) -->
       <article class="eb-module" id="ebMod_lesson3">
         <div class="eb-meta-strip">
           <div class="eb-meta-item">
@@ -1224,7 +1224,7 @@ Kết quả: Mỗi câu dưới 10 chữ, giọng ấm áp, gần gũi. Ghi thê
           </div>
         </div>
 
-        <h2 class="eb-h2">Bài 3 — Để AI phỏng vấn bạn (Trái tim hành trình)</h2>
+        <h2 class="eb-h2">Bài 3: Để AI phỏng vấn bạn (Trái tim hành trình)</h2>
         <p class="eb-p">
           Thay vì tự nghĩ xem nên kể gì cho AI, bạn đảo vai: <strong>để AI hỏi từng câu, bạn chỉ việc trả lời</strong>. Giống như đi khám bệnh: bác sĩ hỏi từng câu, cuối buổi gom tất cả thành <strong>Hồ sơ thương hiệu</strong>.
         </p>
@@ -1259,7 +1259,7 @@ Kết quả: Mỗi câu dưới 10 chữ, giọng ấm áp, gần gũi. Ghi thê
               <h4 style="font-size:15px;margin:4px 0 10px;color:#fff">Hồ sơ thương hiệu: Bếp Mai</h4>
               <ul style="list-style:none;font-size:12px;line-height:1.65;color:#FCE4EC">
                 <li>✦ <strong>Chuyên môn:</strong> 8 năm làm bánh handmade ít đường</li>
-                <li>✦ <strong>Khách hàng:</strong> Mẹ bỉm 25–40 tuổi, lo sức khỏe gia đình</li>
+                <li>✦ <strong>Khách hàng:</strong> Mẹ bỉm 25 đến 40 tuổi, lo sức khỏe gia đình</li>
                 <li>✦ <strong>Khác biệt:</strong> Vị ngọt thanh tự nhiên, giao tận nhà</li>
                 <li>✦ <strong>Giọng nói:</strong> Ấm áp, gần gũi, xưng "Mai"</li>
                 <li>✦ <strong>Không bao giờ nói:</strong> Cam kết giảm cân thần tốc</li>
@@ -1272,19 +1272,19 @@ Kết quả: Mỗi câu dưới 10 chữ, giọng ấm áp, gần gũi. Ghi thê
         ${renderPromptCard('Câu lệnh phỏng vấn xây Hồ sơ thương hiệu cá nhân', `Bạn là chuyên gia xây dựng thương hiệu cá nhân.\nHãy phỏng vấn tôi để làm Hồ sơ thương hiệu cá nhân.\nQuy tắc:\n- Mỗi lần chỉ hỏi 1 câu, chờ tôi trả lời rồi mới hỏi tiếp.\n- Dùng từ ngữ đơn giản, có ví dụ gợi ý để tôi dễ trả lời.\n- Tối đa 12 câu, đi qua: chuyên môn và kinh nghiệm, câu chuyện nghề đáng nhớ, thành quả có thật, giá trị tôi theo đuổi, người tôi giúp được và vấn đề của họ, điều tôi khác người cùng nghề.\n- Câu nào tôi trả lời chung chung, hỏi thêm 1 câu để lấy ví dụ cụ thể.\nKhi xong, tổng hợp thành Hồ sơ thương hiệu cá nhân gồm: tôi là ai, chuyên môn, câu chuyện, thành quả, người tôi giúp, điều khác biệt, giọng nói, màu sắc gợi ý, những điều không bao giờ nói.\nKhông thêm thành tích hay con số tôi chưa nói.\nBắt đầu với câu hỏi đầu tiên.`)}
 
         <h3 class="eb-h3">📲 Mở rộng: Phỏng vấn khách hàng thật qua Zalo</h3>
-        <p class="eb-p">Hồ sơ trên mới là góc nhìn của bạn. Hãy nhờ AI soạn 7 câu hỏi ngắn gửi khách quen qua Zalo (thu 5–10 câu trả lời, xóa tên/SĐT rồi dán lại cho Claude tìm câu khẩu hiệu đắt giá):</p>
+        <p class="eb-p">Hồ sơ trên mới là góc nhìn của bạn. Hãy nhờ AI soạn 7 câu hỏi ngắn gửi khách quen qua Zalo (thu 5 đến 10 câu trả lời, xóa tên/SĐT rồi dán lại cho Claude tìm câu khẩu hiệu đắt giá):</p>
         ${renderPromptCard('Câu lệnh soạn 7 câu hỏi phỏng vấn khách quen qua Zalo', `Soạn 7 câu hỏi ngắn để tôi hỏi khách quen qua Zalo, nhằm hiểu: vì sao họ chọn [tiệm của tôi], họ thích gì, chưa hài lòng gì.\nCâu hỏi thân mật, không dẫn dắt, trả lời được trong 2 phút.`)}
 
         <div class="part-nav-footer" style="margin-top:24px">
           <button type="button" class="btn-step-prev" onclick="window.EbookApp.switchChapter('lesson2')">← Bài 2: Tìm hiểu</button>
           <button type="button" class="btn-step-next" onclick="window.EbookApp.switchChapter('lesson4')">
-            <span>Tiếp theo: Bài 4 — Khảo sát & Brand Guideline</span>
+            <span>Tiếp theo: Bài 4: Khảo sát & Brand Guideline</span>
             <span>→</span>
           </button>
         </div>
       </article>
 
-      <!-- MODULE: BÀI 4 — KHẢO SÁT 15 CÂU & BRAND GUIDELINE -->
+      <!-- MODULE: BÀI 4: KHẢO SÁT 15 CÂU & BRAND GUIDELINE -->
       <article class="eb-module" id="ebMod_lesson4">
         <div class="eb-meta-strip">
           <div class="eb-meta-item">
@@ -1301,7 +1301,7 @@ Kết quả: Mỗi câu dưới 10 chữ, giọng ấm áp, gần gũi. Ghi thê
           </div>
         </div>
 
-        <h2 class="eb-h2">Bài 4 — Khảo sát 15 câu: Xuất Brand Guideline 24 slide & File .md</h2>
+        <h2 class="eb-h2">Bài 4: Khảo sát 15 câu: Xuất Brand Guideline 24 slide & File .md</h2>
         <p class="eb-p">
           Sau khi có Hồ sơ thương hiệu ở Bài 3, bạn bước vào bài thực hành định hình thị giác quan trọng: <strong>Khảo sát định vị 15 câu [Bản Học Viên]</strong> để số hóa toàn bộ DNA, mã màu HEX, typography và xuất trọn bộ <strong>Brand Guideline</strong>.
         </p>
@@ -1392,13 +1392,13 @@ Kết quả: Mỗi câu dưới 10 chữ, giọng ấm áp, gần gũi. Ghi thê
         <div class="part-nav-footer" style="margin-top:24px">
           <button type="button" class="btn-step-prev" onclick="window.EbookApp.switchChapter('lesson3')">← Bài 3: Phỏng vấn</button>
           <button type="button" class="btn-step-next" onclick="window.EbookApp.switchChapter('lesson5')">
-            <span>Tiếp theo: Bài 5 — Tạo Project riêng</span>
+            <span>Tiếp theo: Bài 5: Tạo Project riêng</span>
             <span>→</span>
           </button>
         </div>
       </article>
 
-      <!-- MODULE: BÀI 5 — TẠO PROJECT -->
+      <!-- MODULE: BÀI 5: TẠO PROJECT -->
       <article class="eb-module" id="ebMod_lesson5">
         <div class="eb-meta-strip">
           <div class="eb-meta-item">
@@ -1415,7 +1415,7 @@ Kết quả: Mỗi câu dưới 10 chữ, giọng ấm áp, gần gũi. Ghi thê
           </div>
         </div>
 
-        <h2 class="eb-h2">Bài 5 — Tạo Project: Kể một lần, dùng mãi</h2>
+        <h2 class="eb-h2">Bài 5: Tạo Project: Kể một lần, dùng mãi</h2>
         <p class="eb-p">
           Mỗi cuộc trò chuyện mới, Claude lại quên bạn là ai. <strong>Project</strong> giải quyết chuyện đó: bạn cất Hồ sơ thương hiệu (Bài 3) và file Brand Guideline .md (Bài 4) vào một "ngăn tủ" riêng tại <a href="https://claude.ai/projects" target="_blank" rel="noopener" style="color:var(--primary);font-weight:800;text-decoration:underline">claude.ai/projects</a>, và mọi cuộc trò chuyện mở trong ngăn đó đều tự biết thương hiệu của bạn.
         </p>
@@ -1443,13 +1443,13 @@ Kết quả: Mỗi câu dưới 10 chữ, giọng ấm áp, gần gũi. Ghi thê
         <div class="part-nav-footer" style="margin-top:24px">
           <button type="button" class="btn-step-prev" onclick="window.EbookApp.switchChapter('lesson4')">← Bài 4: Brand Guideline</button>
           <button type="button" class="btn-step-next" onclick="window.EbookApp.switchChapter('lesson6')">
-            <span>Tiếp theo: Bài 6 — Làm trang web 1 câu lệnh</span>
+            <span>Tiếp theo: Bài 6: Làm trang web 1 câu lệnh</span>
             <span>→</span>
           </button>
         </div>
       </article>
 
-      <!-- MODULE: BÀI 6 — LÀM TRANG WEB BẰNG 1 CÂU LỆNH -->
+      <!-- MODULE: BÀI 6: LÀM TRANG WEB BẰNG 1 CÂU LỆNH -->
       <article class="eb-module" id="ebMod_lesson6">
         <div class="eb-meta-strip">
           <div class="eb-meta-item">
@@ -1466,7 +1466,7 @@ Kết quả: Mỗi câu dưới 10 chữ, giọng ấm áp, gần gũi. Ghi thê
           </div>
         </div>
 
-        <h2 class="eb-h2">Bài 6 — Làm trang web giới thiệu bằng một câu lệnh</h2>
+        <h2 class="eb-h2">Bài 6: Làm trang web giới thiệu bằng một câu lệnh</h2>
         <p class="eb-p">
           Trước khi bắt đầu, vào <strong>Settings → Capabilities</strong> và bật mục <strong>Code execution and file creation</strong> (bản mới gọi là <em>Create and edit files</em>).
         </p>
@@ -1512,13 +1512,13 @@ Kết quả: Mỗi câu dưới 10 chữ, giọng ấm áp, gần gũi. Ghi thê
         <div class="part-nav-footer" style="margin-top:24px">
           <button type="button" class="btn-step-prev" onclick="window.EbookApp.switchChapter('lesson5')">← Bài 5: Project</button>
           <button type="button" class="btn-step-next" onclick="window.EbookApp.switchChapter('lesson7')">
-            <span>Tiếp theo: Bài 7 — Đóng gói Skill</span>
+            <span>Tiếp theo: Bài 7: Đóng gói Skill</span>
             <span>→</span>
           </button>
         </div>
       </article>
 
-      <!-- MODULE: BÀI 7 — ĐÓNG GÓI SKILL -->
+      <!-- MODULE: BÀI 7: ĐÓNG GÓI SKILL -->
       <article class="eb-module" id="ebMod_lesson7">
         <div class="eb-meta-strip">
           <div class="eb-meta-item">
@@ -1535,7 +1535,7 @@ Kết quả: Mỗi câu dưới 10 chữ, giọng ấm áp, gần gũi. Ghi thê
           </div>
         </div>
 
-        <h2 class="eb-h2">Bài 7 — Đóng gói Skill: Dạy Claude một lần, dùng mãi</h2>
+        <h2 class="eb-h2">Bài 7: Đóng gói Skill: Dạy Claude một lần, dùng mãi</h2>
         <p class="eb-p">
           Khi bạn có một quy trình làm việc lặp đi lặp lại hàng tuần (ví dụ: viết kịch bản video 30 giây), hãy đóng gói nó thành <strong>Skill</strong>.
         </p>
@@ -1607,7 +1607,7 @@ Kết quả: Mỗi câu dưới 10 chữ, giọng ấm áp, gần gũi. Ghi thê
           </div>
         </div>
 
-        <h2 class="eb-h2">Bài 8 & Bài 9 (Nâng cao) — File .md, JSON & Giữ Claude Nhanh</h2>
+        <h2 class="eb-h2">Bài 8 & Bài 9 (Nâng cao): File .md, JSON & Giữ Claude Nhanh</h2>
         <p class="eb-p">
           <strong>Bài 8:</strong> Người mới chỉ cần nhớ một việc: <strong>muốn lưu lại và dùng lại cho AI thì nhờ Claude trả kết quả bằng Markdown (<code>.md</code>)</strong>. Còn khi cần đưa dữ liệu vào phần mềm/web tự động thì dùng <strong>JSON</strong>.
         </p>
@@ -1634,7 +1634,7 @@ Kết quả: Mỗi câu dưới 10 chữ, giọng ấm áp, gần gũi. Ghi thê
           </div>
 
           <div id="ctxAdviceBox" style="background:#fff;border:1.5px solid #F1CAD8;border-radius:13px;padding:14px 16px;font-size:13px">
-            <strong style="color:var(--primary-dark)">🟡 Mức 60% Context — Thời điểm vàng để Reset thủ công 4 bước:</strong>
+            <strong style="color:var(--primary-dark)">🟡 Mức 60% Context: Thời điểm vàng để Reset thủ công 4 bước:</strong>
             <ol style="padding-left:20px;margin-top:6px;line-height:1.65">
               <li>Bảo Claude tóm tắt ngắn gọn những gì đã làm được.</li>
               <li>Copy đoạn tóm tắt đó lại.</li>
@@ -1747,7 +1747,7 @@ Kết quả: Mỗi câu dưới 10 chữ, giọng ấm áp, gần gũi. Ghi thê
               <tr><td>Tin hết con số AI đưa</td><td>AI có thể nhầm hoặc tự bịa</td><td>Mở link nguồn kiểm tra; bắt ghi rõ <code>(AI suy luận)</code></td></tr>
               <tr><td>Mỗi lần lại kể lại từ đầu</td><td>Không dùng Project</td><td>Cất Hồ sơ thương hiệu vào <strong>Project</strong> (Bài 5)</td></tr>
               <tr><td>Giao việc ngay không để hỏi</td><td>AI thiếu thông tin nên đoán mò</td><td>Để <strong>AI phỏng vấn trước</strong> (Quy tắc 2 & Bài 3)</td></tr>
-              <tr><td>AI sai chỉ nói "làm lại đi"</td><td>AI không biết sai ở chỗ nào</td><td>Dùng <strong>công thức 4K</strong> (Khoanh - Kỳ vọng - Kiểm - Khóa)</td></tr>
+              <tr><td>AI sai chỉ nói "làm lại đi"</td><td>AI không biết sai ở chỗ nào</td><td>Dùng <strong>công thức 4K</strong> (Khoanh, Kỳ vọng, Kiểm, Khóa)</td></tr>
               <tr><td>Chat 1 cuộc dài cả tuần</td><td>AI dễ lẫn và mau hết lượt</td><td>Mỗi việc mở một cuộc trò chuyện mới trong Project</td></tr>
               <tr><td>Đăng nguyên văn AI viết</td><td>Nghe giống máy, mất chất riêng</td><td>Đọc to lên và sửa lại bằng lời ăn tiếng nói của mình</td></tr>
             </tbody>
@@ -1765,15 +1765,15 @@ Kết quả: Mỗi câu dưới 10 chữ, giọng ấm áp, gần gũi. Ghi thê
               </tr>
             </thead>
             <tbody>
-              <tr><td><strong>0 – 8</strong></td><td>Mở đầu, 4 quy tắc tư duy, mở Claude Desktop đăng nhập</td><td>Tài khoản sẵn sàng, nắm 4 quy tắc</td></tr>
-              <tr><td><strong>8 – 14</strong></td><td>Bài 1 + Bài 2</td><td>Câu lệnh 4 mảnh & bảng tìm hiểu có nguồn</td></tr>
-              <tr><td><strong>14 – 24</strong></td><td>Bài 3: Claude phỏng vấn bạn</td><td><strong>Hồ sơ thương hiệu</strong> hoàn chỉnh</td></tr>
-              <tr><td><strong>24 – 34</strong></td><td>Bài 4: Khảo sát 15 câu</td><td><strong>Brand Guideline</strong> 24 slide & File .md</td></tr>
-              <tr><td><strong>34 – 39</strong></td><td>Bài 5: Tạo Project</td><td>Project "Trợ lý thương hiệu" cất sẵn hồ sơ</td></tr>
-              <tr><td><strong>39 – 49</strong></td><td>Bài 6: Làm trang web</td><td>Trang web 1 trang theo Brand Guideline & link Share</td></tr>
-              <tr><td><strong>49 – 54</strong></td><td>Bài 7: Đóng gói Skill</td><td>Biết cách đóng gói quy trình riêng</td></tr>
-              <tr><td><strong>54 – 58</strong></td><td>Bài 9: Các lệnh Claude Code</td><td>Biết <code>/compact</code>, <code>/clear</code>, <code>/RE</code> & reset 60%</td></tr>
-              <tr><td><strong>58 – 60</strong></td><td>Hỏi đáp, giới thiệu Bài 8 (.md & JSON) & Phụ lục</td><td>Tổng kết & định hướng sáng tạo tự động</td></tr>
+              <tr><td><strong>0 đến 8</strong></td><td>Mở đầu, 4 quy tắc tư duy, mở Claude Desktop đăng nhập</td><td>Tài khoản sẵn sàng, nắm 4 quy tắc</td></tr>
+              <tr><td><strong>8 đến 14</strong></td><td>Bài 1 + Bài 2</td><td>Câu lệnh 4 mảnh & bảng tìm hiểu có nguồn</td></tr>
+              <tr><td><strong>14 đến 24</strong></td><td>Bài 3: Claude phỏng vấn bạn</td><td><strong>Hồ sơ thương hiệu</strong> hoàn chỉnh</td></tr>
+              <tr><td><strong>24 đến 34</strong></td><td>Bài 4: Khảo sát 15 câu</td><td><strong>Brand Guideline</strong> 24 slide & File .md</td></tr>
+              <tr><td><strong>34 đến 39</strong></td><td>Bài 5: Tạo Project</td><td>Project "Trợ lý thương hiệu" cất sẵn hồ sơ</td></tr>
+              <tr><td><strong>39 đến 49</strong></td><td>Bài 6: Làm trang web</td><td>Trang web 1 trang theo Brand Guideline & link Share</td></tr>
+              <tr><td><strong>49 đến 54</strong></td><td>Bài 7: Đóng gói Skill</td><td>Biết cách đóng gói quy trình riêng</td></tr>
+              <tr><td><strong>54 đến 58</strong></td><td>Bài 9: Các lệnh Claude Code</td><td>Biết <code>/compact</code>, <code>/clear</code>, <code>/RE</code> & reset 60%</td></tr>
+              <tr><td><strong>58 đến 60</strong></td><td>Hỏi đáp, giới thiệu Bài 8 (.md & JSON) & Phụ lục</td><td>Tổng kết & định hướng sáng tạo tự động</td></tr>
             </tbody>
           </table>
         </div>
@@ -1804,7 +1804,7 @@ Kết quả: Mỗi câu dưới 10 chữ, giọng ấm áp, gần gũi. Ghi thê
           </div>
         </div>
 
-        <h2 class="eb-h2">Phụ lục (Nâng cao) — Để AI tự làm phụ đề & quản lý dự án Video trên Windows và Mac</h2>
+        <h2 class="eb-h2">Phụ lục (Nâng cao): Để AI tự làm phụ đề & quản lý dự án Video trên Windows và Mac</h2>
         <p class="eb-p">
           Phần này dùng <strong>Claude Code</strong> để chạy lệnh thật trên máy. Luôn đi đúng thứ tự 3 bước an toàn: <strong>1. Kiểm tra máy (Chỉ đọc) → 2. Cài công cụ thiếu (Có hỏi duyệt) → 3. Tạo Skill <code>/ekk-phu-de</code></strong>.
         </p>
@@ -1842,26 +1842,26 @@ Kết quả: Mỗi câu dưới 10 chữ, giọng ấm áp, gần gũi. Ghi thê
           <!-- WINDOWS COMMANDS -->
           <div id="osPaneWin">
             <p style="font-size:13px;color:var(--text-muted);margin-bottom:10px">
-              <strong>Lưu ý cho Windows:</strong> Bản dựng sẵn của <code>whisper.cpp</code> chỉ hỗ trợ x64/Win32 (máy ARM64 Claude sẽ dừng và báo bạn). Không bao giờ nhảy thẳng vào cài đặt — hãy chạy Bước 1 (Chỉ đọc) trước:
+              <strong>Lưu ý cho Windows:</strong> Bản dựng sẵn của <code>whisper.cpp</code> chỉ hỗ trợ x64/Win32 (máy ARM64 Claude sẽ dừng và báo bạn). Không bao giờ nhảy thẳng vào cài đặt, hãy chạy Bước 1 (Chỉ đọc) trước:
             </p>
-            ${renderPromptCard('Bước 1 (Windows): Kiểm tra máy chỉ đọc — An toàn 100%', `EKK – KIỂM TRA MÁY WINDOWS (CHỈ ĐỌC)\n\n1. MỤC TIÊU\nKiểm tra máy đã có các công cụ sau chưa và có chạy được không:\nNode.js LTS + npm, Git, FFmpeg + FFprobe, whisper.cpp (whisper-cli), model Whisper ggml-base.bin.\nTôi không biết lập trình. Bạn tự chạy lệnh, không yêu cầu tôi mở PowerShell/CMD.\n\n2. PHẠM VI – CHỈ ĐỌC\n- KHÔNG cài, gỡ, nâng cấp, tải hoặc xoá bất cứ thứ gì.\n- KHÔNG sửa PATH, Registry, cấu hình hay file nào.\n- KHÔNG chạy lệnh cần quyền Administrator.\n- Chỉ dùng lệnh đọc thông tin (version, where, Get-Command, winget list...).\n- Nếu WinGet hỏi đồng ý điều khoản, KHÔNG tự đồng ý: dừng phần WinGet và ghi CẦN XÁC MINH.\n- Nếu một kiểm tra buộc phải thay đổi máy mới làm được, bỏ qua và ghi CẦN XÁC MINH.\n\n3. THỰC HIỆN\n- Ghi lại phiên bản Windows, bản Home hay Pro, kiến trúc CPU (x64/ARM64).\n- Kiểm tra WinGet có chạy được không.\n- Hyper-V và ảo hoá CPU: chỉ dùng cách không cần Admin (systeminfo, Get-CimInstance Win32_Processor). Không dùng Get-WindowsOptionalFeature.\n- Với từng công cụ: tìm trong PATH, trong danh sách phần mềm đã cài (winget list, Apps) và các vị trí thông dụng (Program Files, AppData, WinGet Packages/Links, C:\\ffmpeg, %USERPROFILE%\\EKK).\n- whisper.cpp: tìm cả whisper-cli.exe và tên cũ main.exe.\n- Chạy thử lệnh phiên bản (hoặc --help nếu công cụ không có lệnh phiên bản) để xác nhận chạy được thật, không chỉ thấy file.\n- Phát hiện cài nhiều bản, PATH xung đột hoặc cài đặt dở dang.\n- Model: tìm ggml-base.bin và kích thước file (khoảng 148 MB). File ggml-base.en.bin là bản chỉ tiếng Anh, không tính là PASS. Không tải model để so sánh.\n\n4. PHÂN LOẠI\n- PASS: có và chạy được.\n- THIẾU: không tìm thấy sau khi kiểm tra đủ các vị trí.\n- CẦN XÁC MINH: có dấu vết nhưng lỗi, nhiều bản, hoặc chưa chắc chắn.\n\n5. BÀN GIAO\nBảng tiếng Việt: Công cụ | Phiên bản | Đường dẫn | Trạng thái | Ghi chú\nCuối báo cáo nêu ngắn gọn: Thông tin máy, Công cụ THIẾU, Công cụ CẦN XÁC MINH và Kết luận.`)}
+            ${renderPromptCard('Bước 1 (Windows): Kiểm tra máy chỉ đọc (An toàn 100%)', `EKK: KIỂM TRA MÁY WINDOWS (CHỈ ĐỌC)\n\n1. MỤC TIÊU\nKiểm tra máy đã có các công cụ sau chưa và có chạy được không:\nNode.js LTS + npm, Git, FFmpeg + FFprobe, whisper.cpp (whisper-cli), model Whisper ggml-base.bin.\nTôi không biết lập trình. Bạn tự chạy lệnh, không yêu cầu tôi mở PowerShell/CMD.\n\n2. PHẠM VI (CHỈ ĐỌC)\n- KHÔNG cài, gỡ, nâng cấp, tải hoặc xoá bất cứ thứ gì.\n- KHÔNG sửa PATH, Registry, cấu hình hay file nào.\n- KHÔNG chạy lệnh cần quyền Administrator.\n- Chỉ dùng lệnh đọc thông tin (version, where, Get-Command, winget list...).\n- Nếu WinGet hỏi đồng ý điều khoản, KHÔNG tự đồng ý: dừng phần WinGet và ghi CẦN XÁC MINH.\n- Nếu một kiểm tra buộc phải thay đổi máy mới làm được, bỏ qua và ghi CẦN XÁC MINH.\n\n3. THỰC HIỆN\n- Ghi lại phiên bản Windows, bản Home hay Pro, kiến trúc CPU (x64/ARM64).\n- Kiểm tra WinGet có chạy được không.\n- Hyper-V và ảo hoá CPU: chỉ dùng cách không cần Admin (systeminfo, Get-CimInstance Win32_Processor). Không dùng Get-WindowsOptionalFeature.\n- Với từng công cụ: tìm trong PATH, trong danh sách phần mềm đã cài (winget list, Apps) và các vị trí thông dụng (Program Files, AppData, WinGet Packages/Links, C:\\ffmpeg, %USERPROFILE%\\EKK).\n- whisper.cpp: tìm cả whisper-cli.exe và tên cũ main.exe.\n- Chạy thử lệnh phiên bản (hoặc --help nếu công cụ không có lệnh phiên bản) để xác nhận chạy được thật, không chỉ thấy file.\n- Phát hiện cài nhiều bản, PATH xung đột hoặc cài đặt dở dang.\n- Model: tìm ggml-base.bin và kích thước file (khoảng 148 MB). File ggml-base.en.bin là bản chỉ tiếng Anh, không tính là PASS. Không tải model để so sánh.\n\n4. PHÂN LOẠI\n- PASS: có và chạy được.\n- THIẾU: không tìm thấy sau khi kiểm tra đủ các vị trí.\n- CẦN XÁC MINH: có dấu vết nhưng lỗi, nhiều bản, hoặc chưa chắc chắn.\n\n5. BÀN GIAO\nBảng tiếng Việt: Công cụ | Phiên bản | Đường dẫn | Trạng thái | Ghi chú\nCuối báo cáo nêu ngắn gọn: Thông tin máy, Công cụ THIẾU, Công cụ CẦN XÁC MINH và Kết luận.`)}
 
-            ${renderPromptCard('Bước 2 (Windows): Cài công cụ còn thiếu — Có hỏi duyệt từng bước', `EKK – CÀI CÔNG CỤ CÒN THIẾU (WINDOWS)\n\n1. MỤC TIÊU\nCài các công cụ báo THIẾU trong báo cáo kiểm tra vừa rồi, để máy có đủ:\nNode.js LTS + npm, Git, FFmpeg + FFprobe, whisper.cpp (whisper-cli), model ggml-base.bin.\nTôi không biết lập trình. Bạn tự chạy lệnh.\n\n2. PHẠM VI\n- Chỉ cài thứ đang THIẾU. Không gỡ, không nâng cấp thứ đã PASS.\n- Thứ CẦN XÁC MINH: báo tôi phương án xử lý, chờ tôi chọn.\n- Chỉ dùng nguồn chính thức:\n  + Node.js, Git, FFmpeg: qua WinGet. Tra đúng ID bằng winget show trước khi cài.\n  + whisper.cpp: trang Releases chính thức github.com/ggml-org/whisper.cpp, bản whisper-bin-x64.zip, giải nén vào %USERPROFILE%\\EKK\\whisper.\n  + Model: huggingface.co/ggerganov/whisper.cpp, file ggml-base.bin, lưu vào %USERPROFILE%\\EKK\\models.\n- TRƯỚC MỖI LẦN CÀI HOẶC TẢI: báo tên, nguồn, dung lượng, nơi lưu, rồi chờ tôi gõ "đồng ý".\n- Không chạy quyền Administrator nếu tôi chưa đồng ý.\n- Chỉ sửa PATH của tài khoản người dùng, không sửa PATH hệ thống. Báo trước khi sửa.\n- Máy ARM64: dừng phần whisper.cpp và báo tôi.\n\n3. THỰC HIỆN & 4. KIỂM TRA CUỐI\nCài lần lượt từng công cụ. Chạy lại bài kiểm tra chỉ đọc và thử dùng FFmpeg tạo file âm thanh 3 giây rồi cho whisper-cli đọc bằng model ggml-base.bin.\n\n5. BÀN GIAO\nBảng trạng thái, danh sách thay đổi và cách gỡ từng thứ nếu muốn quay lại như cũ.`)}
+            ${renderPromptCard('Bước 2 (Windows): Cài công cụ còn thiếu (Có hỏi duyệt từng bước)', `EKK: CÀI CÔNG CỤ CÒN THIẾU (WINDOWS)\n\n1. MỤC TIÊU\nCài các công cụ báo THIẾU trong báo cáo kiểm tra vừa rồi, để máy có đủ:\nNode.js LTS + npm, Git, FFmpeg + FFprobe, whisper.cpp (whisper-cli), model ggml-base.bin.\nTôi không biết lập trình. Bạn tự chạy lệnh.\n\n2. PHẠM VI\n- Chỉ cài thứ đang THIẾU. Không gỡ, không nâng cấp thứ đã PASS.\n- Thứ CẦN XÁC MINH: báo tôi phương án xử lý, chờ tôi chọn.\n- Chỉ dùng nguồn chính thức:\n  + Node.js, Git, FFmpeg: qua WinGet. Tra đúng ID bằng winget show trước khi cài.\n  + whisper.cpp: trang Releases chính thức github.com/ggml-org/whisper.cpp, bản whisper-bin-x64.zip, giải nén vào %USERPROFILE%\\EKK\\whisper.\n  + Model: huggingface.co/ggerganov/whisper.cpp, file ggml-base.bin, lưu vào %USERPROFILE%\\EKK\\models.\n- TRƯỚC MỖI LẦN CÀI HOẶC TẢI: báo tên, nguồn, dung lượng, nơi lưu, rồi chờ tôi gõ "đồng ý".\n- Không chạy quyền Administrator nếu tôi chưa đồng ý.\n- Chỉ sửa PATH của tài khoản người dùng, không sửa PATH hệ thống. Báo trước khi sửa.\n- Máy ARM64: dừng phần whisper.cpp và báo tôi.\n\n3. THỰC HIỆN & 4. KIỂM TRA CUỐI\nCài lần lượt từng công cụ. Chạy lại bài kiểm tra chỉ đọc và thử dùng FFmpeg tạo file âm thanh 3 giây rồi cho whisper-cli đọc bằng model ggml-base.bin.\n\n5. BÀN GIAO\nBảng trạng thái, danh sách thay đổi và cách gỡ từng thứ nếu muốn quay lại như cũ.`)}
           </div>
 
           <!-- MAC COMMANDS -->
           <div id="osPaneMac" style="display:none">
             <p style="font-size:13px;color:var(--text-muted);margin-bottom:10px">
-              <strong>3 lưu ý quan trọng cho Mac:</strong> (1) <strong>Homebrew</strong> là chợ ứng dụng dòng lệnh (<a href="https://brew.sh" target="_blank" rel="noopener" style="color:var(--primary);font-weight:700">brew.sh</a>) — tự gõ mật khẩu máy, tuyệt đối không đưa mật khẩu cho AI; (2) Kiểm tra <code>xcode-select -p</code> trước khi gọi <code>git --version</code>; (3) Chip Apple Silicon có sẵn bản dựng nhanh.
+              <strong>3 lưu ý quan trọng cho Mac:</strong> (1) <strong>Homebrew</strong> là chợ ứng dụng dòng lệnh (<a href="https://brew.sh" target="_blank" rel="noopener" style="color:var(--primary);font-weight:700">brew.sh</a>), tự gõ mật khẩu máy, tuyệt đối không đưa mật khẩu cho AI; (2) Kiểm tra <code>xcode-select -p</code> trước khi gọi <code>git --version</code>; (3) Chip Apple Silicon có sẵn bản dựng nhanh.
             </p>
-            ${renderPromptCard('Bước 1 (macOS): Kiểm tra máy Mac chỉ đọc — An toàn 100%', `EKK – KIỂM TRA MÁY MAC (CHỈ ĐỌC)\n\n1. MỤC TIÊU\nKiểm tra máy đã có các công cụ sau chưa và có chạy được không:\nHomebrew, Node.js LTS + npm, Git, FFmpeg + FFprobe, whisper.cpp (whisper-cli), model Whisper ggml-base.bin.\nTôi không biết lập trình. Bạn tự chạy lệnh, không yêu cầu tôi mở Terminal.\n\n2. PHẠM VI – CHỈ ĐỌC\n- KHÔNG cài, gỡ, nâng cấp, tải hoặc xoá bất cứ thứ gì. KHÔNG chạy brew install, brew upgrade, brew update.\n- KHÔNG sửa PATH hay file cấu hình (.zshrc, .zprofile).\n- KHÔNG dùng sudo, không hỏi và không nhập mật khẩu máy.\n- Git: kiểm tra xcode-select -p TRƯỚC. Nếu chưa có Command Line Tools, KHÔNG chạy git --version (lệnh này bật hộp thoại cài đặt); ghi THIẾU.\n\n3. THỰC HIỆN\n- Ghi lại phiên bản macOS, chip Apple Silicon (arm64) hay Intel (x86_64), dung lượng ổ còn trống.\n- Homebrew: nằm ở /opt/homebrew hay /usr/local, brew --version chạy được không.\n- Với từng công cụ: tìm trong PATH (which -a), trong brew list và các vị trí thông dụng (/opt/homebrew/bin, /usr/local/bin, ~/EKK, Applications).\n- Model: tìm ggml-base.bin (khoảng 148 MB) trong ~/EKK, thư mục Homebrew và Downloads.\n\n4. PHÂN LOẠI & 5. BÀN GIAO\nBảng tiếng Việt: Công cụ | Phiên bản | Đường dẫn | Trạng thái | Ghi chú (PASS / THIẾU / CẦN XÁC MINH).`)}
+            ${renderPromptCard('Bước 1 (macOS): Kiểm tra máy Mac chỉ đọc (An toàn 100%)', `EKK: KIỂM TRA MÁY MAC (CHỈ ĐỌC)\n\n1. MỤC TIÊU\nKiểm tra máy đã có các công cụ sau chưa và có chạy được không:\nHomebrew, Node.js LTS + npm, Git, FFmpeg + FFprobe, whisper.cpp (whisper-cli), model Whisper ggml-base.bin.\nTôi không biết lập trình. Bạn tự chạy lệnh, không yêu cầu tôi mở Terminal.\n\n2. PHẠM VI (CHỈ ĐỌC)\n- KHÔNG cài, gỡ, nâng cấp, tải hoặc xoá bất cứ thứ gì. KHÔNG chạy brew install, brew upgrade, brew update.\n- KHÔNG sửa PATH hay file cấu hình (.zshrc, .zprofile).\n- KHÔNG dùng sudo, không hỏi và không nhập mật khẩu máy.\n- Git: kiểm tra xcode-select -p TRƯỚC. Nếu chưa có Command Line Tools, KHÔNG chạy git --version (lệnh này bật hộp thoại cài đặt); ghi THIẾU.\n\n3. THỰC HIỆN\n- Ghi lại phiên bản macOS, chip Apple Silicon (arm64) hay Intel (x86_64), dung lượng ổ còn trống.\n- Homebrew: nằm ở /opt/homebrew hay /usr/local, brew --version chạy được không.\n- Với từng công cụ: tìm trong PATH (which -a), trong brew list và các vị trí thông dụng (/opt/homebrew/bin, /usr/local/bin, ~/EKK, Applications).\n- Model: tìm ggml-base.bin (khoảng 148 MB) trong ~/EKK, thư mục Homebrew và Downloads.\n\n4. PHÂN LOẠI & 5. BÀN GIAO\nBảng tiếng Việt: Công cụ | Phiên bản | Đường dẫn | Trạng thái | Ghi chú (PASS / THIẾU / CẦN XÁC MINH).`)}
 
-            ${renderPromptCard('Bước 2 (macOS): Cài công cụ còn thiếu trên Mac', `EKK – CÀI CÔNG CỤ CÒN THIẾU (MAC)\n\n1. MỤC TIÊU\nCài các công cụ báo THIẾU trong báo cáo kiểm tra vừa rồi, để máy có đủ:\nNode.js LTS + npm, Git, FFmpeg + FFprobe, whisper.cpp (whisper-cli), model ggml-base.bin.\n\n2. PHẠM VI\n- Chỉ cài thứ đang THIẾU. Không gỡ, không nâng cấp thứ đã PASS.\n- Nếu máy CHƯA có Homebrew: không tự cài. Đưa tôi đúng dòng lệnh chính thức từ brew.sh để tôi tự dán vào Terminal và tự gõ mật khẩu máy. Không bao giờ hỏi hay nhập mật khẩu của tôi.\n- Cài qua Homebrew: Node.js LTS, git, ffmpeg, whisper-cpp.\n- Model: huggingface.co/ggerganov/whisper.cpp, file ggml-base.bin, lưu vào ~/EKK/models.\n- TRƯỚC MỖI LẦN CÀI HOẶC TẢI: báo tên, nguồn, dung lượng, nơi lưu, rồi chờ tôi gõ "đồng ý".\n- Không dùng sudo. Nếu cần thêm vào PATH: chỉ sửa ~/.zprofile, báo trước dòng sẽ thêm.\n\n3. THỰC HIỆN & 4. KIỂM TRA CUỐI\nCài lần lượt, chạy lại bài kiểm tra chỉ đọc và thử FFmpeg + whisper-cli đọc file âm thanh 3 giây.`)}
+            ${renderPromptCard('Bước 2 (macOS): Cài công cụ còn thiếu trên Mac', `EKK: CÀI CÔNG CỤ CÒN THIẾU (MAC)\n\n1. MỤC TIÊU\nCài các công cụ báo THIẾU trong báo cáo kiểm tra vừa rồi, để máy có đủ:\nNode.js LTS + npm, Git, FFmpeg + FFprobe, whisper.cpp (whisper-cli), model ggml-base.bin.\n\n2. PHẠM VI\n- Chỉ cài thứ đang THIẾU. Không gỡ, không nâng cấp thứ đã PASS.\n- Nếu máy CHƯA có Homebrew: không tự cài. Đưa tôi đúng dòng lệnh chính thức từ brew.sh để tôi tự dán vào Terminal và tự gõ mật khẩu máy. Không bao giờ hỏi hay nhập mật khẩu của tôi.\n- Cài qua Homebrew: Node.js LTS, git, ffmpeg, whisper-cpp.\n- Model: huggingface.co/ggerganov/whisper.cpp, file ggml-base.bin, lưu vào ~/EKK/models.\n- TRƯỚC MỖI LẦN CÀI HOẶC TẢI: báo tên, nguồn, dung lượng, nơi lưu, rồi chờ tôi gõ "đồng ý".\n- Không dùng sudo. Nếu cần thêm vào PATH: chỉ sửa ~/.zprofile, báo trước dòng sẽ thêm.\n\n3. THỰC HIỆN & 4. KIỂM TRA CUỐI\nCài lần lượt, chạy lại bài kiểm tra chỉ đọc và thử FFmpeg + whisper-cli đọc file âm thanh 3 giây.`)}
           </div>
         </div>
 
-        <h3 class="eb-h3">🎬 Bước 3 — Tạo Skill <code>/ekk-phu-de</code> tự động xuất phụ đề tiếng Việt (.srt)</h3>
-        ${renderPromptCard('Bước 3: Câu lệnh tạo Skill /ekk-phu-de làm phụ đề tiếng Việt', `EKK – TẠO SKILL "ekk-phu-de" (TẠO PHỤ ĐỀ TIẾNG VIỆT)\n\n1. MỤC TIÊU\nTạo một skill cá nhân tên ekk-phu-de. Khi tôi gõ /ekk-phu-de kèm đường dẫn video, skill tạo file phụ đề .srt tiếng Việt nằm cạnh video.\n\n2. PHẠM VI\n- Lưu skill tại ~/.claude/skills/ekk-phu-de/SKILL.md (hoặc %USERPROFILE%\\.claude\\skills\\ekk-phu-de\\SKILL.md trên Windows).\n- Dùng FFmpeg, whisper-cli và model ggml-base.bin đã cài.\n- Không sửa, không ghi đè video gốc. File tạm để trong thư mục tạm và xoá sau khi xong.\n\n3. THỰC HIỆN\n- Các bước trong skill: tách âm thanh từ video (16 kHz, mono) → chạy whisper-cli với tiếng Việt, xuất .srt → đặt tên file .srt trùng tên video → báo đường dẫn.\n\n4. KIỂM TRA & 5. BÀN GIAO\nHỏi tôi một video ngắn 10–20 giây có lời nói tiếng Việt, chạy thử /ekk-phu-de và kiểm tra mốc thời gian.`)}
+        <h3 class="eb-h3">🎬 Bước 3: Tạo Skill <code>/ekk-phu-de</code> tự động xuất phụ đề tiếng Việt (.srt)</h3>
+        ${renderPromptCard('Bước 3: Câu lệnh tạo Skill /ekk-phu-de làm phụ đề tiếng Việt', `EKK: TẠO SKILL "ekk-phu-de" (TẠO PHỤ ĐỀ TIẾNG VIỆT)\n\n1. MỤC TIÊU\nTạo một skill cá nhân tên ekk-phu-de. Khi tôi gõ /ekk-phu-de kèm đường dẫn video, skill tạo file phụ đề .srt tiếng Việt nằm cạnh video.\n\n2. PHẠM VI\n- Lưu skill tại ~/.claude/skills/ekk-phu-de/SKILL.md (hoặc %USERPROFILE%\\.claude\\skills\\ekk-phu-de\\SKILL.md trên Windows).\n- Dùng FFmpeg, whisper-cli và model ggml-base.bin đã cài.\n- Không sửa, không ghi đè video gốc. File tạm để trong thư mục tạm và xoá sau khi xong.\n\n3. THỰC HIỆN\n- Các bước trong skill: tách âm thanh từ video (16 kHz, mono) → chạy whisper-cli với tiếng Việt, xuất .srt → đặt tên file .srt trùng tên video → báo đường dẫn.\n\n4. KIỂM TRA & 5. BÀN GIAO\nHỏi tôi một video ngắn 10 đến 20 giây có lời nói tiếng Việt, chạy thử /ekk-phu-de và kiểm tra mốc thời gian.`)}
 
         <!-- INTERACTIVE 6-FOLDER VIDEO TREE EXPLORER -->
         <div class="eb-motion-widget">
@@ -1891,14 +1891,14 @@ Kết quả: Mỗi câu dưới 10 chữ, giọng ấm áp, gần gũi. Ghi thê
           </div>
 
           <div id="folderInspectBox" style="background:#fff;border:1.5px solid #F1CAD8;border-radius:13px;padding:14px 16px;font-size:13px">
-            <strong style="color:var(--primary-dark)">📁 Thư mục <code>01_Raw</code> — Video gốc vừa quay:</strong>
+            <strong style="color:var(--primary-dark)">📁 Thư mục <code>01_Raw</code>: Video gốc vừa quay:</strong>
             <p style="margin:4px 0 0;color:var(--text-muted)">
               Chứa toàn bộ footage gốc từ máy quay/điện thoại. <strong>Quy tắc bất khả xâm phạm trong CLAUDE.md:</strong> AI chỉ được đọc để tách âm thanh hoặc cắt cảnh, <em>tuyệt đối không bao giờ sửa, ghi đè hay xoá file trong 01_Raw</em>.
             </p>
           </div>
         </div>
 
-        ${renderPromptCard('Bước 4: Câu lệnh tạo bộ 6 thư mục dự án Video + CLAUDE.md bảo vệ', `EKK – TẠO THƯ MỤC DỰ ÁN VIDEO\n\n1. MỤC TIÊU\nTạo bộ thư mục chuẩn cho dự án video tên [ten-du-an],\nnằm trong [Documents/EKK-Projects] của tài khoản máy tính này.\n\n2. PHẠM VI\n- Chỉ tạo thư mục mới và file CLAUDE.md. Không di chuyển, đổi tên, xoá file có sẵn.\n- Nếu thư mục dự án đã tồn tại: dừng, báo tôi, không ghi đè.\n- Tên thư mục giữ đúng như dưới đây: không dấu, không khoảng trắng.\n\n3. THỰC HIỆN\nTạo đúng 6 thư mục:\n01_Raw — video gốc vừa quay\n02_Broll — cảnh phụ chèn minh hoạ\n03_Tham-chieu — video mẫu để học phong cách\n04_Brand-guideline — hồ sơ thương hiệu, logo, màu, font\n05_Sound-effect — nhạc nền, hiệu ứng âm thanh\n06_Final — video đã xuất\nTạo CLAUDE.md ở thư mục gốc dự án, ghi ngắn gọn (dưới 30 dòng):\n- Mỗi thư mục dùng để chứa gì.\n- Không bao giờ sửa, ghi đè hoặc xoá file trong 01_Raw.\n- Video xuất ra chỉ lưu trong 06_Final; file tạm không để lẫn vào các thư mục trên.\n- 03_Tham-chieu chỉ để học phong cách, không cắt ghép vào video thành phẩm.\n- Luôn đọc 04_Brand-guideline trước khi làm chữ, màu, phụ đề.\n\n4. KIỂM TRA & 5. BÀN GIAO\nLiệt kê lại cây thư mục vừa tạo, xác nhận đủ 6 thư mục và nội dung CLAUDE.md.`)}
+        ${renderPromptCard('Bước 4: Câu lệnh tạo bộ 6 thư mục dự án Video + CLAUDE.md bảo vệ', `EKK: TẠO THƯ MỤC DỰ ÁN VIDEO\n\n1. MỤC TIÊU\nTạo bộ thư mục chuẩn cho dự án video tên [ten-du-an],\nnằm trong [Documents/EKK-Projects] của tài khoản máy tính này.\n\n2. PHẠM VI\n- Chỉ tạo thư mục mới và file CLAUDE.md. Không di chuyển, đổi tên, xoá file có sẵn.\n- Nếu thư mục dự án đã tồn tại: dừng, báo tôi, không ghi đè.\n- Tên thư mục giữ đúng như dưới đây: không dấu, không khoảng trắng.\n\n3. THỰC HIỆN\nTạo đúng 6 thư mục:\n01_Raw: video gốc vừa quay\n02_Broll: cảnh phụ chèn minh hoạ\n03_Tham-chieu: video mẫu để học phong cách\n04_Brand-guideline: hồ sơ thương hiệu, logo, màu, font\n05_Sound-effect: nhạc nền, hiệu ứng âm thanh\n06_Final: video đã xuất\nTạo CLAUDE.md ở thư mục gốc dự án, ghi ngắn gọn (dưới 30 dòng):\n- Mỗi thư mục dùng để chứa gì.\n- Không bao giờ sửa, ghi đè hoặc xoá file trong 01_Raw.\n- Video xuất ra chỉ lưu trong 06_Final; file tạm không để lẫn vào các thư mục trên.\n- 03_Tham-chieu chỉ để học phong cách, không cắt ghép vào video thành phẩm.\n- Luôn đọc 04_Brand-guideline trước khi làm chữ, màu, phụ đề.\n\n4. KIỂM TRA & 5. BÀN GIAO\nLiệt kê lại cây thư mục vừa tạo, xác nhận đủ 6 thư mục và nội dung CLAUDE.md.`)}
 
         <div class="part-nav-footer" style="margin-top:24px">
           <button type="button" class="btn-step-prev" onclick="window.EbookApp.switchChapter('cheatsheet')">← Thẻ lệnh bỏ túi</button>
@@ -1940,7 +1940,7 @@ Kết quả: Mỗi câu dưới 10 chữ, giọng ấm áp, gần gũi. Ghi thê
   const PUZZLE_PRESETS = {
     bepmai: {
       role: 'chuyên gia marketing cho các tiệm nhỏ',
-      context: 'tiệm bánh handmade ở Đà Nẵng, bán bánh ít đường, khách là mẹ bỉm 25–40 tuổi quan tâm sức khỏe gia đình',
+      context: 'tiệm bánh handmade ở Đà Nẵng, bán bánh ít đường, khách là mẹ bỉm 25 đến 40 tuổi quan tâm sức khỏe gia đình',
       task: 'viết 5 câu khẩu hiệu',
       result: 'Mỗi câu dưới 10 chữ, giọng ấm áp, gần gũi. Ghi thêm 1 dòng giải thích vì sao chọn câu đó'
     },
@@ -1958,7 +1958,7 @@ Kết quả: Mỗi câu dưới 10 chữ, giọng ấm áp, gần gũi. Ghi thê
     },
     shop: {
       role: 'chuyên gia chăm sóc khách hàng và chốt đơn qua tin nhắn',
-      context: 'tiệm thời trang thiết kế tối giản cho nữ công sở 25–35 tuổi tại TP.HCM',
+      context: 'tiệm thời trang thiết kế tối giản cho nữ công sở 25 đến 35 tuổi tại TP.HCM',
       task: 'soạn 3 mẫu tin nhắn trả lời khi khách hỏi giá xong rồi im lặng',
       result: 'Ngắn gọn dưới 4 câu, tinh tế, khéo léo gợi ý phối đồ mà không gây cảm giác chèo kéo'
     }
@@ -2251,13 +2251,13 @@ Kết quả: Mỗi câu dưới 10 chữ, giọng ấm áp, gần gũi. Ghi thê
       fill.style.width = level + '%';
       if (level === 30) {
         fill.style.background = '#1E8E5A';
-        box.innerHTML = `<strong style="color:#1E8E5A">🟢 Mức 30% Context — Bộ nhớ đang sạch và nhanh:</strong><p style="margin:4px 0 0;color:var(--text-muted)">Claude đang nhớ rất rõ hướng dẫn trong <code>CLAUDE.md</code>. Nếu Claude trả lời sai ở giai đoạn này, hãy gõ <code>/RE</code> (<code>/rewind</code>) để quay lại tin nhắn trước và sửa bằng công thức 4K.</p>`;
+        box.innerHTML = `<strong style="color:#1E8E5A">🟢 Mức 30% Context: Bộ nhớ đang sạch và nhanh:</strong><p style="margin:4px 0 0;color:var(--text-muted)">Claude đang nhớ rất rõ hướng dẫn trong <code>CLAUDE.md</code>. Nếu Claude trả lời sai ở giai đoạn này, hãy gõ <code>/RE</code> (<code>/rewind</code>) để quay lại tin nhắn trước và sửa bằng công thức 4K.</p>`;
       } else if (level === 60) {
         fill.style.background = 'linear-gradient(90deg,#D89824,#C82061)';
-        box.innerHTML = `<strong style="color:var(--primary-dark)">🟡 Mức 60% Context — Thời điểm vàng để Reset thủ công 4 bước:</strong><ol style="padding-left:20px;margin-top:6px;line-height:1.65"><li>Bảo Claude tóm tắt ngắn gọn những gì đã làm được.</li><li>Copy đoạn tóm tắt đó lại.</li><li>Gõ lệnh <code>/clear</code> để làm sạch hoàn toàn bàn làm việc.</li><li>Dán bản tóm tắt vào khung chat mới và tiếp tục làm việc mượt mà!</li></ol>`;
+        box.innerHTML = `<strong style="color:var(--primary-dark)">🟡 Mức 60% Context: Thời điểm vàng để Reset thủ công 4 bước:</strong><ol style="padding-left:20px;margin-top:6px;line-height:1.65"><li>Bảo Claude tóm tắt ngắn gọn những gì đã làm được.</li><li>Copy đoạn tóm tắt đó lại.</li><li>Gõ lệnh <code>/clear</code> để làm sạch hoàn toàn bàn làm việc.</li><li>Dán bản tóm tắt vào khung chat mới và tiếp tục làm việc mượt mà!</li></ol>`;
       } else {
         fill.style.background = '#D92D20';
-        box.innerHTML = `<strong style="color:#B42318">🔴 Mức 95% Context — Nguy hiểm (Tránh để chạm ngưỡng này):</strong><p style="margin:4px 0 0;color:var(--text-muted)">Ở mức 95%, Claude sẽ tự động nén context và chất lượng câu trả lời thường giảm rõ rệt, dễ quên quy tắc cũ. Hãy dùng <code>/compact</code> hoặc chủ động reset ở mức 60%!</p>`;
+        box.innerHTML = `<strong style="color:#B42318">🔴 Mức 95% Context: Nguy hiểm (Tránh để chạm ngưỡng này):</strong><p style="margin:4px 0 0;color:var(--text-muted)">Ở mức 95%, Claude sẽ tự động nén context và chất lượng câu trả lời thường giảm rõ rệt, dễ quên quy tắc cũ. Hãy dùng <code>/compact</code> hoặc chủ động reset ở mức 60%!</p>`;
       }
     },
 
@@ -2286,7 +2286,7 @@ Kết quả: Mỗi câu dưới 10 chữ, giọng ấm áp, gần gũi. Ghi thê
       const box = document.getElementById('folderInspectBox');
       if (box && info) {
         box.innerHTML = `
-          <strong style="color:var(--primary-dark)">📁 Thư mục <code>${info.code}</code> — ${info.title}:</strong>
+          <strong style="color:var(--primary-dark)">📁 Thư mục <code>${info.code}</code>: ${info.title}:</strong>
           <p style="margin:4px 0 0;color:var(--text-muted)">${info.desc}</p>
         `;
       }
@@ -2384,7 +2384,7 @@ Kết quả: Mỗi câu dưới 10 chữ, giọng ấm áp, gần gũi. Ghi thê
       const voice = this.selectedVoice || 'female';
 
       if (voice !== 'system' && audioKey) {
-        const audioSrc = `assets/audio/${voice}_${audioKey}.mp3`;
+        const audioSrc = `assets/audio/${voice}_${audioKey}.mp3?v=20261119_v2`;
         const audio = new Audio(audioSrc);
         this.currentAudio = audio;
 
@@ -2435,7 +2435,7 @@ Kết quả: Mỗi câu dưới 10 chữ, giọng ấm áp, gần gũi. Ghi thê
       let clean = (text || '')
         .replace(/<[^>]+>/g, ' ')
         .replace(/\[[^\]]+\]/g, ' ')
-        .replace(/[#*`_~]/g, '')
+        .replace(/[#*`_~—–]/g, ' ').replace(/\s+-\s+/g, ', ')
         .replace(/https?:\/\/\S+/g, 'đường dẫn liên kết')
         .replace(/\s+/g, ' ')
         .trim();
@@ -2624,16 +2624,17 @@ Kết quả: Mỗi câu dưới 10 chữ, giọng ấm áp, gần gũi. Ghi thê
 
       // Fallback comprehensive guide response grounded in whole website
       return {
+        id: 'kb_fallback',
         targetPart: 'overview',
         targetLabel: 'Xem Tổng quan trên Website',
         answer: `Cảm ơn bạn đã hỏi Ngáo Bot!<br><br>Để tìm hiểu thông tin chi tiết, bạn có thể tham khảo các phần chính sau trên website:<br>
-• **Phần 1: Tổng quan** — Định vị *"Hiểu Nhân cho rõ, Xây Hiệu cho lâu"*. Giải quyết câu chuyện bóc tách năng lực thực chất.<br>
-• **Phần 2: 3 Trục tư duy** — Bản sắc độc bản, Phễu truyền thông đa kênh, AI & Vibe Coding thực chiến.<br>
-• **Phần 3: Quyền lợi** — 1 ngày offline + 14 ngày đồng hành + 2 record + 1 Zoom sửa bài.<br>
-• **Phần 4: Giảng viên** — Gặp gỡ Trainer Ngọc Tâm (12+ năm KN) & Trainer Nguyễn Hoà (Edit Không Khó).<br>
-• **Phần 5: Địa điểm & Học phí** — WORK X, 182 Điện Biên Phủ (12/12/2026), học phí 2.393.000đ trọn gói.<br>
-• **Phần 6: Đăng ký & QR** — Quét QR thanh toán hoặc gọi Hotline 0902 596 059.<br>
-• **Phần 7: Ebook Học Viên** — Cẩm nang làm web & video bằng Claude AI (Mật khẩu: NGAO2026).<br><br>
+• **Phần 1 (Tổng quan):** Định vị *"Hiểu Nhân cho rõ, Xây Hiệu cho lâu"*. Giải quyết câu chuyện bóc tách năng lực thực chất.<br>
+• **Phần 2 (3 Trục tư duy):** Bản sắc độc bản, Phễu truyền thông đa kênh, AI & Vibe Coding thực chiến.<br>
+• **Phần 3 (Quyền lợi):** 1 ngày offline + 14 ngày đồng hành + 2 record + 1 Zoom sửa bài.<br>
+• **Phần 4 (Giảng viên):** Gặp gỡ Trainer Ngọc Tâm (12+ năm KN) & Trainer Nguyễn Hoà (Edit Không Khó).<br>
+• **Phần 5 (Địa điểm & Học phí):** WORK X, 182 Điện Biên Phủ (12/12/2026), học phí 2.393.000đ trọn gói.<br>
+• **Phần 6 (Đăng ký & QR):** Quét QR thanh toán hoặc gọi Hotline 0902 596 059.<br>
+• **Phần 7 (Ebook Học Viên):** Cẩm nang làm web & video bằng Claude AI (Mật khẩu: NGAO2026).<br><br>
 👉 Bạn cũng có thể bấm vào các câu hỏi gợi ý bên trên hoặc nói trực tiếp qua micro 🎙️ nhé!`
       };
     },
@@ -2663,7 +2664,7 @@ Kết quả: Mỗi câu dưới 10 chữ, giọng ấm áp, gần gũi. Ghi thê
 
         const rawSpeechText = (kbItem.answer || '')
           .replace(/<[^>]+>/g, ' ')
-          .replace(/[#*`_~]/g, '')
+          .replace(/[#*`_~—–]/g, ' ').replace(/\s+-\s+/g, ', ')
           .replace(/https?:\/\/\S+/g, 'đường dẫn liên kết')
           .replace(/\s+/g, ' ')
           .trim();

@@ -829,6 +829,57 @@
       font-weight: 900;
       font-size: 11px;
     }
+    .trainer-corp-box {
+      margin-top: 12px;
+      background: linear-gradient(135deg, #540B27 0%, #8E1344 100%);
+      color: #FFFFFF;
+      border-radius: 14px;
+      padding: 13px 15px;
+      box-shadow: 0 6px 18px rgba(112, 26, 57, 0.16);
+    }
+    .trainer-corp-head {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 6px;
+    }
+    .trainer-corp-tag {
+      background: #FFDE59;
+      color: #4A0E26;
+      font-size: 10px;
+      font-weight: 900;
+      padding: 2px 9px;
+      border-radius: 99px;
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+    }
+    .trainer-corp-title {
+      font-size: 12.5px;
+      font-weight: 850;
+      color: #FFFFFF;
+    }
+    .trainer-corp-desc {
+      font-size: 11.8px;
+      line-height: 1.5;
+      color: #FCE2EC;
+      margin: 0 0 10px;
+    }
+    .corp-partner-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    .corp-partner-pill {
+      background: rgba(255, 255, 255, 0.16);
+      border: 1px solid rgba(255, 255, 255, 0.28);
+      color: #FFFFFF;
+      font-size: 10.5px;
+      font-weight: 800;
+      padding: 3px 10px;
+      border-radius: 99px;
+      white-space: nowrap;
+    }
     .trainer-quote-box {
       margin-top: auto;
       background: linear-gradient(135deg, #FFF0F5 0%, #FFF8FA 100%);
@@ -1461,6 +1512,9 @@
         font-size: 11px;
         padding: 6px 10px;
       }
+      .trainer-corp-box {
+        padding: 11px 12px;
+      }
       .trainer-quote-box {
         font-size: 11.5px;
         padding: 8px 12px;
@@ -1511,7 +1565,7 @@
       }
     }
   </style>
-  <link rel="stylesheet" href="ebook-style.css?v=20261119_v9">
+  <link rel="stylesheet" href="ebook-style.css?v=20261119_v10">
 </head>
 <body>
 
@@ -1527,7 +1581,7 @@
       </a>
 
       <div class="nav-actions">
-        <button type="button" class="btn-ebook-nav" onclick="goToPart('ebook')" title="Ebook thực chiến Claude làm Web & Video — Chỉ dành cho học viên có mã PASS">
+        <button type="button" class="btn-ebook-nav" onclick="goToPart('ebook')" title="Ebook thực chiến Claude làm Web & Video (Chỉ dành cho học viên có mã PASS)">
           <span>📘</span>
           <span class="btn-ebook-label">Ebook</span>
           <span class="btn-ebook-suffix">&nbsp;Thực Chiến</span>
@@ -1628,7 +1682,7 @@
             <div class="quick-stats">
               <div class="stat-pill">
                 <strong>12/12/2026</strong>
-                <small>08:30 - 17:30</small>
+                <small>08:30 đến 17:30</small>
               </div>
               <div class="stat-pill">
                 <strong>TP. Hồ Chí Minh</strong>
@@ -1659,7 +1713,7 @@
                 <div style="width:38px;height:38px;background:#fff;border-radius:10px;display:grid;place-items:center;font-size:20px;flex-shrink:0">✍️</div>
                 <div>
                   <strong style="font-size:14px;color:#fff">ĐIỀN FORM ĐĂNG KÝ · Giữ chỗ khoá học 12/12/2026</strong>
-                  <small style="color:#FFE0EC;font-size:12px">Workshop Offline thực chiến tại TP.HCM (08:30 - 17:30) · 14 ngày đồng hành xây kênh</small>
+                  <small style="color:#FFE0EC;font-size:12px">Workshop Offline thực chiến tại TP.HCM (08:30 đến 17:30) · 14 ngày đồng hành xây kênh</small>
                 </div>
               </div>
               <a href="https://docs.google.com/forms/d/e/1FAIpQLSepAfBro_dd6fLU0Hj6dQpfPBSq8BkOecbS5xvoiyPW0TqbSw/viewform" target="_blank" rel="noopener noreferrer" class="mini-tool-btn" style="background:#FFDE59;color:#540B27;font-weight:900;padding:9px 18px;border:none;white-space:nowrap;display:inline-flex;align-items:center;gap:6px">
@@ -1690,7 +1744,7 @@
     <section class="part-section" id="part-curriculum" role="tabpanel" aria-labelledby="tabBtn-curriculum">
       <div class="part-card">
         <span class="sec-badge">Phương pháp cốt lõi</span>
-        <h2 class="sec-title">Ba Trục Tư Duy: Hiểu Nhân – Định Vị – Xây Hiệu</h2>
+        <h2 class="sec-title">Ba Trục Tư Duy: Hiểu Nhân · Định Vị · Xây Hiệu</h2>
         <p class="sec-desc">
           Đó là lý do Ngáo Content xây dựng PERSONAL BRANDING MASTERY với ba trục tư duy nền tảng:
         </p>
@@ -1838,7 +1892,7 @@
           <div class="trainer-card">
             <div class="trainer-top">
               <div class="trainer-avatar-frame">
-                <img src="assets/trainer_ngoc_tam_real.jpg" alt="Trainer Ngọc Tâm - Founder Ngáo Content" loading="lazy">
+                <img src="assets/trainer_ngoc_tam_real.jpg" alt="Trainer Ngọc Tâm, Founder Ngáo Content" loading="lazy">
               </div>
               <div class="trainer-meta">
                 <span class="t-badge">Speaker & Trainer</span>
@@ -1886,7 +1940,7 @@
           <div class="trainer-card">
             <div class="trainer-top">
               <div class="trainer-avatar-frame">
-                <img src="assets/trainer_nguyen_hoa_portrait.jpg" alt="Trainer Nguyễn Hoà - Founder Edit Không Khó" loading="lazy">
+                <img src="assets/trainer_nguyen_hoa_portrait.jpg" alt="Trainer Nguyễn Hoà, Founder Edit Không Khó" loading="lazy">
               </div>
               <div class="trainer-meta">
                 <span class="t-badge">Speaker & AI Trainer</span>
@@ -1926,6 +1980,24 @@
                 <li>Trực tiếp <strong>đào tạo hơn 300+ học viên</strong> làm chủ kỹ năng dựng phim & sáng tạo nội dung.</li>
                 <li>Nhà phát triển bộ công cụ <strong>EKK Tools</strong> và tác giả Ebook độc quyền cho học viên.</li>
               </ul>
+
+              <div class="trainer-corp-box">
+                <div class="trainer-corp-head">
+                  <span class="trainer-corp-tag">Hiện tại</span>
+                  <span class="trainer-corp-title">Đào tạo cùng doanh nghiệp & tổ chức giáo dục</span>
+                </div>
+                <p class="trainer-corp-desc">
+                  Kết hợp cùng FPT Skill thực hiện workshop CapCut; diễn giả và đào tạo tại Studify, CinePro, Amway, Vietcap, Ngáo Content cùng nhiều công ty, trường đại học và tổ chức giáo dục.
+                </p>
+                <div class="corp-partner-pills">
+                  <span class="corp-partner-pill">FPT Skill</span>
+                  <span class="corp-partner-pill">Studify</span>
+                  <span class="corp-partner-pill">CinePro</span>
+                  <span class="corp-partner-pill">Amway</span>
+                  <span class="corp-partner-pill">Vietcap</span>
+                  <span class="corp-partner-pill">Ngáo Content</span>
+                </div>
+              </div>
             </div>
 
             <div class="trainer-quote-box">
@@ -1968,7 +2040,7 @@
             <div class="icon">📅</div>
             <span>Thời gian học</span>
             <strong>Thứ Bảy · 12/12/2026</strong>
-            <p>Trọn vẹn 1 ngày: 08:30 - 17:30 tập trung cao độ.</p>
+            <p>Trọn vẹn 1 ngày: từ 08:30 đến 17:30 tập trung cao độ.</p>
           </div>
           <div class="log-card">
             <div class="icon">📍</div>
@@ -2049,7 +2121,7 @@
               </div>
               <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
                 <span>📅</span>
-                <span>Thứ Bảy, 12/12/2026 | 08:30 – 17:30</span>
+                <span>Thứ Bảy, 12/12/2026 | 08:30 đến 17:30</span>
               </div>
               <div style="display:flex;align-items:center;gap:8px">
                 <span>💻</span>
@@ -2120,7 +2192,7 @@
     </div>
   </div>
 
-  <script src="ebook-engine.js?v=20261119_v9"></script>
+  <script src="ebook-engine.js?v=20261119_v10"></script>
   <script>
     // Part Navigation Controller
     const PARTS = ['overview', 'curriculum', 'benefits', 'trainers', 'logistics', 'register', 'ebook'];

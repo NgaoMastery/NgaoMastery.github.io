@@ -135,7 +135,7 @@ Theo trang hỗ trợ của Anthropic, máy cần macOS 11 trở lên hoặc Win
 
 Tên và vị trí nút có thể khác tùy phiên bản ứng dụng. Giảng viên nên gửi link tải cho học viên trước buổi học 1 đến 2 ngày để buổi học không mất thời gian cài đặt.
 
-## Bài 1 — Câu lệnh đầu tiên: công thức 4 mảnh
+## Bài 1: Câu lệnh đầu tiên: công thức 4 mảnh
 
 | Mục tiêu | Thời gian | Bạn có được |
 | --- | --- | --- |
@@ -146,7 +146,7 @@ AI trả lời chung chung vì ta hỏi chung chung. Một câu lệnh tốt gi�
 | Mảnh | Trả lời câu hỏi | Ví dụ của chị Mai |
 | --- | --- | --- |
 | 1. Vai trò | AI đóng vai ai? | "Bạn là chuyên gia marketing cho tiệm nhỏ" |
-| 2. Bối cảnh | Mình là ai, bán gì, cho ai? | "Tiệm bánh handmade ở Đà Nẵng, khách là mẹ bỉm 25–40 tuổi" |
+| 2. Bối cảnh | Mình là ai, bán gì, cho ai? | "Tiệm bánh handmade ở Đà Nẵng, khách là mẹ bỉm 25 đến 40 tuổi" |
 | 3. Việc cần làm | Cụ thể cần gì? | "Viết 5 câu khẩu hiệu" |
 | 4. Kết quả mong muốn | Trình bày thế nào, dài bao nhiêu, giọng ra sao? | "Mỗi câu dưới 10 chữ, giọng ấm áp, kèm lý do chọn" |
 
@@ -160,7 +160,7 @@ Bốn mảnh nằm chung trong một tin nhắn; mảnh nào bị thiếu, AI s�
 
 ```text
 ✅ Bạn là chuyên gia marketing cho các tiệm nhỏ.
-Tôi có tiệm bánh handmade ở Đà Nẵng, bán bánh ít đường, khách chủ yếu là mẹ bỉm 25–40 tuổi quan tâm sức khỏe gia đình.
+Tôi có tiệm bánh handmade ở Đà Nẵng, bán bánh ít đường, khách chủ yếu là mẹ bỉm 25 đến 40 tuổi quan tâm sức khỏe gia đình.
 Hãy viết 5 câu khẩu hiệu.
 Mỗi câu dưới 10 chữ, giọng ấm áp, gần gũi. Ghi thêm 1 dòng giải thích vì sao chọn câu đó.
 ```
@@ -180,7 +180,7 @@ Kết quả: [dài bao nhiêu, trình bày thế nào, giọng văn ra sao].
 - "Thích câu số 3. Viết thêm 5 câu theo hướng đó."
 - "Trước khi làm, hãy hỏi tôi những gì bạn cần biết." (Bí quyết này dùng nhiều ở Bài 3.)
 
-## Bài 2 — Khai thác thông tin: để AI đi tìm hiểu giúp bạn
+## Bài 2: Khai thác thông tin: để AI đi tìm hiểu giúp bạn
 
 | Mục tiêu | Thời gian | Bạn có được |
 | --- | --- | --- |
@@ -190,17 +190,17 @@ Trước khi làm thương hiệu, cần hiểu khách hàng và đối thủ. C
 
 **Bật tìm kiếm web:** tùy phiên bản ứng dụng, bạn thấy công tắc "Web search" trong nút **+** hoặc biểu tượng thanh trượt cạnh ô nhập; bật nó lên. Ở phiên bản mới không có công tắc này, Claude tự tìm khi cần ([nguồn](https://support.claude.com/en/articles/10684626)). Chắc ăn nhất: viết thêm chữ "tìm trên web" trong câu lệnh.
 
-**Mẫu 1 — Hiểu khách hàng:**
+**Mẫu 1: Hiểu khách hàng:**
 
 ```text
-Tìm trên web và cho tôi biết: khách hàng [mô tả khách, ví dụ: mẹ bỉm 25–40 tuổi ở Đà Nẵng] khi mua [sản phẩm] thường:
+Tìm trên web và cho tôi biết: khách hàng [mô tả khách, ví dụ: mẹ bỉm 25 đến 40 tuổi ở Đà Nẵng] khi mua [sản phẩm] thường:
 1. Lo lắng điều gì nhất?
 2. Hay hỏi những câu gì?
 3. Tìm mua ở đâu (Facebook, TikTok, Shopee...)?
 Trình bày thành bảng ngắn, ghi nguồn cho từng ý.
 ```
 
-**Mẫu 2 — Soi đối thủ:**
+**Mẫu 2: Soi đối thủ:**
 
 ```text
 Tìm trên web 5 thương hiệu [ngành của bạn] tại [khu vực] đang làm tốt trên mạng xã hội.
@@ -208,7 +208,7 @@ Với mỗi thương hiệu cho biết: họ nói mình khác biệt ở điểm
 Cuối cùng gợi ý 3 khoảng trống mà thương hiệu nhỏ như tôi có thể chiếm.
 ```
 
-**Mẫu 3 — Bắt xu hướng:**
+**Mẫu 3: Bắt xu hướng:**
 
 ```text
 Tìm trên web các xu hướng nội dung [ngành của bạn] gần đây trên TikTok và Facebook.
@@ -219,7 +219,7 @@ Chọn 5 xu hướng phù hợp với tiệm nhỏ, ngân sách thấp. Mỗi xu
 
 Câu kiểm tra nên thuộc: *"Ý nào trong câu trả lời trên bạn chưa chắc chắn? Đánh dấu giúp tôi."*
 
-## Bài 3 — Để AI phỏng vấn bạn
+## Bài 3: Để AI phỏng vấn bạn
 
 | Mục tiêu | Thời gian | Bạn có được |
 | --- | --- | --- |
@@ -236,7 +236,7 @@ Câu kiểm tra nên thuộc: *"Ý nào trong câu trả lời trên bạn chưa
 
 Sau tối đa 12 câu, Claude tổng hợp thành **Hồ sơ thương hiệu Bếp Mai**, ví dụ:
 
-- Khách hàng: mẹ bỉm 25–40 tuổi, quan tâm sức khỏe gia đình
+- Khách hàng: mẹ bỉm 25 đến 40 tuổi, quan tâm sức khỏe gia đình
 - Khác biệt: bánh ít đường, giao tận nhà
 - Giọng nói: ấm áp, gần gũi, xưng Mai
 
@@ -262,7 +262,7 @@ Bắt đầu với câu hỏi đầu tiên.
 - Nói thật, nói tự nhiên như kể cho bạn thân. Không cần văn hay.
 - Trên điện thoại, bấm biểu tượng micro để nói thay vì gõ.
 - Chưa biết trả lời? Gõ: *"Tôi chưa biết, gợi ý cho tôi 3 lựa chọn."*
-- Xong hồ sơ, đọc lại và sửa chỗ chưa giống mình. **Lưu hồ sơ này lại** — Bài 4 và Bài 5 sẽ dùng.
+- Xong hồ sơ, đọc lại và sửa chỗ chưa giống mình. **Lưu hồ sơ này lại**: Bài 4 và Bài 5 sẽ dùng.
 
 ### Mở rộng: phỏng vấn khách hàng thật
 
@@ -273,9 +273,9 @@ Soạn 7 câu hỏi ngắn để tôi hỏi khách quen qua Zalo, nhằm hiểu:
 Câu hỏi thân mật, không dẫn dắt, trả lời được trong 2 phút.
 ```
 
-Thu được câu trả lời của 5–10 khách, dán vào Claude (bỏ tên và số điện thoại của khách) và hỏi: *"Khách nhắc nhiều nhất điều gì? Có câu nào dùng được làm khẩu hiệu không?"* Lời của khách thường là chất liệu quảng cáo tốt nhất.
+Thu được câu trả lời của 5 đến 10 khách, dán vào Claude (bỏ tên và số điện thoại của khách) và hỏi: *"Khách nhắc nhiều nhất điều gì? Có câu nào dùng được làm khẩu hiệu không?"* Lời của khách thường là chất liệu quảng cáo tốt nhất.
 
-## Bài 4 — Khảo sát 15 câu: Xuất Brand Guideline 24 slide & File .md
+## Bài 4: Khảo sát 15 câu: Xuất Brand Guideline 24 slide & File .md
 
 | Mục tiêu | Thời gian | Bạn có được |
 | --- | --- | --- |
@@ -319,7 +319,7 @@ Ghi nhớ chính xác:
 Mọi ấn phẩm, nội dung và trang web tiếp theo đều phải tuân thủ nghiêm ngặt bộ Brand Guideline này.
 ```
 
-## Bài 5 — Tạo Project: kể một lần, dùng mãi
+## Bài 5: Tạo Project: kể một lần, dùng mãi
 
 | Mục tiêu | Thời gian | Bạn có được |
 | --- | --- | --- |
@@ -359,7 +359,7 @@ Bạn là trợ lý thương hiệu của [tên thương hiệu].
 
 **Mẹo:** mỗi thương hiệu hoặc mỗi khách hàng lớn một Project riêng. Freelancer làm cho nhiều khách thì đừng trộn chung, kẻo Claude lẫn giọng văn khách này sang khách kia.
 
-## Bài 6 — Làm trang web giới thiệu bằng một câu lệnh
+## Bài 6: Làm trang web giới thiệu bằng một câu lệnh
 
 | Mục tiêu | Thời gian | Bạn có được |
 | --- | --- | --- |
@@ -374,7 +374,7 @@ Claude có thể làm một trang web giới thiệu ngay trong khung chat. Tran
 Brand Guideline ở Bài 4 cung cấp màu sắc, typography và giọng nói. Trước khi gõ lệnh tạo web, bạn chuẩn bị thêm 5 thông tin bán hàng có thật:
 
 - 3 sản phẩm/dịch vụ nổi bật: tên, giá, 1 câu mô tả, ảnh thật.
-- 2–3 câu cảm nhận thật của khách (chụp tin nhắn cũng được).
+- 2 đến 3 câu cảm nhận thật của khách (chụp tin nhắn cũng được).
 - Số điện thoại, số Zalo, địa chỉ, giờ mở cửa.
 - Link Facebook, TikTok, Shopee... (nếu có).
 - File logo gốc (PNG nền trong hoặc SVG).
@@ -454,7 +454,7 @@ Bạn thay `<tên-github>` bằng tên tài khoản GitHub của mình.
 
 Chưa có tài khoản GitHub? Đăng ký miễn phí tại [github.com/signup](https://github.com/signup); đăng ký và đăng nhập là việc bạn tự làm, không đưa mật khẩu cho Claude. Hướng dẫn chính thức: [GitHub Pages](https://docs.github.com/en/pages). Vì trang web được đặt công khai, đừng để thông tin riêng tư (số CCCD, mật khẩu, hồ sơ nội bộ) trong các file đưa lên.
 
-## Bài 7 — Đóng gói Skill: dạy Claude một lần, dùng mãi
+## Bài 7: Đóng gói Skill: dạy Claude một lần, dùng mãi
 
 | Mục tiêu | Thời gian | Bạn có được |
 | --- | --- | --- |
@@ -494,7 +494,7 @@ Xem, bật tắt, xóa skill ở mục **Customize → Skills**. Skill không ch
 
 **Những việc nên đóng gói thành Skill:** việc bạn làm đi làm lại hàng tuần và có cách làm riêng, ví dụ trả lời tin nhắn hỏi giá, viết bài giới thiệu sản phẩm mới, làm kịch bản video, soạn báo giá cho khách.
 
-## Bài 8 (Nâng cao) — File .md và câu lệnh JSON: hai định dạng nên biết
+## Bài 8 (Nâng cao): File .md và câu lệnh JSON: hai định dạng nên biết
 
 | Mục tiêu | Thời gian | Bạn có được |
 | --- | --- | --- |
@@ -551,7 +551,7 @@ JSON ghi thông tin thành từng cặp **tên ô : giá trị**, đặt trong d
 
 Tài liệu của Anthropic gợi ý chia câu lệnh dài thành từng phần bằng thẻ như `<huong_dan>`, `<boi_canh>` ([nguồn](https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/use-xml-tags)). Viết bằng JSON giúp bạn không sót ô nào, nhưng không làm Claude thông minh hơn.
 
-**Mẫu 1 — Yêu cầu trả kết quả JSON (dùng nhiều nhất):**
+**Mẫu 1: Yêu cầu trả kết quả JSON (dùng nhiều nhất):**
 
 ```text
 Từ bảng giá tôi gửi, liệt kê tất cả sản phẩm dưới dạng JSON.
@@ -559,12 +559,12 @@ Mỗi sản phẩm gồm: ten_san_pham, gia (số, đơn vị đồng), don_vi, 
 Chỉ trả JSON, không thêm lời giải thích. Không tự bịa sản phẩm không có trong bảng giá.
 ```
 
-**Mẫu 2 — Câu lệnh viết dạng JSON (công thức 4 mảnh của Bài 1):**
+**Mẫu 2: Câu lệnh viết dạng JSON (công thức 4 mảnh của Bài 1):**
 
 ```json
 {
   "vai_tro": "chuyên gia marketing cho tiệm nhỏ",
-  "boi_canh": "tiệm bánh handmade ở Đà Nẵng, khách là mẹ bỉm 25–40 tuổi",
+  "boi_canh": "tiệm bánh handmade ở Đà Nẵng, khách là mẹ bỉm 25 đến 40 tuổi",
   "nhiem_vu": "viết 5 câu khẩu hiệu",
   "ket_qua": "mỗi câu dưới 10 chữ, giọng ấm áp, kèm 1 dòng giải thích"
 }
@@ -581,7 +581,7 @@ Mẫu 2 và câu lệnh ✅ ở Bài 1 cho kết quả tương đương. Chọn 
 | Bảng số liệu để cộng trừ, lọc | Bảng tính (Excel hoặc Google Sheets) |
 | Đưa vào phần mềm, website, công cụ tự động hoá | JSON |
 
-## Bài 9 (Nâng cao) — Giữ Claude nhanh và thông minh: các lệnh cần nhớ
+## Bài 9 (Nâng cao): Giữ Claude nhanh và thông minh: các lệnh cần nhớ
 
 | Mục tiêu | Thời gian | Bạn có được |
 | --- | --- | --- |
@@ -671,17 +671,17 @@ Chuyển tất cả file sang Markdown (.md) sẽ tiết kiệm hơn. Xem Bài 8
 
 | Phút | Nội dung | Học viên làm ra |
 | --- | --- | --- |
-| 0–8 | Mở đầu, 4 quy tắc tư duy (đọc nhanh), mở Claude Desktop và đăng nhập (cài sẵn trước buổi học) | Tài khoản sẵn sàng, nhớ 4 quy tắc |
-| 8–14 | Bài 1 + Bài 2 | Câu lệnh 4 mảnh và một bảng tìm hiểu có nguồn |
-| 14–24 | Bài 3: Claude phỏng vấn bạn | Hồ sơ thương hiệu |
-| 24–34 | Bài 4: Khảo sát 15 câu | Bộ Brand Guideline 24 slide & File .md |
-| 34–39 | Bài 5: Tạo Project | Project "Trợ lý thương hiệu" cất sẵn hồ sơ |
-| 39–49 | Bài 6: Làm web | Trang web một trang theo Brand Guideline, có link chia sẻ |
-| 49–54 | Bài 7: Đóng gói Skill (giới thiệu) | Biết cách đóng gói Skill dùng lại |
-| 54–58 | Bài 9: các lệnh cần nhớ (nếu lớp có dùng Claude Code) | Biết /compact, /clear, /RE và cách reset ở 60% |
-| 58–60 | Hỏi đáp, giới thiệu Bài 8 (.md & JSON) và Phụ lục | Máy sẵn sàng cho sáng tạo tự động |
+| 0 đến 8 | Mở đầu, 4 quy tắc tư duy (đọc nhanh), mở Claude Desktop và đăng nhập (cài sẵn trước buổi học) | Tài khoản sẵn sàng, nhớ 4 quy tắc |
+| 8 đến 14 | Bài 1 + Bài 2 | Câu lệnh 4 mảnh và một bảng tìm hiểu có nguồn |
+| 14 đến 24 | Bài 3: Claude phỏng vấn bạn | Hồ sơ thương hiệu |
+| 24 đến 34 | Bài 4: Khảo sát 15 câu | Bộ Brand Guideline 24 slide & File .md |
+| 34 đến 39 | Bài 5: Tạo Project | Project "Trợ lý thương hiệu" cất sẵn hồ sơ |
+| 39 đến 49 | Bài 6: Làm web | Trang web một trang theo Brand Guideline, có link chia sẻ |
+| 49 đến 54 | Bài 7: Đóng gói Skill (giới thiệu) | Biết cách đóng gói Skill dùng lại |
+| 54 đến 58 | Bài 9: các lệnh cần nhớ (nếu lớp có dùng Claude Code) | Biết /compact, /clear, /RE và cách reset ở 60% |
+| 58 đến 60 | Hỏi đáp, giới thiệu Bài 8 (.md & JSON) và Phụ lục | Máy sẵn sàng cho sáng tạo tự động |
 
-## Phụ lục (Nâng cao) — Để AI tự làm trên máy Windows và Mac: kiểm tra máy, cài công cụ, tạo Skill
+## Phụ lục (Nâng cao): Để AI tự làm trên máy Windows và Mac: kiểm tra máy, cài công cụ, tạo Skill
 
 | Dành cho ai | Cần gì | Bạn có được |
 | --- | --- | --- |
@@ -707,19 +707,19 @@ Phần này dành cho người muốn đi xa hơn: để Claude tự cắt video
 
 Ba bước ngay dưới đây dành cho **Windows**. Dùng máy **Mac** thì kéo xuống mục "Phiên bản cho Mac".
 
-### Bước 1 — Kiểm tra máy (chỉ đọc)
+### Bước 1: Kiểm tra máy (chỉ đọc)
 
 Câu lệnh này không cài, không sửa bất cứ thứ gì. Nó chỉ cho bạn biết máy đang có gì và thiếu gì.
 
 ```text
-EKK – KIỂM TRA MÁY WINDOWS (CHỈ ĐỌC)
+EKK: KIỂM TRA MÁY WINDOWS (CHỈ ĐỌC)
 
 1. MỤC TIÊU
 Kiểm tra máy đã có các công cụ sau chưa và có chạy được không:
 Node.js LTS + npm, Git, FFmpeg + FFprobe, whisper.cpp (whisper-cli), model Whisper ggml-base.bin.
 Tôi không biết lập trình. Bạn tự chạy lệnh, không yêu cầu tôi mở PowerShell/CMD.
 
-2. PHẠM VI – CHỈ ĐỌC
+2. PHẠM VI: CHỈ ĐỌC
 - KHÔNG cài, gỡ, nâng cấp, tải hoặc xoá bất cứ thứ gì.
 - KHÔNG sửa PATH, Registry, cấu hình hay file nào.
 - KHÔNG chạy lệnh cần quyền Administrator.
@@ -752,12 +752,12 @@ Cuối báo cáo nêu ngắn gọn:
 - Kết luận: máy này phù hợp quay "máy sạch" trực tiếp hay nên dùng máy ảo.
 ```
 
-### Bước 2 — Cài công cụ còn thiếu
+### Bước 2: Cài công cụ còn thiếu
 
 Chỉ dùng sau khi có báo cáo Bước 1, trong cùng cuộc trò chuyện. Claude phải hỏi bạn trước mỗi lần cài hoặc tải.
 
 ```text
-EKK – CÀI CÔNG CỤ CÒN THIẾU (WINDOWS)
+EKK: CÀI CÔNG CỤ CÒN THIẾU (WINDOWS)
 
 1. MỤC TIÊU
 Cài các công cụ báo THIẾU trong báo cáo kiểm tra vừa rồi, để máy có đủ:
@@ -791,14 +791,14 @@ Cài lần lượt từng công cụ. Sau mỗi công cụ, chạy lệnh phiên
 
 Vì sao có dòng ARM64: trang phát hành chính thức của whisper.cpp chỉ có bản dựng sẵn cho Windows x64 và Win32 ([nguồn](https://www.sourceforge.net/projects/whisper-cpp.mirror/files/v1.8.2/)). Máy ARM64 cần phương án khác, không nên để AI tự xoay xỡ.
 
-### Bước 3 — Tạo Skill trên Claude Code
+### Bước 3: Tạo Skill trên Claude Code
 
 Ở Claude Code, mỗi Skill là một thư mục có file `SKILL.md`. Skill cá nhân nằm ở `~/.claude/skills/<tên-skill>/SKILL.md`, dùng được cho mọi dự án. Gọi skill bằng cách gõ `/tên-skill` ở đầu tin nhắn, hoặc Claude tự dùng khi yêu cầu khớp với phần mô tả của skill ([nguồn](https://code.claude.com/docs/en/skills)). Skill bật trong cài đặt Claude trên web (Bài 6) cũng tự có trong Claude Code khi đăng nhập cùng tài khoản ([nguồn](https://support.claude.com/en/articles/12512180)).
 
 Ví dụ dưới đây tạo skill làm phụ đề tiếng Việt, dùng đúng các công cụ vừa cài:
 
 ```text
-EKK – TẠO SKILL "ekk-phu-de" (TẠO PHỤ ĐỀ TIẾNG VIỆT)
+EKK: TẠO SKILL "ekk-phu-de" (TẠO PHỤ ĐỀ TIẾNG VIỆT)
 
 1. MỤC TIÊU
 Tạo một skill cá nhân tên ekk-phu-de. Khi tôi gõ /ekk-phu-de kèm đường dẫn video, skill tạo file phụ đề .srt tiếng Việt nằm cạnh video.
@@ -815,7 +815,7 @@ Tạo một skill cá nhân tên ekk-phu-de. Khi tôi gõ /ekk-phu-de kèm đư�
 - Viết hướng dẫn trong skill bằng tiếng Việt dễ hiểu để tôi đọc lại được.
 
 4. KIỂM TRA
-- Hỏi tôi một video ngắn 10–20 giây có lời nói tiếng Việt, rồi chạy thử /ekk-phu-de.
+- Hỏi tôi một video ngắn 10 đến 20 giây có lời nói tiếng Việt, rồi chạy thử /ekk-phu-de.
 - Mở file .srt, kiểm tra có chữ và có mốc thời gian.
 - Lỗi thì sửa skill và chạy lại đến khi đạt.
 
@@ -832,17 +832,17 @@ Mac khác Windows ở 3 điểm cần biết trước:
 - **Git trên Mac là "cái bẫy" nhỏ:** máy chưa có bộ Command Line Tools mà gõ `git --version` thì Mac bật ngay hộp thoại đòi cài. Vì vậy câu lệnh kiểm tra phải xem `xcode-select -p` trước.
 - **Chip Apple Silicon hay Intel:** Homebrew có bản dựng sẵn của whisper-cpp cho Apple Silicon (macOS Sonoma trở lên) nhưng với Mac Intel chỉ có cho Sonoma ([nguồn](https://formulae.brew.sh/formula/whisper-cpp)). Mac Intel đời cũ có thể phải tự biên dịch, rất lâu.
 
-**Bước 1 — Kiểm tra máy Mac (chỉ đọc):**
+**Bước 1: Kiểm tra máy Mac (chỉ đọc):**
 
 ```text
-EKK – KIỂM TRA MÁY MAC (CHỈ ĐỌC)
+EKK: KIỂM TRA MÁY MAC (CHỈ ĐỌC)
 
 1. MỤC TIÊU
 Kiểm tra máy đã có các công cụ sau chưa và có chạy được không:
 Homebrew, Node.js LTS + npm, Git, FFmpeg + FFprobe, whisper.cpp (whisper-cli), model Whisper ggml-base.bin.
 Tôi không biết lập trình. Bạn tự chạy lệnh, không yêu cầu tôi mở Terminal.
 
-2. PHẠM VI – CHỈ ĐỌC
+2. PHẠM VI: CHỈ ĐỌC
 - KHÔNG cài, gỡ, nâng cấp, tải hoặc xoá bất cứ thứ gì. KHÔNG chạy brew install, brew upgrade, brew update.
 - KHÔNG sửa PATH hay file cấu hình (.zshrc, .zprofile).
 - KHÔNG dùng sudo, không hỏi và không nhập mật khẩu máy.
@@ -873,10 +873,10 @@ Cuối báo cáo nêu ngắn gọn:
 - Kết luận: máy này quay "máy sạch" trực tiếp được không, hay nên tạo tài khoản người dùng macOS mới hoặc dùng máy ảo.
 ```
 
-**Bước 2 — Cài công cụ còn thiếu trên Mac:**
+**Bước 2: Cài công cụ còn thiếu trên Mac:**
 
 ```text
-EKK – CÀI CÔNG CỤ CÒN THIẾU (MAC)
+EKK: CÀI CÔNG CỤ CÒN THIẾU (MAC)
 
 1. MỤC TIÊU
 Cài các công cụ báo THIẾU trong báo cáo kiểm tra vừa rồi, để máy có đủ:
@@ -907,7 +907,7 @@ Cài lần lượt từng công cụ. Sau mỗi công cụ, chạy lệnh phiên
 - Cách gỡ từng thứ nếu muốn quay lại như cũ.
 ```
 
-### Bước 4 — Tạo bộ thư mục cho dự án video (Windows và Mac)
+### Bước 4: Tạo bộ thư mục cho dự án video (Windows và Mac)
 
 Mỗi video là một dự án riêng, và dự án nào cũng có cùng 6 ngăn. File gọn gàng thì bạn tìm nhanh, còn Claude hiểu ngay file nào dùng vào việc gì.
 
@@ -925,7 +925,7 @@ Vì sao đặt tên như vậy: số đứng đầu giữ các ngăn đúng th�
 **Câu lệnh tạo thư mục (dùng trong Claude Code):**
 
 ```text
-EKK – TẠO THƯ MỤC DỰ ÁN VIDEO
+EKK: TẠO THƯ MỤC DỰ ÁN VIDEO
 
 1. MỤC TIÊU
 Tạo bộ thư mục chuẩn cho dự án video tên [ten-du-an],
@@ -938,12 +938,12 @@ nằm trong [Documents/EKK-Projects] của tài khoản máy tính này.
 
 3. THỰC HIỆN
 Tạo đúng 6 thư mục:
-01_Raw — video gốc vừa quay
-02_Broll — cảnh phụ chèn minh hoạ
-03_Tham-chieu — video mẫu để học phong cách
-04_Brand-guideline — hồ sơ thương hiệu, logo, màu, font
-05_Sound-effect — nhạc nền, hiệu ứng âm thanh
-06_Final — video đã xuất
+01_Raw: video gốc vừa quay
+02_Broll: cảnh phụ chèn minh hoạ
+03_Tham-chieu: video mẫu để học phong cách
+04_Brand-guideline: hồ sơ thương hiệu, logo, màu, font
+05_Sound-effect: nhạc nền, hiệu ứng âm thanh
+06_Final: video đã xuất
 Tạo CLAUDE.md ở thư mục gốc dự án, ghi ngắn gọn (dưới 30 dòng):
 - Mỗi thư mục dùng để chứa gì.
 - Không bao giờ sửa, ghi đè hoặc xoá file trong 01_Raw.
@@ -964,7 +964,7 @@ Vì sao tạo thêm CLAUDE.md: Claude Code tự đọc file này mỗi khi bạn
 
 Sau khi có thư mục: mở Claude Code ngay trong thư mục dự án đó rồi giao việc, ví dụ "Làm phụ đề cho video trong 01\_Raw, lưu file .srt vào 06\_Final."
 
-**Công thức chung để viết câu lệnh giao việc cho máy:** mọi câu lệnh trong phụ lục này đều có 5 phần — Mục tiêu, Phạm vi (được làm và không được làm), Thực hiện, Kiểm tra, Bàn giao. Phần Phạm vi là quan trọng nhất: nó là hàng rào giữ máy của bạn an toàn.
+**Công thức chung để viết câu lệnh giao việc cho máy:** mọi câu lệnh trong phụ lục này đều có 5 phần: Mục tiêu, Phạm vi (được làm và không được làm), Thực hiện, Kiểm tra, Bàn giao. Phần Phạm vi là quan trọng nhất: nó là hàng rào giữ máy của bạn an toàn.
 
 ## Liên kết cần dùng
 
@@ -988,16 +988,16 @@ Chỉ tải từ đúng các trang trên. Tải từ trang lạ có thể dính 
 
 ## Nguồn
 
-- [How can I create and manage projects? — Claude Help Center](https://support.claude.com/en/articles/9519177)
-- [Enable and use web search — Claude Help Center](https://support.claude.com/en/articles/10684626)
-- [Publish and share artifacts — Claude Help Center](https://support.claude.com/en/articles/9547008)
-- [Use skills in Claude — Claude Help Center](https://support.claude.com/en/articles/12512180)
-- [How to create a skill with Claude through conversation — Claude Academy](https://academy.claude.com/tutorials/how-to-create-a-skill-with-claude-through-conversation)
-- [Set up Claude Code — Claude Code Docs](https://code.claude.com/docs/en/setup)
-- [Extend Claude with skills — Claude Code Docs](https://code.claude.com/docs/en/skills)
-- [whisper.cpp v1.8.2 release files (bản sao) — SourceForge](https://www.sourceforge.net/projects/whisper-cpp.mirror/files/v1.8.2/)
-- [PDF support — Claude Platform Docs](https://platform.claude.com/docs/en/build-with-claude/pdf-support)
-- [Use XML tags to structure your prompts — Claude Platform Docs](https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/use-xml-tags)
-- [whisper-cpp — Homebrew Formulae](https://formulae.brew.sh/formula/whisper-cpp)
-- [Install Claude Desktop — Claude Help Center](https://support.claude.com/en/articles/10065433-install-claude-desktop)
-- [Claude download page — Anthropic](https://claude.com/download)
+- [How can I create and manage projects?: Claude Help Center](https://support.claude.com/en/articles/9519177)
+- [Enable and use web search: Claude Help Center](https://support.claude.com/en/articles/10684626)
+- [Publish and share artifacts: Claude Help Center](https://support.claude.com/en/articles/9547008)
+- [Use skills in Claude: Claude Help Center](https://support.claude.com/en/articles/12512180)
+- [How to create a skill with Claude through conversation: Claude Academy](https://academy.claude.com/tutorials/how-to-create-a-skill-with-claude-through-conversation)
+- [Set up Claude Code: Claude Code Docs](https://code.claude.com/docs/en/setup)
+- [Extend Claude with skills: Claude Code Docs](https://code.claude.com/docs/en/skills)
+- [whisper.cpp v1.8.2 release files (bản sao): SourceForge](https://www.sourceforge.net/projects/whisper-cpp.mirror/files/v1.8.2/)
+- [PDF support: Claude Platform Docs](https://platform.claude.com/docs/en/build-with-claude/pdf-support)
+- [Use XML tags to structure your prompts: Claude Platform Docs](https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/use-xml-tags)
+- [whisper-cpp: Homebrew Formulae](https://formulae.brew.sh/formula/whisper-cpp)
+- [Install Claude Desktop: Claude Help Center](https://support.claude.com/en/articles/10065433-install-claude-desktop)
+- [Claude download page: Anthropic](https://claude.com/download)
