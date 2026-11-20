@@ -82,9 +82,9 @@
       id: 'kb_tuition',
       targetPart: 'logistics',
       targetLabel: 'Xem Học phí & Quyền lợi (Phần 5)',
-      keywords: ['học phí', 'giá', 'chi phí', 'bao nhiêu tiền', '2.393.000', '2393000', 'học phí bao nhiêu', 'trọn gói', 'ưu đãi', 'tiền học'],
+      keywords: ['học phí', 'giá', 'chi phí', 'bao nhiêu tiền', '2.393.000', '2393000', '2393k', '4.569.000', '4569k', 'giá gốc', 'giảm giá', 'trước 8/12', 'học phí bao nhiêu', 'trọn gói', 'ưu đãi', 'tiền học'],
       question: 'Học phí khoá học là bao nhiêu? Học phí bao gồm những quyền lợi gì?',
-      answer: `💰 **Học phí chính thức:** **2.393.000đ / học viên** (Học phí trọn gói).<br><br>🎁 **Đã bao gồm toàn bộ quyền lợi:**<br>1. **01 ngày Workshop Offline trực tiếp** (08:30 đến 17:30) tại WORK X, 182 Điện Biên Phủ.<br>2. **14 ngày đồng hành thực chiến** xây kênh cùng giảng viên & trợ giảng.<br>3. **02 Video record** buổi học xem lại trọn đời.<br>4. **01 buổi Zoom chữa bài chuyên sâu** phản biện và tinh chỉnh bài làm của bạn.<br>5. **Toàn bộ Ebook thực chiến & Tool AI** mang về ứng dụng trọn đời.`
+      answer: `💰 **Học phí ưu đãi:** Giá gốc **4.569.000đ** giảm còn **2.393.000đ / học viên** (áp dụng khi đăng ký trước **08/12**).<br><br>🎁 **Đã bao gồm toàn bộ quyền lợi trọn gói:**<br>1. **01 ngày Workshop Offline trực tiếp** (08:30 đến 17:30) tại WORK X, 182 Điện Biên Phủ.<br>2. **14 ngày đồng hành thực chiến** xây kênh cùng giảng viên & trợ giảng.<br>3. **02 Video record** buổi học xem lại trọn đời.<br>4. **01 buổi Zoom chữa bài chuyên sâu** phản biện và tinh chỉnh bài làm của bạn.<br>5. **Toàn bộ Ebook thực chiến & Tool AI** mang về ứng dụng trọn đời.`
     },
     {
       id: 'kb_hotline',
@@ -157,7 +157,7 @@
       targetUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSepAfBro_dd6fLU0Hj6dQpfPBSq8BkOecbS5xvoiyPW0TqbSw/viewform',
       keywords: ['đăng ký', 'cách đăng ký', 'giữ chỗ', 'quét qr', 'form', 'chuyển khoản', 'thanh toán', 'ghi danh', 'làm sao để học'],
       question: 'Làm thế nào để đăng ký tham gia khoá học và chuyển khoản giữ chỗ?',
-      answer: `Có 2 cách đăng ký vô cùng thuận tiện:<br><br>1. **Quét mã QR trực tiếp trên website:** Chuyển đến tab **Phần 6: Đăng ký & QR**, mở app ngân hàng quét mã QR để chuyển khoản học phí 2.393.000đ.<br>2. **Mở Google Form chính thức:** Bấm nút *"Mở Google Form Đăng Ký Trực Tiếp"* để điền thông tin liên hệ.<br><br>Sau khi nhận được thông tin, ban tuyển sinh Ngáo Content sẽ gọi điện hoặc nhắn tin Zalo xác nhận trong vòng 15 phút. Nếu cần hỗ trợ khẩn cấp, bạn hãy gọi hotline **0902 596 059** nhé!`
+      answer: `Có 2 cách đăng ký vô cùng thuận tiện:<br><br>1. **Quét mã QR trực tiếp trên website:** Chuyển đến tab **Phần 6: Đăng ký & QR**, mở app ngân hàng quét mã QR để giữ chỗ với học phí ưu đãi **2.393.000đ** (giá gốc 4.569.000đ, áp dụng khi đăng ký trước 08/12).<br>2. **Mở Google Form chính thức:** Bấm nút *"Mở Google Form Đăng Ký Trực Tiếp"* để điền thông tin liên hệ.<br><br>Sau khi nhận được thông tin, ban tuyển sinh Ngáo Content sẽ gọi điện hoặc nhắn tin Zalo xác nhận trong vòng 15 phút. Nếu cần hỗ trợ khẩn cấp, bạn hãy gọi hotline **0902 596 059** nhé!`
     },
     {
       id: 'kb_brandguide_tool',
@@ -2632,7 +2632,7 @@ Kết quả: Mỗi câu dưới 10 chữ, giọng ấm áp, gần gũi. Ghi thê
 • **Phần 2 (3 Trục tư duy):** Bản sắc độc bản, Phễu truyền thông đa kênh, AI & Vibe Coding thực chiến.<br>
 • **Phần 3 (Quyền lợi):** 1 ngày offline + 14 ngày đồng hành + 2 record + 1 Zoom sửa bài.<br>
 • **Phần 4 (Giảng viên):** Gặp gỡ Trainer Ngọc Tâm (12+ năm KN) & Trainer Nguyễn Hoà (Edit Không Khó).<br>
-• **Phần 5 (Địa điểm & Học phí):** WORK X, 182 Điện Biên Phủ (12/12/2026), học phí 2.393.000đ trọn gói.<br>
+• **Phần 5 (Địa điểm & Học phí):** WORK X, 182 Điện Biên Phủ (12/12/2026), giá gốc 4.569.000đ giảm còn 2.393.000đ khi đăng ký trước 08/12.<br>
 • **Phần 6 (Đăng ký & QR):** Quét QR thanh toán hoặc gọi Hotline 0902 596 059.<br>
 • **Phần 7 (Ebook Học Viên):** Cẩm nang làm web & video bằng Claude AI (Mật khẩu: NGAO2026).<br><br>
 👉 Bạn cũng có thể bấm vào các câu hỏi gợi ý bên trên hoặc nói trực tiếp qua micro 🎙️ nhé!`

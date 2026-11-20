@@ -456,6 +456,26 @@
       border-radius: 12px;
       padding: 9px 8px;
       text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .stat-pill-deal {
+      background: linear-gradient(180deg, #FFF0F6 0%, #FFF8E7 100%);
+      border-color: #E8A2BE;
+    }
+    .stat-price-old {
+      display: block;
+      font-size: 10.5px;
+      font-weight: 700;
+      color: #9E7B8C;
+      text-decoration: line-through;
+      line-height: 1.1;
+      margin-bottom: 1px;
+    }
+    .stat-pill-deal strong {
+      color: var(--primary);
     }
     .stat-pill strong {
       display: block;
@@ -912,6 +932,46 @@
       margin-bottom: 24px;
       box-shadow: 0 4px 16px rgba(200, 32, 97, 0.12);
     }
+    .price-badge-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 6px;
+    }
+    .price-eyebrow {
+      font-size: 11px;
+      font-weight: 850;
+      color: var(--primary);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .price-deal-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      padding: 3px 10px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, #701A39 0%, #C82061 100%);
+      color: #FFDE59;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 0.15px;
+      box-shadow: 0 3px 10px rgba(200, 32, 97, 0.22);
+    }
+    .price-val-row {
+      display: flex;
+      align-items: baseline;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .price-old {
+      font-size: clamp(16px, 2vw, 20px);
+      font-weight: 750;
+      color: #9E7B8C;
+      text-decoration: line-through;
+      text-decoration-thickness: 2px;
+    }
     .price-val {
       font-size: clamp(24px, 3vw, 34px);
       font-weight: 900;
@@ -922,7 +982,7 @@
       font-size: 12px;
       color: #8E204E;
       font-weight: 700;
-      margin-top: 4px;
+      margin-top: 6px;
     }
 
     .audience-tag-wrap {
@@ -1232,6 +1292,7 @@
       .benefit-grid { grid-template-columns: 1fr; }
       .ai-highlight-card { grid-column: span 1; }
       .pricing-banner { flex-direction: column; text-align: center; }
+      .price-badge-row, .price-val-row { justify-content: center; }
       .register-grid { grid-template-columns: 1fr; }
       .logistics-grid { grid-template-columns: 1fr; }
       .pillar-tabs { grid-template-columns: 1fr; }
@@ -1653,9 +1714,10 @@
                 <strong>TP. Hồ Chí Minh</strong>
                 <small>Offline thực chiến</small>
               </div>
-              <div class="stat-pill">
+              <div class="stat-pill stat-pill-deal">
+                <span class="stat-price-old">4.569.000đ</span>
                 <strong>2.393.000đ</strong>
-                <small>Học phí trọn gói</small>
+                <small>Ưu đãi trước 08/12</small>
               </div>
               <div class="stat-pill">
                 <strong>Claude Pro</strong>
@@ -1982,8 +2044,14 @@
         <!-- PRICING BANNER -->
         <div class="pricing-banner">
           <div>
-            <span style="font-size:11px;font-weight:850;color:var(--primary);text-transform:uppercase;letter-spacing:0.5px">HỌC PHÍ CHÍNH THỨC</span>
-            <div class="price-val">2.393.000đ <small style="font-size:14px;color:var(--text-muted);font-weight:600">/ học viên</small></div>
+            <div class="price-badge-row">
+              <span class="price-eyebrow">HỌC PHÍ ƯU ĐÃI</span>
+              <span class="price-deal-pill">🔥 Áp dụng khi đăng ký trước 08/12</span>
+            </div>
+            <div class="price-val-row">
+              <del class="price-old">4.569.000đ</del>
+              <div class="price-val">2.393.000đ <small style="font-size:14px;color:var(--text-muted);font-weight:600">/ học viên</small></div>
+            </div>
             <div class="price-note">Trọn gói 01 ngày Offline + 14 ngày đồng hành + 02 Video record + 01 Zoom sửa bài + Hệ thống AI mang về.</div>
           </div>
           <button type="button" class="btn-primary cta-register-highlight" onclick="goToPart('register')" style="padding:14px 28px;font-size:14.5px">Đăng ký giữ chỗ ngay ↗</button>
@@ -2043,7 +2111,7 @@
           <span class="sec-badge">Ghi danh giữ chỗ</span>
           <h2 class="sec-title" style="margin-bottom:8px">Đăng Ký Tham Gia Khoá Học Offline 12/12/2026</h2>
           <p class="sec-desc" style="margin:0 auto">
-            Quét mã QR bằng điện thoại hoặc bấm nút mở trực tiếp Google Form để hoàn tất đăng ký giữ chỗ. Học phí: <strong>2.393.000đ/học viên</strong>.
+            Quét mã QR bằng điện thoại hoặc bấm nút mở trực tiếp Google Form để hoàn tất đăng ký giữ chỗ. Học phí ưu đãi: <del style="color:var(--text-light);font-weight:600">4.569.000đ</del> <strong>2.393.000đ/học viên</strong> (áp dụng khi đăng ký trước 08/12).
           </p>
         </div>
 
@@ -2060,8 +2128,12 @@
               </a>
             </div>
 
-            <div style="font-size:22px;font-weight:900;color:var(--primary-dark);margin:14px 0 6px">
-              Học phí: 2.393.000đ <small style="font-size:14px;color:var(--text-muted);font-weight:600">/ học viên</small>
+            <div style="margin:14px 0 8px;display:flex;flex-direction:column;align-items:center;gap:5px">
+              <span class="price-deal-pill">🔥 Áp dụng khi đăng ký trước 08/12</span>
+              <div style="display:flex;align-items:baseline;justify-content:center;gap:10px;flex-wrap:wrap">
+                <del style="font-size:16px;font-weight:750;color:#9E7B8C;text-decoration-thickness:2px">4.569.000đ</del>
+                <span style="font-size:24px;font-weight:900;color:var(--primary)">2.393.000đ <small style="font-size:14px;color:var(--text-muted);font-weight:600">/ học viên</small></span>
+              </div>
             </div>
 
             <p style="font-size:13px;color:var(--text-muted);line-height:1.55;max-width:440px;margin-bottom:16px">
@@ -2132,7 +2204,7 @@
       <div style="width:52px;height:52px;background:#EAF6ED;color:#2F7A48;border-radius:50%;display:grid;place-items:center;font-size:26px;margin:0 auto 12px">✓</div>
       <h3>Đăng Ký Thành Công!</h3>
       <p id="modalMsg">
-        Cảm ơn bạn đã đăng ký tham gia <strong>Personal Branding Mastery (12/12/2026 tại TP.HCM)</strong>. Học phí: 2.393.000đ. Bộ phận tuyển sinh Ngáo Content đã ghi nhận và sẽ liên hệ xác nhận trong vòng 15 phút.
+        Cảm ơn bạn đã đăng ký tham gia <strong>Personal Branding Mastery (12/12/2026 tại TP.HCM)</strong>. Học phí ưu đãi: 2.393.000đ (giá gốc 4.569.000đ, áp dụng khi đăng ký trước 08/12). Bộ phận tuyển sinh Ngáo Content đã ghi nhận và sẽ liên hệ xác nhận trong vòng 15 phút.
       </p>
       <div style="background:var(--bg-alt);padding:12px;border-radius:10px;margin-bottom:18px;font-size:12.5px;color:var(--primary-dark);text-align:left">
         <strong>Khuyến nghị cho học viên:</strong><br>
@@ -2146,7 +2218,7 @@
     </div>
   </div>
 
-  <script src="ebook-engine.js?v=20261119_v13"></script>
+  <script src="ebook-engine.js?v=20261120_v14"></script>
   <script src="noel-effects.js?v=20261120_v3" defer></script>
   <script>
     // Part Navigation Controller
@@ -2248,7 +2320,7 @@
 
       const modalMsg = document.getElementById('modalMsg');
       if (modalMsg) {
-        modalMsg.innerHTML = `Cảm ơn <strong>${name}</strong> (${phone})! Ngáo Content đã lưu giữ chỗ của bạn cho khoá học ngày <strong>12/12/2026 tại TP.HCM</strong> (Học phí: 2.393.000đ). Chúng tôi sẽ liên hệ trong thời gian sớm nhất.`;
+        modalMsg.innerHTML = `Cảm ơn <strong>${name}</strong> (${phone})! Ngáo Content đã lưu giữ chỗ của bạn cho khoá học ngày <strong>12/12/2026 tại TP.HCM</strong> (Học phí ưu đãi: 2.393.000đ, giá gốc 4.569.000đ, áp dụng khi đăng ký trước 08/12). Chúng tôi sẽ liên hệ trong thời gian sớm nhất.`;
       }
       document.getElementById('successModal').classList.add('active');
     }
