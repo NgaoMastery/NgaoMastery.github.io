@@ -121,9 +121,9 @@
     {
       id: 'kb_curriculum_3pillars',
       targetPart: 'curriculum',
-      targetLabel: 'Xem 3 Trục tư duy (Phần 2)',
-      keywords: ['3 trục', 'ba trục', 'nội dung học', 'giáo trình', 'chương trình', 'học gì', 'học những gì', 'bản sắc độc bản', 'phễu nội dung', 'trục 1', 'trục 2', 'trục 3'],
-      question: 'Chương trình khoá học gồm những nội dung gì? 3 Trục tư duy là gì?',
+      targetLabel: 'Xem Nội dung lớp học (Phần 2)',
+      keywords: ['nội dung lớp học', 'lớp học', '3 trục', 'ba trục', 'nội dung học', 'giáo trình', 'chương trình', 'học gì', 'học những gì', 'bản sắc độc bản', 'phễu nội dung', 'trục 1', 'trục 2', 'trục 3'],
+      question: 'Nội dung lớp học gồm những gì? 3 Trục tư duy là gì?',
       answer: `Chương trình đào tạo được xây dựng trên **3 Trục tư duy vững chắc**:<br><br>1. **Trục 1: Bản sắc độc bản (Identity):** Hiểu nhân cho rõ, tìm ra chất người thực tế, câu chuyện nghề đáng nhớ và định vị độc bản thay vì vẽ vỏ bọc hào nhoáng.<br>2. **Trục 2: Hệ thống phễu truyền thông (Funnel & System):** Xây dựng phễu nội dung đa kênh, thiết lập trụ cột nội dung và tạo lý do đủ rõ để người khác tin tưởng, ghi nhớ.<br>3. **Trục 3: Công nghệ AI & Vibe Coding thực chiến:** Ứng dụng Claude Desktop, prompt 4 mảnh, khảo sát 15 câu xuất Brand Guideline 24 slide, tự tay làm trang web cá nhân và quy trình làm video AI nhanh gấp 5 đến 10 lần!`
     },
     {
@@ -719,7 +719,7 @@
                     <ul style="margin:8px 0 0 16px;padding:0;line-height:1.6;font-size:12.5px">
                       <li>📅 <strong>Thời gian, địa điểm & học phí</strong> khoá học 12/12/2026.</li>
                       <li>👥 <strong>Thông tin 2 giảng viên</strong> Ngọc Tâm & Nguyễn Hoà.</li>
-                      <li>📚 <strong>Nội dung 3 Trục tư duy</strong> & quyền lợi 14 ngày đồng hành.</li>
+                      <li>📚 <strong>Nội dung lớp học</strong> (3 Trục tư duy) & quyền lợi 14 ngày đồng hành.</li>
                       <li>🎨 <strong>Bài test 15 câu</strong> & cách xuất bộ Brand Guideline 24 slide.</li>
                       <li>✍️ <strong>Cách đăng ký</strong> giữ chỗ & hotline hỗ trợ.</li>
                       <li>📖 <strong>Toàn bộ cẩm nang Ebook</strong> làm web & video bằng AI!</li>
@@ -2629,7 +2629,7 @@ Kết quả: Mỗi câu dưới 10 chữ, giọng ấm áp, gần gũi. Ghi thê
         targetLabel: 'Xem Tổng quan trên Website',
         answer: `Cảm ơn bạn đã hỏi Ngáo Bot!<br><br>Để tìm hiểu thông tin chi tiết, bạn có thể tham khảo các phần chính sau trên website:<br>
 • **Phần 1 (Tổng quan):** Định vị *"Hiểu Nhân cho rõ, Xây Hiệu cho lâu"*. Giải quyết câu chuyện bóc tách năng lực thực chất.<br>
-• **Phần 2 (3 Trục tư duy):** Bản sắc độc bản, Phễu truyền thông đa kênh, AI & Vibe Coding thực chiến.<br>
+• **Phần 2 (Nội dung lớp học):** 3 Trục tư duy: Bản sắc độc bản, Phễu truyền thông đa kênh, AI & Vibe Coding thực chiến.<br>
 • **Phần 3 (Quyền lợi):** 1 ngày offline + 14 ngày đồng hành + 2 record + 1 Zoom sửa bài.<br>
 • **Phần 4 (Giảng viên):** Gặp gỡ Trainer Ngọc Tâm (12+ năm KN) & Trainer Nguyễn Hoà (Edit Không Khó).<br>
 • **Phần 5 (Địa điểm & Học phí):** WORK X, 182 Điện Biên Phủ (12/12/2026), giá gốc 4.569.000đ giảm còn 2.393.000đ khi đăng ký trước 08/12.<br>
