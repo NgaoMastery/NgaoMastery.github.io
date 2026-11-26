@@ -122,7 +122,7 @@
       id: 'kb_curriculum_3pillars',
       targetPart: 'curriculum',
       targetLabel: 'Xem Nội dung lớp học (Phần 2)',
-      keywords: ['nội dung lớp học', 'lớp học', '3 trục', 'ba trục', 'nội dung học', 'giáo trình', 'chương trình', 'học gì', 'học những gì', 'bản sắc độc bản', 'phễu nội dung', 'trục 1', 'trục 2', 'trục 3'],
+      keywords: ['nội dung lớp học', 'lớp học', 'buổi sáng', 'buổi chiều', 'lộ trình', 'learning outcomes', 'đầu ra', 'syllabus', '3 trục', 'ba trục', 'nội dung học', 'giáo trình', 'chương trình', 'học gì', 'học những gì', 'bản sắc độc bản', 'phễu nội dung', 'trục 1', 'trục 2', 'trục 3'],
       question: 'Nội dung lớp học gồm những gì? 3 Trục tư duy là gì?',
       answer: `Chương trình đào tạo được xây dựng trên **3 Trục tư duy vững chắc**:<br><br>1. **Trục 1: Bản sắc độc bản (Identity):** Hiểu nhân cho rõ, tìm ra chất người thực tế, câu chuyện nghề đáng nhớ và định vị độc bản thay vì vẽ vỏ bọc hào nhoáng.<br>2. **Trục 2: Hệ thống phễu truyền thông (Funnel & System):** Xây dựng phễu nội dung đa kênh, thiết lập trụ cột nội dung và tạo lý do đủ rõ để người khác tin tưởng, ghi nhớ.<br>3. **Trục 3: Công nghệ AI & Vibe Coding thực chiến:** Ứng dụng Claude Desktop, prompt 4 mảnh, khảo sát 15 câu xuất Brand Guideline 24 slide, tự tay làm trang web cá nhân và quy trình làm video AI nhanh gấp 5 đến 10 lần!`
     },
