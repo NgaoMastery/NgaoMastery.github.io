@@ -642,165 +642,240 @@
 
     /* PART 2B: DETAILED SYLLABUS, SYSTEM FLOW & LEARNING OUTCOMES */
     .curr-subblock {
-      margin-top: 34px;
-      padding-top: 30px;
+      margin-top: 30px;
+      padding-top: 26px;
       border-top: 1.5px dashed var(--border);
     }
     .curr-subhead-eyebrow {
       display: inline-block;
-      font-size: 11px;
+      font-size: 10.5px;
       font-weight: 850;
       text-transform: uppercase;
-      letter-spacing: 0.7px;
+      letter-spacing: 0.75px;
       color: var(--primary);
-      margin-bottom: 6px;
+      background: var(--primary-light);
+      padding: 3px 10px;
+      border-radius: 99px;
+      margin-bottom: 8px;
     }
     .curr-subhead-title {
-      font-size: clamp(19px, 2.2vw, 25px);
+      font-size: clamp(19px, 2.1vw, 24px);
       font-weight: 900;
       color: var(--primary-dark);
       letter-spacing: -0.4px;
       line-height: 1.25;
-      margin-bottom: 20px;
+      margin-bottom: 18px;
     }
 
-    /* Syllabus Timeline */
-    .syllabus-card {
+    /* Syllabus 2-Column Balanced Grid */
+    .syllabus-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+      align-items: stretch;
+    }
+    .syllabus-session-card {
       background: #fff;
       border: 1.5px solid var(--border);
       border-radius: var(--radius-md);
-      padding: 24px 28px;
-    }
-    .syllabus-session + .syllabus-session {
-      margin-top: 24px;
-      padding-top: 24px;
-      border-top: 1px solid var(--border-light);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      box-shadow: var(--shadow-sm);
     }
     .syllabus-session-head {
       display: flex;
       align-items: center;
       gap: 12px;
-      margin-bottom: 16px;
+      padding: 16px 20px;
+      background: linear-gradient(135deg, #FFF5F8 0%, #FFFAFC 100%);
+      border-bottom: 1px solid var(--border-light);
     }
     .syllabus-session-icon {
       width: 38px;
       height: 38px;
       border-radius: 10px;
-      background: var(--primary-light);
+      background: #fff;
+      border: 1px solid #F3CAD9;
       color: var(--primary);
       display: grid;
       place-items: center;
       flex-shrink: 0;
+      box-shadow: 0 2px 6px rgba(200, 32, 97, 0.08);
     }
     .syllabus-session-head h4 {
-      font-size: 14.5px;
+      font-size: 14px;
       font-weight: 900;
       color: var(--primary-dark);
-      letter-spacing: 0.2px;
+      letter-spacing: 0.15px;
       text-transform: uppercase;
       line-height: 1.25;
     }
     .syllabus-session-head small {
       display: block;
-      font-size: 12.5px;
+      font-size: 12px;
       color: var(--text-muted);
-      font-weight: 500;
+      font-weight: 550;
       margin-top: 2px;
     }
     .syllabus-list {
       list-style: none;
-      display: grid;
+      display: flex;
+      flex-direction: column;
       gap: 14px;
+      padding: 18px 20px 20px;
+      flex: 1;
     }
     .syllabus-item {
       display: grid;
       grid-template-columns: 26px 1fr;
-      gap: 10px;
+      gap: 11px;
       align-items: start;
     }
     .syllabus-num {
-      font-size: 13px;
-      font-weight: 850;
+      width: 26px;
+      height: 26px;
+      border-radius: 8px;
+      background: var(--primary-light);
       color: var(--primary);
-      padding-top: 2px;
-      text-align: center;
+      font-size: 12px;
+      font-weight: 850;
+      display: grid;
+      place-items: center;
+      flex-shrink: 0;
+      margin-top: 1px;
     }
     .syllabus-body {
-      border-left: 2px solid #F3D2DF;
-      padding-left: 14px;
+      border-left: 2px solid #F6D8E4;
+      padding-left: 12px;
     }
     .syllabus-body strong {
       display: block;
-      font-size: 14px;
+      font-size: 13.5px;
       font-weight: 800;
-      color: var(--text);
+      color: var(--primary-dark);
       line-height: 1.35;
       margin-bottom: 3px;
     }
     .syllabus-body p {
-      font-size: 13px;
+      font-size: 12.5px;
       color: var(--text-muted);
       line-height: 1.55;
       margin: 0;
     }
     .syllabus-after {
-      margin-top: 22px;
-      background: var(--bg-alt);
-      border: 1.5px solid var(--border);
-      border-radius: 14px;
+      grid-column: 1 / -1;
+      background: linear-gradient(135deg, #FFF2F7 0%, #FFF9FB 100%);
+      border: 1.5px solid #EAB9CC;
+      border-radius: var(--radius-md);
       padding: 18px 22px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
     }
-    .syllabus-after .syllabus-session-head {
-      margin-bottom: 8px;
+    .syllabus-after-copy {
+      flex: 1;
     }
-    .syllabus-after p {
-      font-size: 13.5px;
+    .syllabus-after-copy h4 {
+      font-size: 14px;
+      font-weight: 900;
+      color: var(--primary-dark);
+      text-transform: uppercase;
+      letter-spacing: 0.15px;
+      margin-bottom: 2px;
+    }
+    .syllabus-after-copy small {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 5px;
+    }
+    .syllabus-after-copy p {
+      font-size: 13px;
       color: var(--text);
-      line-height: 1.6;
+      line-height: 1.58;
       margin: 0;
+    }
+
+    /* Split Editorial Layout: 7-Step Flow (Left) + 8 Learning Outcomes (Right) */
+    .system-outcomes-split {
+      display: grid;
+      grid-template-columns: 0.82fr 1.18fr;
+      gap: 20px;
+      align-items: stretch;
+    }
+    .system-flow-panel,
+    .outcomes-panel {
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 22px 22px;
+      display: flex;
+      flex-direction: column;
+    }
+    .system-flow-panel {
+      background: #FFF9FB;
+    }
+    .outcomes-panel {
+      background: #fff;
+      box-shadow: var(--shadow-sm);
+    }
+    .panel-title {
+      font-size: 18px;
+      font-weight: 900;
+      color: var(--primary-dark);
+      letter-spacing: -0.3px;
+      line-height: 1.3;
+      margin-bottom: 6px;
+    }
+    .panel-subtitle {
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.5;
+      margin-bottom: 16px;
     }
 
     /* 7-Step Brand System Flow */
     .brand-flow-wrap {
-      max-width: 620px;
-      margin: 0 auto;
       display: flex;
       flex-direction: column;
       align-items: center;
+      flex: 1;
+      justify-content: space-between;
     }
     .brand-flow-step {
       width: 100%;
-      background: #FFF6F9;
+      background: #fff;
       border: 1.5px solid #EAB9CC;
-      border-radius: 14px;
-      padding: 14px 20px;
+      border-radius: 12px;
+      padding: 10px 14px;
       text-align: center;
       transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
     }
     .brand-flow-step:hover {
-      transform: translateY(-2px);
+      transform: translateY(-1px);
       border-color: var(--primary);
       box-shadow: var(--shadow-sm);
     }
     .brand-flow-step strong {
       display: block;
-      font-size: 14.5px;
+      font-size: 13px;
       font-weight: 900;
       color: var(--primary-dark);
-      letter-spacing: 0.3px;
+      letter-spacing: 0.25px;
       text-transform: uppercase;
-      margin-bottom: 3px;
+      margin-bottom: 1px;
     }
     .brand-flow-step span {
       display: block;
-      font-size: 13px;
+      font-size: 12px;
       color: var(--text-muted);
       font-weight: 550;
     }
     .brand-flow-step.is-final {
-      background: linear-gradient(135deg, #701A39 0%, #8C1C45 100%);
+      background: linear-gradient(135deg, #701A39 0%, #981D4B 100%);
       border-color: #701A39;
-      box-shadow: 0 8px 22px rgba(112, 26, 57, 0.2);
+      box-shadow: 0 6px 18px rgba(112, 26, 57, 0.2);
     }
     .brand-flow-step.is-final strong {
       color: #FFFFFF;
@@ -810,10 +885,10 @@
     }
     .brand-flow-arrow {
       color: var(--primary);
-      font-size: 18px;
+      font-size: 14px;
       font-weight: 800;
       line-height: 1;
-      padding: 6px 0;
+      padding: 3px 0;
       user-select: none;
     }
 
@@ -821,13 +896,17 @@
     .outcomes-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 14px;
+      gap: 12px;
+      flex: 1;
     }
     .outcome-card {
       background: #FFF7FA;
       border: 1.5px solid var(--border-light);
-      border-radius: 14px;
-      padding: 18px 20px;
+      border-radius: 12px;
+      padding: 14px 16px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
       transition: all 0.2s ease;
     }
     .outcome-card:hover {
@@ -838,30 +917,44 @@
     }
     .outcome-num {
       display: inline-block;
-      font-size: 15px;
+      font-size: 13.5px;
       font-weight: 900;
       color: var(--primary);
-      margin-bottom: 6px;
+      margin-bottom: 4px;
       letter-spacing: -0.2px;
     }
     .outcome-card h4 {
-      font-size: 15px;
+      font-size: 14px;
       font-weight: 850;
       color: var(--primary-dark);
-      margin-bottom: 4px;
+      margin-bottom: 3px;
+      line-height: 1.3;
     }
     .outcome-card p {
-      font-size: 13px;
+      font-size: 12.5px;
       color: var(--text-muted);
-      line-height: 1.55;
+      line-height: 1.5;
       margin: 0;
     }
     .outcomes-footnote {
       margin-top: 14px;
-      font-size: 12.5px;
+      padding-top: 12px;
+      border-top: 1px dashed var(--border);
+      font-size: 12px;
       color: var(--text-light);
-      line-height: 1.55;
+      line-height: 1.5;
       font-style: italic;
+    }
+    @media (max-width: 960px) {
+      .syllabus-grid,
+      .system-outcomes-split {
+        grid-template-columns: 1fr;
+      }
+      .syllabus-after {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
     }
 
     /* PART 3: PACKAGES & BEYOND 1-DAY VALUE */
@@ -1723,7 +1816,15 @@
         margin-top: 24px;
         padding-top: 22px;
       }
-      .syllabus-card {
+      .syllabus-session-head {
+        padding: 13px 14px;
+      }
+      .syllabus-list {
+        padding: 14px 14px 16px;
+        gap: 12px;
+      }
+      .system-flow-panel,
+      .outcomes-panel {
         padding: 16px 14px;
       }
       .syllabus-item {
@@ -2099,9 +2200,9 @@
           <span class="curr-subhead-eyebrow">Lộ trình chi tiết</span>
           <h3 class="curr-subhead-title">Một ngày xây nền móng. 14 ngày đưa chiến lược vào thực tế.</h3>
 
-          <div class="syllabus-card">
+          <div class="syllabus-grid">
             <!-- BUỔI SÁNG -->
-            <div class="syllabus-session">
+            <div class="syllabus-session-card">
               <div class="syllabus-session-head">
                 <div class="syllabus-session-icon" aria-hidden="true">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4"/><path d="m4.93 10.93 2.83 2.83"/><path d="M2 18h2"/><path d="M20 18h2"/><path d="m19.07 10.93-2.83 2.83"/><path d="M22 22H2"/><path d="m8 6 4-4 4 4"/><path d="M16 18a4 4 0 0 0-8 0"/></svg>
@@ -2113,28 +2214,28 @@
               </div>
               <ol class="syllabus-list">
                 <li class="syllabus-item">
-                  <span class="syllabus-num">1</span>
+                  <span class="syllabus-num">01</span>
                   <div class="syllabus-body">
                     <strong>Giải mã Personal Branding &amp; chẩn đoán kênh hiện tại</strong>
                     <p>Hiểu đúng bản chất xây dựng thương hiệu. Nhận diện những điểm nghẽn trong quá trình phát triển kênh và xác định mình đang ở đâu.</p>
                   </div>
                 </li>
                 <li class="syllabus-item">
-                  <span class="syllabus-num">2</span>
+                  <span class="syllabus-num">02</span>
                   <div class="syllabus-body">
                     <strong>Định vị thương hiệu · Vai trò · Mục tiêu thực tế</strong>
                     <p>Khai thác tài sản cá nhân, năng lực, lợi thế khác biệt. Xác định mình muốn trở thành ai trong nhận thức của đối tượng mục tiêu và xây thương hiệu để phục vụ mục tiêu gì.</p>
                   </div>
                 </li>
                 <li class="syllabus-item">
-                  <span class="syllabus-num">3</span>
+                  <span class="syllabus-num">03</span>
                   <div class="syllabus-body">
                     <strong>Audience Insight &amp; công thức khai thác trụ cột nội dung</strong>
                     <p>Hiểu ai cần biết đến mình, họ cần điều gì, vì sao họ nên lắng nghe mình. Thực hành công thức chuyển Insight thành Content Pillars và các hướng khai thác nội dung.</p>
                   </div>
                 </li>
                 <li class="syllabus-item">
-                  <span class="syllabus-num">4</span>
+                  <span class="syllabus-num">04</span>
                   <div class="syllabus-body">
                     <strong>Case thực tế · Khám kênh · Định hướng trực tiếp</strong>
                     <p>Phân tích những bài toán xây dựng thương hiệu khác nhau. Cùng trainer nhìn nhận vấn đề và tháo gỡ những vướng mắc trên kênh thực tế.</p>
@@ -2144,7 +2245,7 @@
             </div>
 
             <!-- BUỔI CHIỀU -->
-            <div class="syllabus-session">
+            <div class="syllabus-session-card">
               <div class="syllabus-session-head">
                 <div class="syllabus-session-icon" aria-hidden="true">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
@@ -2156,35 +2257,35 @@
               </div>
               <ol class="syllabus-list">
                 <li class="syllabus-item">
-                  <span class="syllabus-num">5</span>
+                  <span class="syllabus-num">05</span>
                   <div class="syllabus-body">
                     <strong>Xây dựng chiến lược Content Marketing cho kênh</strong>
                     <p>Chuyển định vị thành chiến lược nội dung, xác định vai trò của từng nhóm nội dung trong quá trình thu hút, xây niềm tin, ghi nhớ thương hiệu và chuyển đổi.</p>
                   </div>
                 </li>
                 <li class="syllabus-item">
-                  <span class="syllabus-num">6</span>
+                  <span class="syllabus-num">06</span>
                   <div class="syllabus-body">
                     <strong>Thiết kế Content Series mang dấu ấn thương hiệu</strong>
                     <p>Học cách tìm chất liệu từ công việc, chuyên môn và đời sống; phát triển một ý tưởng thành nhiều nội dung và xây dựng các series có thể duy trì lâu dài.</p>
                   </div>
                 </li>
                 <li class="syllabus-item">
-                  <span class="syllabus-num">7</span>
+                  <span class="syllabus-num">07</span>
                   <div class="syllabus-body">
                     <strong>Thực hành lập Content Marketing Plan</strong>
                     <p>Xây dựng kế hoạch nội dung có mục tiêu, trụ cột, chủ đề, format và định hướng triển khai phù hợp với nguồn lực thực tế.</p>
                   </div>
                 </li>
                 <li class="syllabus-item">
-                  <span class="syllabus-num">8</span>
+                  <span class="syllabus-num">08</span>
                   <div class="syllabus-body">
                     <strong>Ứng dụng AI, Claude &amp; Vibe Coding cùng trainer Nguyễn Hoà</strong>
                     <p>Học cách sử dụng AI như một cộng sự trong quá trình nghiên cứu, sáng tạo, thiết kế, quản trị tri thức, phát triển website và xây dựng các công cụ hỗ trợ thương hiệu.</p>
                   </div>
                 </li>
                 <li class="syllabus-item">
-                  <span class="syllabus-num">9</span>
+                  <span class="syllabus-num">09</span>
                   <div class="syllabus-body">
                     <strong>Hoàn thiện định hướng &amp; Action Plan cá nhân</strong>
                     <p>Tổng hợp những gì đã học thành bản đồ hành động, xác định các ưu tiên triển khai trong 14 ngày tiếp theo.</p>
@@ -2195,122 +2296,129 @@
 
             <!-- 14 NGÀY SAU LỚP -->
             <div class="syllabus-after">
-              <div class="syllabus-session-head">
-                <div class="syllabus-session-icon" aria-hidden="true">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M16 2v4"/><path d="M8 2v4"/><path d="M3 10h18"/><path d="m9 16 2 2 4-4"/></svg>
+              <div class="syllabus-session-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M16 2v4"/><path d="M8 2v4"/><path d="M3 10h18"/><path d="m9 16 2 2 4-4"/></svg>
+              </div>
+              <div class="syllabus-after-copy">
+                <h4>14 ngày sau lớp: Đồng hành thực thi</h4>
+                <small>Từ hiểu đúng đến làm được</small>
+                <p>Tiếp tục triển khai định hướng đã xây dựng tại lớp, nhận hỗ trợ trong quá trình thực hành, tháo gỡ vướng mắc và điều chỉnh chiến lược theo bài toán thực tế của mỗi học viên.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- BỐ CỤC 2 CỘT CÂN ĐỐI: KIẾN TRÚC 7 BƯỚC + LEARNING OUTCOMES (8 ĐẦU RA) -->
+        <div class="curr-subblock">
+          <div class="system-outcomes-split">
+            <!-- CỘT TRÁI: BẢN ĐỒ 7 BƯỚC -->
+            <div class="system-flow-panel">
+              <div>
+                <span class="curr-subhead-eyebrow">Kiến trúc hệ thống</span>
+                <h3 class="panel-title">Bản Đồ 7 Bước Xây Thương Hiệu</h3>
+                <p class="panel-subtitle">Từ năng lực thật đến hệ thống vận hành bền vững:</p>
+              </div>
+
+              <div class="brand-flow-wrap">
+                <div class="brand-flow-step">
+                  <strong>Tài sản cá nhân</strong>
+                  <span>Năng lực · Trải nghiệm · Giá trị</span>
                 </div>
-                <div>
-                  <h4>14 ngày sau lớp: Đồng hành thực thi</h4>
-                  <small>Từ hiểu đúng đến làm được</small>
+                <div class="brand-flow-arrow" aria-hidden="true">↓</div>
+
+                <div class="brand-flow-step">
+                  <strong>Định vị &amp; Mục tiêu</strong>
+                  <span>Vai trò · Vị thế · Lợi thế khác biệt</span>
+                </div>
+                <div class="brand-flow-arrow" aria-hidden="true">↓</div>
+
+                <div class="brand-flow-step">
+                  <strong>Audience Insight</strong>
+                  <span>Ai cần mình và vì sao?</span>
+                </div>
+                <div class="brand-flow-arrow" aria-hidden="true">↓</div>
+
+                <div class="brand-flow-step">
+                  <strong>Content Strategy</strong>
+                  <span>Direction · Pillar · Angle</span>
+                </div>
+                <div class="brand-flow-arrow" aria-hidden="true">↓</div>
+
+                <div class="brand-flow-step">
+                  <strong>Content Series &amp; Plan</strong>
+                  <span>Chuỗi nội dung · Kế hoạch thực thi</span>
+                </div>
+                <div class="brand-flow-arrow" aria-hidden="true">↓</div>
+
+                <div class="brand-flow-step">
+                  <strong>AI &amp; Brand Workflow</strong>
+                  <span>Công nghệ hỗ trợ vận hành</span>
+                </div>
+                <div class="brand-flow-arrow" aria-hidden="true">↓</div>
+
+                <div class="brand-flow-step is-final">
+                  <strong>Đo lường &amp; Tích lũy</strong>
+                  <span>Thử nghiệm · Điều chỉnh · Phát triển</span>
                 </div>
               </div>
-              <p>Tiếp tục triển khai định hướng đã xây dựng tại lớp, nhận hỗ trợ trong quá trình thực hành, tháo gỡ vướng mắc và điều chỉnh chiến lược theo bài toán thực tế của mỗi học viên.</p>
+            </div>
+
+            <!-- CỘT PHẢI: 8 ĐẦU RA LEARNING OUTCOMES -->
+            <div class="outcomes-panel">
+              <div>
+                <span class="curr-subhead-eyebrow">Learning Outcomes</span>
+                <h3 class="panel-title">Không chỉ mang kiến thức về. Mang cả một bộ khung để tiếp tục xây thương hiệu.</h3>
+                <p class="panel-subtitle">8 đầu ra thực chiến học viên trực tiếp xây dựng trong khoá học:</p>
+              </div>
+
+              <div class="outcomes-grid">
+                <div class="outcome-card">
+                  <span class="outcome-num">01</span>
+                  <h4>Personal Brand Map</h4>
+                  <p>Bản đồ năng lực, giá trị, lợi thế và mục tiêu thương hiệu.</p>
+                </div>
+                <div class="outcome-card">
+                  <span class="outcome-num">02</span>
+                  <h4>Brand Positioning</h4>
+                  <p>Định hướng vị thế, vai trò và giá trị muốn được ghi nhớ.</p>
+                </div>
+                <div class="outcome-card">
+                  <span class="outcome-num">03</span>
+                  <h4>Audience Insight</h4>
+                  <p>Bản đồ nhu cầu, vấn đề và động lực của đối tượng mục tiêu.</p>
+                </div>
+                <div class="outcome-card">
+                  <span class="outcome-num">04</span>
+                  <h4>Content Pillar Matrix</h4>
+                  <p>Hệ thống trụ cột và hướng khai thác nội dung có chiến lược.</p>
+                </div>
+                <div class="outcome-card">
+                  <span class="outcome-num">05</span>
+                  <h4>Signature Content Series</h4>
+                  <p>Định hướng chuỗi nội dung mang dấu ấn và góc nhìn riêng.</p>
+                </div>
+                <div class="outcome-card">
+                  <span class="outcome-num">06</span>
+                  <h4>Content Marketing Plan</h4>
+                  <p>Bộ khung kế hoạch phát triển nội dung và kênh.</p>
+                </div>
+                <div class="outcome-card">
+                  <span class="outcome-num">07</span>
+                  <h4>AI &amp; Brand Workflow</h4>
+                  <p>Phương pháp ứng dụng AI vào quy trình xây dựng thương hiệu.</p>
+                </div>
+                <div class="outcome-card">
+                  <span class="outcome-num">08</span>
+                  <h4>14-Day Action Plan</h4>
+                  <p>Lộ trình hành động để tiếp tục thực hành sau buổi học.</p>
+                </div>
+              </div>
+
+              <p class="outcomes-footnote">
+                Các đầu ra được phát triển trong quá trình học và tiếp tục hoàn thiện trong 14 ngày đồng hành, tùy theo hiện trạng và mức độ thực hành của mỗi học viên.
+              </p>
             </div>
           </div>
-        </div>
-
-        <!-- SƠ ĐỒ HỆ THỐNG 7 BƯỚC -->
-        <div class="curr-subblock">
-          <div style="text-align:center;margin-bottom:20px">
-            <span class="curr-subhead-eyebrow">Kiến trúc hệ thống</span>
-            <h3 class="curr-subhead-title" style="margin-bottom:0">Bản Đồ 7 Bước Xây Dựng Thương Hiệu Cá Nhân</h3>
-          </div>
-
-          <div class="brand-flow-wrap">
-            <div class="brand-flow-step">
-              <strong>Tài sản cá nhân</strong>
-              <span>Năng lực · Trải nghiệm · Giá trị</span>
-            </div>
-            <div class="brand-flow-arrow" aria-hidden="true">↓</div>
-
-            <div class="brand-flow-step">
-              <strong>Định vị &amp; Mục tiêu</strong>
-              <span>Vai trò · Vị thế · Lợi thế khác biệt</span>
-            </div>
-            <div class="brand-flow-arrow" aria-hidden="true">↓</div>
-
-            <div class="brand-flow-step">
-              <strong>Audience Insight</strong>
-              <span>Ai cần mình và vì sao?</span>
-            </div>
-            <div class="brand-flow-arrow" aria-hidden="true">↓</div>
-
-            <div class="brand-flow-step">
-              <strong>Content Strategy</strong>
-              <span>Direction · Pillar · Angle</span>
-            </div>
-            <div class="brand-flow-arrow" aria-hidden="true">↓</div>
-
-            <div class="brand-flow-step">
-              <strong>Content Series &amp; Plan</strong>
-              <span>Chuỗi nội dung · Kế hoạch thực thi</span>
-            </div>
-            <div class="brand-flow-arrow" aria-hidden="true">↓</div>
-
-            <div class="brand-flow-step">
-              <strong>AI &amp; Brand Workflow</strong>
-              <span>Công nghệ hỗ trợ vận hành</span>
-            </div>
-            <div class="brand-flow-arrow" aria-hidden="true">↓</div>
-
-            <div class="brand-flow-step is-final">
-              <strong>Đo lường &amp; Tích lũy</strong>
-              <span>Thử nghiệm · Điều chỉnh · Phát triển</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- LEARNING OUTCOMES (8 ĐẦU RA MANG VỀ) -->
-        <div class="curr-subblock">
-          <span class="curr-subhead-eyebrow">Learning Outcomes</span>
-          <h3 class="curr-subhead-title">Không chỉ mang kiến thức về. Mang cả một bộ khung để tiếp tục xây thương hiệu.</h3>
-
-          <div class="outcomes-grid">
-            <div class="outcome-card">
-              <span class="outcome-num">01</span>
-              <h4>Personal Brand Map</h4>
-              <p>Bản đồ năng lực, giá trị, lợi thế và mục tiêu thương hiệu.</p>
-            </div>
-            <div class="outcome-card">
-              <span class="outcome-num">02</span>
-              <h4>Brand Positioning</h4>
-              <p>Định hướng vị thế, vai trò và giá trị muốn được ghi nhớ.</p>
-            </div>
-            <div class="outcome-card">
-              <span class="outcome-num">03</span>
-              <h4>Audience Insight</h4>
-              <p>Bản đồ nhu cầu, vấn đề và động lực của đối tượng mục tiêu.</p>
-            </div>
-            <div class="outcome-card">
-              <span class="outcome-num">04</span>
-              <h4>Content Pillar Matrix</h4>
-              <p>Hệ thống trụ cột và hướng khai thác nội dung có chiến lược.</p>
-            </div>
-            <div class="outcome-card">
-              <span class="outcome-num">05</span>
-              <h4>Signature Content Series</h4>
-              <p>Định hướng chuỗi nội dung mang dấu ấn và góc nhìn riêng.</p>
-            </div>
-            <div class="outcome-card">
-              <span class="outcome-num">06</span>
-              <h4>Content Marketing Plan</h4>
-              <p>Bộ khung kế hoạch phát triển nội dung và kênh.</p>
-            </div>
-            <div class="outcome-card">
-              <span class="outcome-num">07</span>
-              <h4>AI &amp; Brand Workflow</h4>
-              <p>Phương pháp ứng dụng AI vào quy trình xây dựng thương hiệu.</p>
-            </div>
-            <div class="outcome-card">
-              <span class="outcome-num">08</span>
-              <h4>14-Day Action Plan</h4>
-              <p>Lộ trình hành động để tiếp tục thực hành sau buổi học.</p>
-            </div>
-          </div>
-
-          <p class="outcomes-footnote">
-            Các đầu ra được phát triển trong quá trình học và tiếp tục hoàn thiện trong 14 ngày đồng hành, tùy theo hiện trạng và mức độ thực hành của mỗi học viên.
-          </p>
         </div>
 
         <div class="part-nav-footer">
